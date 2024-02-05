@@ -1,0 +1,1827 @@
+<html lang="es-ES" style="--vh: 6.54px;">
+
+<head>
+  <style>
+    .pac-container {
+      background-color: #fff;
+      position: absolute !important;
+      z-index: 1000;
+      border-radius: 2px;
+      border-top: 1px solid #d9d9d9;
+      font-family: Arial, sans-serif;
+      -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      overflow: hidden
+    }
+
+    .pac-logo:after {
+      content: "";
+      padding: 1px 1px 1px 0;
+      height: 18px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      text-align: right;
+      display: block;
+      background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);
+      background-position: right;
+      background-repeat: no-repeat;
+      -webkit-background-size: 120px 14px;
+      background-size: 120px 14px
+    }
+
+    .hdpi.pac-logo:after {
+      background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)
+    }
+
+    .pac-item {
+      cursor: default;
+      padding: 0 4px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      line-height: 30px;
+      text-align: left;
+      border-top: 1px solid #e6e6e6;
+      font-size: 11px;
+      color: #515151
+    }
+
+    .pac-item:hover {
+      background-color: #fafafa
+    }
+
+    .pac-item-selected,
+    .pac-item-selected:hover {
+      background-color: #ebf2fe
+    }
+
+    .pac-matched {
+      font-weight: 700
+    }
+
+    .pac-item-query {
+      font-size: 13px;
+      padding-right: 3px;
+      color: #000
+    }
+
+    .pac-icon {
+      width: 15px;
+      height: 20px;
+      margin-right: 7px;
+      margin-top: 6px;
+      display: inline-block;
+      vertical-align: top;
+      background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);
+      -webkit-background-size: 34px 34px;
+      background-size: 34px
+    }
+
+    .hdpi .pac-icon {
+      background-image: url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)
+    }
+
+    .pac-icon-search {
+      background-position: -1px -1px
+    }
+
+    .pac-item-selected .pac-icon-search {
+      background-position: -18px -1px
+    }
+
+    .pac-icon-marker {
+      background-position: -1px -161px
+    }
+
+    .pac-item-selected .pac-icon-marker {
+      background-position: -18px -161px
+    }
+
+    .pac-placeholder {
+      color: gray
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Carta Bandido`s Burger</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/wp-content/themes/bandidos2020/img/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="pingback" href="https://bandidosburger.es/es/xmlrpc.php">
+  <title>Carta Bandido`s Burger</title>
+  <meta name="description"
+    content="Descubre la carta de hamburguesas gourmet, entrantes y postres de bandidos. Cada restaurante bandidos tiene una hamburguesa especial, descúbrelas aquí.">
+  <link rel="canonical" href="https://bandidosburger.es/carta/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Carta Bandido`s Burger">
+  <meta property="og:description"
+    content="Descubre la carta de hamburguesas gourmet, entrantes y postres de bandidos. Cada restaurante bandidos tiene una hamburguesa especial, descúbrelas aquí.">
+  <meta property="og:url" content="https://bandidosburger.es/carta/">
+  <meta property="og:site_name" content="bandidos">
+  <meta property="article:publisher" content="https://www.facebook.com/bandidos">
+  <meta property="article:modified_time" content="2023-04-19T12:40:16+00:00">
+  <meta property="og:image" content="assets/">
+  <meta property="og:image:width" content="1800">
+  <meta property="og:image:height" content="1201">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Bandidos">
+  <link rel="dns-prefetch" href="https://bandidosburger.es/">
+  <link rel="dns-prefetch" href="//js.maxmind.com">
+  <link rel="alternate" type="application/rss+xml" title="bandidos » Feed" href="https://bandidosburger.es/es/feed/">
+  <link rel="alternate" type="application/rss+xml" title="bandidos » Feed de los comentarios"
+    href="https://bandidosburger.es/es/comments/feed/">
+  <style id="classic-theme-styles-inline-css">
+    .wp-block-button__link {
+      color: #fff;
+      background-color: #32373c;
+      border-radius: 9999px;
+      box-shadow: none;
+      text-decoration: none;
+      padding: calc(.667em + 2px) calc(1.333em + 2px);
+      font-size: 1.125em
+    }
+
+    .wp-block-file__button {
+      background: #32373c;
+      color: #fff;
+      text-decoration: none
+    }
+  </style>
+  <style id="global-styles-inline-css">
+    body {
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--cyan-bluish-gray: #abb8c3;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--pale-pink: #f78da7;
+      --wp--preset--color--vivid-red: #cf2e2e;
+      --wp--preset--color--luminous-vivid-orange: #ff6900;
+      --wp--preset--color--luminous-vivid-amber: #fcb900;
+      --wp--preset--color--light-green-cyan: #7bdcb5;
+      --wp--preset--color--vivid-green-cyan: #00d084;
+      --wp--preset--color--pale-cyan-blue: #8ed1fc;
+      --wp--preset--color--vivid-cyan-blue: #0693e3;
+      --wp--preset--color--vivid-purple: #9b51e0;
+      --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+      --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+      --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+      --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+      --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+      --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+      --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+      --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+      --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+      --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+      --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+      --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+      --wp--preset--font-size--small: 13px;
+      --wp--preset--font-size--medium: 20px;
+      --wp--preset--font-size--large: 36px;
+      --wp--preset--font-size--x-large: 42px;
+      --wp--preset--spacing--20: 0.44rem;
+      --wp--preset--spacing--30: 0.67rem;
+      --wp--preset--spacing--40: 1rem;
+      --wp--preset--spacing--50: 1.5rem;
+      --wp--preset--spacing--60: 2.25rem;
+      --wp--preset--spacing--70: 3.38rem;
+      --wp--preset--spacing--80: 5.06rem;
+      --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+      --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+      --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+      --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+    }
+
+    :where(.is-layout-flex) {
+      gap: 0.5em;
+    }
+
+    :where(.is-layout-grid) {
+      gap: 0.5em;
+    }
+
+    body .is-layout-flow>.alignleft {
+      float: left;
+      margin-inline-start: 0;
+      margin-inline-end: 2em;
+    }
+
+    body .is-layout-flow>.alignright {
+      float: right;
+      margin-inline-start: 2em;
+      margin-inline-end: 0;
+    }
+
+    body .is-layout-flow>.aligncenter {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    body .is-layout-constrained>.alignleft {
+      float: left;
+      margin-inline-start: 0;
+      margin-inline-end: 2em;
+    }
+
+    body .is-layout-constrained>.alignright {
+      float: right;
+      margin-inline-start: 2em;
+      margin-inline-end: 0;
+    }
+
+    body .is-layout-constrained>.aligncenter {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+      max-width: var(--wp--style--global--content-size);
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    body .is-layout-constrained>.alignwide {
+      max-width: var(--wp--style--global--wide-size);
+    }
+
+    body .is-layout-flex {
+      display: flex;
+    }
+
+    body .is-layout-flex {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    body .is-layout-flex>* {
+      margin: 0;
+    }
+
+    body .is-layout-grid {
+      display: grid;
+    }
+
+    body .is-layout-grid>* {
+      margin: 0;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    .has-black-color {
+      color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-color {
+      color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-color {
+      color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-color {
+      color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-color {
+      color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-color {
+      color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-color {
+      color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-color {
+      color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-color {
+      color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-color {
+      color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-color {
+      color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-color {
+      color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-background-color {
+      background-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-background-color {
+      background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-background-color {
+      background-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-background-color {
+      background-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-background-color {
+      background-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-background-color {
+      background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-background-color {
+      background-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-background-color {
+      background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-background-color {
+      background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-background-color {
+      background-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-black-border-color {
+      border-color: var(--wp--preset--color--black) !important;
+    }
+
+    .has-cyan-bluish-gray-border-color {
+      border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+    }
+
+    .has-white-border-color {
+      border-color: var(--wp--preset--color--white) !important;
+    }
+
+    .has-pale-pink-border-color {
+      border-color: var(--wp--preset--color--pale-pink) !important;
+    }
+
+    .has-vivid-red-border-color {
+      border-color: var(--wp--preset--color--vivid-red) !important;
+    }
+
+    .has-luminous-vivid-orange-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-amber-border-color {
+      border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+    }
+
+    .has-light-green-cyan-border-color {
+      border-color: var(--wp--preset--color--light-green-cyan) !important;
+    }
+
+    .has-vivid-green-cyan-border-color {
+      border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+    }
+
+    .has-pale-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+    }
+
+    .has-vivid-cyan-blue-border-color {
+      border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+    }
+
+    .has-vivid-purple-border-color {
+      border-color: var(--wp--preset--color--vivid-purple) !important;
+    }
+
+    .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+      background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+    }
+
+    .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+      background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+    }
+
+    .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+    }
+
+    .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+      background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+    }
+
+    .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+      background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+    }
+
+    .has-cool-to-warm-spectrum-gradient-background {
+      background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+    }
+
+    .has-blush-light-purple-gradient-background {
+      background: var(--wp--preset--gradient--blush-light-purple) !important;
+    }
+
+    .has-blush-bordeaux-gradient-background {
+      background: var(--wp--preset--gradient--blush-bordeaux) !important;
+    }
+
+    .has-luminous-dusk-gradient-background {
+      background: var(--wp--preset--gradient--luminous-dusk) !important;
+    }
+
+    .has-pale-ocean-gradient-background {
+      background: var(--wp--preset--gradient--pale-ocean) !important;
+    }
+
+    .has-electric-grass-gradient-background {
+      background: var(--wp--preset--gradient--electric-grass) !important;
+    }
+
+    .has-midnight-gradient-background {
+      background: var(--wp--preset--gradient--midnight) !important;
+    }
+
+    .has-small-font-size {
+      font-size: var(--wp--preset--font-size--small) !important;
+    }
+
+    .has-medium-font-size {
+      font-size: var(--wp--preset--font-size--medium) !important;
+    }
+
+    .has-large-font-size {
+      font-size: var(--wp--preset--font-size--large) !important;
+    }
+
+    .has-x-large-font-size {
+      font-size: var(--wp--preset--font-size--x-large) !important;
+    }
+
+    .wp-block-navigation a:where(:not(.wp-element-button)) {
+      color: inherit;
+    }
+
+    :where(.wp-block-post-template.is-layout-flex) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-post-template.is-layout-grid) {
+      gap: 1.25em;
+    }
+
+    :where(.wp-block-columns.is-layout-flex) {
+      gap: 2em;
+    }
+
+    :where(.wp-block-columns.is-layout-grid) {
+      gap: 2em;
+    }
+
+    .wp-block-pullquote {
+      font-size: 1.5em;
+      line-height: 1.6;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/cartabandidos.css" media="all">
+  <style id="wp-custom-css">
+    #deliveryUnavailable {
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .modal_emergencia {
+      position: fixed;
+    }
+
+    #CybotCookiebotDialog {
+      background-color: black !important;
+    }
+
+    #CybotCookiebotDialog * {
+      font-family: "Nunito Sans", Arial, sans-serif !important;
+    }
+
+    #CybotCookiebotDialogBody {
+      max-width: 100% !important;
+    }
+
+    #CybotCookiebotDialogBodyButtons a {
+      line-height: 2em !important;
+      padding: 5px 5px 3px !important;
+      border-radius: 4px !important;
+    }
+
+    #CybotCookiebotDialogBodyButtonAccept,
+    a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection,
+    a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+      background-color: #EE2737 !important;
+      border-color: #EE2737 !important;
+    }
+
+    #CybotCookiebotDialogPoweredbyLink {
+      display: none !important;
+    }
+
+    #CybotCookiebotDialogBodyContentTitle,
+    #CybotCookiebotDialogBodyContentText p,
+    #CybotCookiebotDialog a {
+      color: white !important;
+    }
+
+    #CybotCookiebotDialogDetail {
+      background-color: black !important;
+      padding: 20px !important;
+    }
+
+    #CybotCookiebotDialogDetailBodyContentTabs a,
+    #CybotCookiebotDialogDetailBodyContent a {
+      color: white !important;
+    }
+
+    .wpcf7-form {
+      width: 500px;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .wpcf7-form label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .wpcf7-form-control-wrap input,
+    .wpcf7-form-control-wrap textarea {
+      background: #f2f2f2;
+      border: 0;
+      outline: none;
+      font-size: 16px;
+      padding: 0.5em 1em;
+    }
+
+    .wpcf7-submit {
+      text-align: center;
+      margin: 0 0 50px;
+    }
+
+    .wpcf7-legal {
+      font-size: 14px;
+      margin: 0 0 50px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 5px;
+      left: auto;
+      right: 10px;
+      width: 20px;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin-bottom: 10px;
+    }
+
+    .page__footer {
+      padding-bottom: 80px;
+    }
+
+    #bandidos_footer {
+      padding-bottom: 6rem;
+    }
+  </style>
+ 
+  <style type="text/css" id="CookieConsentStateDisplayStyles">
+    .cookieconsent-optin,
+    .cookieconsent-optin-preferences,
+    .cookieconsent-optin-statistics,
+    .cookieconsent-optin-marketing {
+      display: block;
+      display: initial;
+    }
+
+    .cookieconsent-optout-preferences,
+    .cookieconsent-optout-statistics,
+    .cookieconsent-optout-marketing,
+    .cookieconsent-optout {
+      display: none;
+    }
+  </style>
+  <style type="text/css">
+    BODY.modal-open {
+      overflow: hidden;
+    }
+
+    .wp-modal {
+      z-index: 10000;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      overflow: auto;
+    }
+
+    .wp-modal>.wp-modal-wrapper-outer {
+      display: flex;
+      height: 100%;
+    }
+
+    .wp-modal>.wp-modal-wrapper-outer>.wp-modal-wrapper-inner {
+      margin: auto;
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wp-modal>.wp-modal-wrapper-outer>.wp-modal-wrapper-inner>.wp-modal-block {
+      display: flex;
+      flex-direction: column;
+      max-width: 30em;
+      max-height: 50em;
+      border: 1px solid #E0E0E0;
+      border-radius: 2px;
+      box-shadow: 0 0.2em 2em black;
+      background-color: #FFF;
+      color: #333;
+      margin: 1em;
+    }
+
+    .wp-modal-block>.wp-modal-title {
+      border-bottom: 2px solid #10ACFF;
+      color: #10ACFF;
+      padding: 0.7em 0.6em;
+      line-height: 1.2em;
+      font-size: 125%;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .wp-modal-title>.wp-modal-title-icon {
+      background-size: 2em 2em;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      width: 2em;
+      height: 2em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      margin-right: 0.7em;
+    }
+
+    .wp-modal-title>.wp-modal-title-text {
+      flex-grow: 1;
+    }
+
+    wp-modal-block>.wp-modal-content {
+      overflow: auto;
+    }
+
+    .wp-modal-content>.wp-modal-text {
+      padding: 0.7em 0.6em;
+    }
+
+    .wp-modal-block>.wp-modal-buttons {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: row;
+      border-top: 1px solid #E0E0E0;
+    }
+
+    .wp-modal-buttons>.wp-modal-button {
+      flex: 1;
+      border-right: 1px solid #E0E0E0;
+      cursor: pointer;
+      font-weight: normal;
+      line-height: 1.2em;
+      padding: 0.7em 0.6em;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .wp-modal-buttons>.wp-modal-button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .wp-modal-buttons>.wp-modal-button:last-child {
+      border-right: 0;
+    }
+
+    .wp-popup {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      font-family: arial;
+      text-align: center;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .wp-popup .wp-popup-content {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: 0 auto;
+      max-width: 350px;
+      min-width: 231px;
+    }
+
+    .wp-popup .wp-popup-title {
+      font: bold 18px arial;
+      margin-bottom: 12px;
+    }
+
+    .wp-popup .wp-popup-message {
+      font: 15px arial;
+      color: #777;
+      margin-bottom: 25px;
+    }
+
+    .wp-popup .wp-popup-example {
+      background-color: #fff;
+      height: 80px;
+      box-shadow: 0 0 20px #888888;
+      margin-bottom: 20px;
+      flex-flow: row nowrap;
+      display: flex;
+      align-self: stretch;
+    }
+
+    .wp-popup .wp-popup-example .wp-popup-icon {
+      flex-basis: 80px;
+      width: 80px;
+      height: 80px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      background-color: #efefef;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .wp-popup #logo.wp-popup-icon {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    .wp-popup .wp-popup-example-text {
+      text-align: left;
+      flex: 1 auto;
+      padding: 10px 17px 8px 17px;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .wp-popup .wp-popup-example-text>div {
+      flex: 0 auto;
+    }
+
+    .wp-popup .wp-popup-example-text .wp-popup-example-title {
+      font: 13px arial;
+      color: #3c3c3c;
+      margin-bottom: 5px;
+    }
+
+    .wp-popup .wp-popup-example-text .wp-popup-example-message {
+      flex-grow: 1;
+      font: 12px arial;
+      color: #3c3c3c;
+    }
+
+    .wp-popup .wp-popup-example-text .wp-popup-example-url {
+      font: 10px arial;
+      color: #9d9d9d;
+    }
+
+    .wp-popup .wp-popup-disclaimer {
+      font: 10px arial;
+      font-style: italic;
+      color: #b0b0b0;
+    }
+
+    .wp-popup .wp-popup-buttons {
+      padding: 20px;
+    }
+
+    .wp-popup .wp-popup-buttons .wp-popup-negative-button {
+      border: none;
+      background: none;
+      color: #777;
+      text-decoration: underline;
+      padding: 15px;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .wp-popup .wp-popup-buttons .wp-popup-positive-button {
+      border: none;
+      background: #1a73e8;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  </style>
+  <style type="text/css">
+    .wp-switch {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      height: auto;
+      padding: .2em;
+      border-radius: 1.25em;
+      box-shadow: inset 0 -1px rgba(0, 0, 0, .05), inset 0 1px 1px rgba(0, 0, 0, .05);
+      cursor: pointer;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(255, 255, 255, .3) 1.5em)
+    }
+
+    .wp-switch-input {
+      display: none
+    }
+
+    .wp-switch-label {
+      position: relative;
+      display: block;
+      height: 2em;
+      font-size: 60%;
+      text-transform: uppercase;
+      background: #eceeef;
+      border-radius: inherit;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .12), inset 0 0 2px rgba(0, 0, 0, .15);
+      transition: .15s ease-out;
+      transition-property: opacity;
+    }
+
+    .wp-switch-label:after,
+    .wp-switch-label:before {
+      line-height: 0;
+      clear: both;
+      transition: inherit;
+      white-space: nowrap;
+      display: inline-block
+    }
+
+    .wp-switch-label:before {
+      content: attr(data-off);
+      right: 1em;
+      color: #aaa;
+      text-shadow: 0 1px rgba(255, 255, 255, .5);
+      float: right;
+      margin-top: 1em;
+      margin-right: 1em;
+      margin-left: 2.5em
+    }
+
+    .wp-switch-label:after {
+      content: attr(data-on);
+      left: 1em;
+      color: #fff;
+      text-shadow: 0 1px rgba(0, 0, 0, .2);
+      opacity: 0;
+      float: left;
+      margin-top: 0;
+      margin-left: 1em;
+      margin-right: 2.5em
+    }
+
+    .wp-switch-input:checked~.wp-switch-label {
+      background: #47a8d8;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15), inset 0 0 3px rgba(0, 0, 0, .2)
+    }
+
+    .wp-switch-input:checked~.wp-switch-label:before {
+      opacity: 0
+    }
+
+    .wp-switch-input:checked~.wp-switch-label:after {
+      opacity: 1
+    }
+
+    .wp-switch-handle {
+      position: absolute;
+      top: .24em;
+      left: .24em;
+      width: 1.125em;
+      height: 1.125em;
+      background: #fff;
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+      background-image: linear-gradient(to bottom, #fff 40%, #f0f0f0);
+      transition: .15s ease-out;
+      transition-property: left, margin-left
+    }
+
+    .wp-switch-handle:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: .1875em 0 0 .1875em;
+      width: .75em;
+      height: .75em;
+      background: #f9f9f9;
+      border-radius: 100%;
+      box-shadow: inset 0 1px rgba(0, 0, 0, .02);
+      background-image: linear-gradient(to bottom, #eee, #fff)
+    }
+
+    .wp-switch-input:checked~.wp-switch-handle {
+      left: 100%;
+      margin-left: -1.365em;
+      box-shadow: -1px 1px 5px rgba(0, 0, 0, .2)
+    }
+
+    .wp-switch-input:disabled~.wp-switch-handle {
+      background-image: linear-gradient(to bottom, silver 40%, grey)
+    }
+
+    .wp-switch-input:disabled~.wp-switch-handle:before {
+      background: #b0b0b0
+    }
+
+    .wp-switch-input:disabled~.wp-switch-label {
+      background: silver
+    }
+
+    .wp-switch-input:disabled~.wp-switch-label:before {
+      color: #eee
+    }
+
+    .wp-switch-off-gray>.wp-switch-label {
+      background: #eceeef
+    }
+
+    .wp-switch-off-gray>.wp-switch-label:before {
+      color: #aaa;
+      text-shadow: 0 1px rgba(255, 255, 255, .5)
+    }
+
+    .wp-switch-off-grey>.wp-switch-label {
+      background: #eceeef
+    }
+
+    .wp-switch-off-grey>.wp-switch-label:before {
+      color: #aaa;
+      text-shadow: 0 1px rgba(255, 255, 255, .5)
+    }
+
+    .wp-switch-off-red>.wp-switch-label {
+      background: #ed2121
+    }
+
+    .wp-switch-off-red>.wp-switch-label:before {
+      color: #fff;
+      text-shadow: 0 1px rgba(0, 0, 0, .2)
+    }
+
+    .wp-switch-on-green>.wp-switch-input:checked~.wp-switch-label {
+      background: #4fb845;
+      text-shadow: 0 1px rgba(0, 0, 0, .2)
+    }
+
+    .wp-switch-on-blue>.wp-switch-input:checked~.wp-switch-label {
+      background: #47a8d8;
+      text-shadow: 0 1px rgba(0, 0, 0, .2)
+    }
+  </style>
+  <style type="text/css">
+    .wp-tag-switch {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      height: auto;
+      padding: .2em;
+      border-radius: 1.25em;
+      box-shadow: inset 0 -1px rgba(0, 0, 0, .05), inset 0 1px 1px rgba(0, 0, 0, .05);
+      cursor: pointer;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(255, 255, 255, .3) 1.5em)
+    }
+
+    .wp-tag-switch-input {
+      display: none !important
+    }
+
+    .wp-tag-switch-label {
+      position: relative;
+      display: block;
+      height: 2em;
+      font-size: 60%;
+      text-transform: uppercase;
+      background: #eceeef;
+      border-radius: inherit;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .12), inset 0 0 2px rgba(0, 0, 0, .15);
+      transition: .15s ease-out;
+      transition-property: opacity
+    }
+
+    .wp-tag-switch-label:after,
+    .wp-tag-switch-label:before {
+      line-height: 0;
+      clear: both;
+      transition: inherit;
+      white-space: nowrap;
+      display: inline-block
+    }
+
+    .wp-tag-switch-label:before {
+      content: attr(data-off);
+      right: 1em;
+      color: #aaa;
+      text-shadow: 0 1px rgba(255, 255, 255, .5);
+      float: right;
+      margin-top: 1em;
+      margin-right: 1em;
+      margin-left: 2.5em
+    }
+
+    .wp-tag-switch-label:after {
+      content: attr(data-on);
+      left: 1em;
+      color: #fff;
+      text-shadow: 0 1px rgba(0, 0, 0, .2);
+      opacity: 0;
+      float: left;
+      margin-top: 0;
+      margin-left: 1em;
+      margin-right: 2.5em
+    }
+
+    .wp-tag-switch-input:checked~.wp-tag-switch-label {
+      background: #47a8d8;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, .15), inset 0 0 3px rgba(0, 0, 0, .2)
+    }
+
+    .wp-tag-switch-input:checked~.wp-tag-switch-label:before {
+      opacity: 0
+    }
+
+    .wp-tag-switch-input:checked~.wp-tag-switch-label:after {
+      opacity: 1
+    }
+
+    .wp-tag-switch-handle {
+      position: absolute;
+      top: .24em;
+      left: .24em;
+      width: 1.125em;
+      height: 1.125em;
+      background: #fff;
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+      background-image: linear-gradient(to bottom, #fff 40%, #f0f0f0);
+      transition: .15s ease-out;
+      transition-property: left, margin-left
+    }
+
+    .wp-tag-switch-handle:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: .1875em 0 0 .1875em;
+      width: .75em;
+      height: .75em;
+      background: #f9f9f9;
+      border-radius: 100%;
+      box-shadow: inset 0 1px rgba(0, 0, 0, .02);
+      background-image: linear-gradient(to bottom, #eee, #fff)
+    }
+
+    .wp-tag-switch-input:checked~.wp-tag-switch-handle {
+      left: 100%;
+      margin-left: -1.365em;
+      box-shadow: -1px 1px 5px rgba(0, 0, 0, .2)
+    }
+
+    .wp-tag-switch-input:disabled~.wp-tag-switch-handle {
+      background-image: linear-gradient(to bottom, silver 40%, grey)
+    }
+
+    .wp-tag-switch-input:disabled~.wp-tag-switch-handle:before {
+      background: #b0b0b0
+    }
+
+    .wp-tag-switch-input:disabled~.wp-tag-switch-label {
+      background: silver
+    }
+
+    .wp-tag-switch-input:disabled~.wp-tag-switch-label:before {
+      color: #eee
+    }
+
+    .wp-tag-switch-off-gray>.wp-tag-switch-label {
+      background: #eceeef
+    }
+
+    .wp-tag-switch-off-gray>.wp-tag-switch-label:before {
+      color: #aaa;
+      text-shadow: 0 1px rgba(255, 255, 255, .5)
+    }
+
+    .wp-tag-switch-off-grey>.wp-tag-switch-label {
+      background: #eceeef
+    }
+
+    .wp-tag-switch-off-grey>.wp-tag-switch-label:before {
+      color: #aaa;
+      text-shadow: 0 1px rgba(255, 255, 255, .5)
+    }
+
+    .wp-tag-switch-off-red>.wp-tag-switch-label {
+      background: #ed2121
+    }
+
+    .wp-tag-switch-off-red>.wp-tag-switch-label:before {
+      color: #fff;
+      text-shadow: 0 1px rgba(0, 0, 0, .2)
+    }
+
+    .wp-tag-switch-on-green>.wp-tag-switch-input:checked~.wp-tag-switch-label {
+      background: #4fb845;
+      text-shadow: 0 1px rgba(0, 0, 0, .2)
+    }
+
+    .wp-tag-switch-on-blue>.wp-tag-switch-input:checked~.wp-tag-switch-label {
+      background: #47a8d8;
+      text-shadow: 0 1px rgba(0, 0, 0, .2)
+    }
+
+
+    #divcustumfld {
+        transition: .5s linear;
+    }
+    #divcustumfld.hide {
+        transform:translatey(-100%)
+    }
+  </style>
+  <meta http-equiv="origin-trial"
+    content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+</head>
+
+<body
+  class="page-template page-template-templates page-template-template-menu page-template-templatestemplate-menu-php page page-id-5 home st elementor-template-full-width no-sidebar elementor-default elementor-kit-40817 elementor-page elementor-page-5 elementor-page-44009"
+  data-section="section--black">
+  <div id="container">
+    <div id="header" class="header" style="opacity: 1;">
+      <div class="container-logo">
+        <div class="container-logo__mobile">
+          <div class="menu__navtrigger">
+            <div id="menu-navtrigger-mobile" class="ham">
+              <div class="ham--line"></div>
+              <div class="ham--line"></div>
+              <div class="ham--line"></div>
+            </div>
+          </div><a href="index.html">
+            <img src="./assets/logoInicio.png" class="logo" alt="">
+          </a>
+        </div>
+        <div class="container-logo__tablet">
+          <a href="index.html">
+            <img src="./assets/logoInicio.png" class="logo" alt="">
+          </a>
+          <div class="menu__navtrigger">
+            <div id="menu-navtrigger-desktop" class="ham left-side">
+              <div class="ham--line"></div>
+              <div class="ham--line"></div>
+              <div class="ham--line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__config">
+        <a href="carta.html" class="header__config--order">
+          <div class="mask"> <span class="text-top">Menu</span> <span class="text-bottom">Menu</span>
+          </div>
+        </a>
+        <a href="reservas.html" class="header__config--booking">
+          <div class="mask"> <span class="text-top">Reservar</span> <span class="text-bottom">Reservar</span></div>
+        </a>
+        
+        <a href="https://goo.gl/maps/VzhujTr8HMW5iUYT7" target="_blank" class="header__config--order">
+          <div class="mask"> 
+            <span class="text-top">Encuentranos</span> 
+            <span class="text-bottom">Encuentranos</span></div>
+        </a>
+      </div>
+    </div>
+    <div id="sticky-header" class="header header-sticky" style="opacity: 0;">
+      <div class="container-logo">
+        <div class="container-logo__mobile container-logo-sticky">
+          <div class="menu__navtrigger">
+            <div id="menu-navtrigger-sticky" class="ham">
+              <div class="ham--line"></div>
+              <div class="ham--line"></div>
+              <div class="ham--line"></div>
+            </div>
+          </div><a href="index.html">
+            <img src="./assets/logoInicio.png" class="logo" alt="">
+
+          </a>
+        </div>
+      </div>
+      <div class="header__config">
+        <a href="reservas.html" class="header__config--order">
+          <div class="mask"> <span class="text-top">Hacer pedido</span> <span class="text-bottom">Hacer pedido</span>
+          </div>
+        </a>
+        <a href="reservas.html" class="header__config--booking">
+          <div class="mask"> <span class="text-top">Reservar</span> <span class="text-bottom">Reservar</span></div>
+        </a>
+        <a href="https://goo.gl/maps/VzhujTr8HMW5iUYT7" target="_blank" class="header__config--order">
+          <div class="mask"> 
+            <span class="text-top">Encuentranos</span> 
+            <span class="text-bottom">Encuentranos</span></div>
+        </a>
+      </div>
+    </div>
+    <section class="fastbooking-section">
+      <div id="reserve-btn" class="wheel-container">
+        <div id="reserve-btn-wrapper" class="wheel-wrapper"> <!--?xml version="1.0" standalone="no"?--> <svg
+            viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+              d="M20.1,30.1L17,28.9l-1.2,3l3.1,1.3l-1.4,3.5L8.6,33l1.4-3.5l3.4,1.4l1.2-3l-3.4-1.4l1.4-3.5l8.8,3.6L20.1,30.1z">
+            </path>
+            <path
+              d="M27.5,21.6l-1.4-0.9l-2.6,2.1l0.5,1.6l-2.6,2.1l-3-9.8l3.2-2.6l9,4.9L27.5,21.6z M21.9,18l0.9,2.7l1.4-1.2L21.9,18z">
+            </path>
+            <path d="M34.7,15.5l4.8-1.1l0.6,2.8l-10.2,2.3l-0.1-0.5l3.5-7.4l-4.7,1.1l-0.6-2.5l10-2.3l0.1,0.5L34.7,15.5z">
+            </path>
+            <path d="M52.7,14l-2.5,6.2l-3.5-1.5l2.5-6.2l-3.1-1.3l1.1-2.6l9.7,4l-1.1,2.6L52.7,14z"></path>
+            <path
+              d="M56.8,26c-2.4-2.8-2.1-5.3-0.3-6.7l4.4-3.7l2.5,2.9L59.1,22c-0.7,0.6-0.8,1.4-0.1,2.3c0.8,0.9,1.6,1,2.3,0.3l4.2-3.5 l2.2,2.6l-4.4,3.7C61.6,28.8,59.2,28.8,56.8,26z">
+            </path>
+            <path
+              d="M62.3,41.2c0-0.5,0.6-0.9,1.4-0.9l1.2-0.1c0.5,0,0.9-0.2,0.9-0.9l-0.1-1.7l-3.5,0.2l-0.2-3.8l9.5-0.5l0.3,6.6 c0.1,2.2-1,3.7-2.5,3.7l-0.2,0c-0.9,0-1.8-0.7-2.1-1.9c-0.1,1.4-1,2.1-2,2.1l-0.9,0c-0.6,0-1.1,0.2-1.5,0.5l0,0L62.3,41.2z M68.3,40c0.6,0,0.8-0.4,0.8-1.3l-0.1-1.3l-1.9,0.1l0.1,1.3c0,0.9,0.3,1.2,0.9,1.2L68.3,40z">
+            </path>
+            <path
+              d="M62.1,44.9l8.7,3.9l-3.9,8.6l-2.4-1.1l2.3-5.1l-1.2-0.5L64.1,54l-1.2-0.6l1.5-3.4l-1.2-0.5l-2.3,5.1l-2.6-1.2L62.1,44.9z">
+            </path>
+            <path
+              d="M53.8,56.9c1.8-1.5,3.7-2.2,5.3-2.4l0.2,2.4c-1.4,0.2-3.1,0.9-4,1.7c-0.9,0.8-1,1.2-0.8,1.5c0.8,0.9,5.3-3.8,7.5-1.1 c1.1,1.3,0.4,3.8-1.9,5.6c-1.8,1.4-3.3,1.9-4.9,2.1l0-2.4c1.4-0.3,2.7-0.8,3.6-1.6c0.7-0.6,0.9-1.1,0.7-1.3c-0.8-1-5.5,3.8-7.6,1.2 C50.7,61.3,51.7,58.7,53.8,56.9z">
+            </path>
+            <path
+              d="M49.5,60.6l2.1,9.3l-9.2,2.1l-0.6-2.6l5.5-1.3L47,66.8l-3.6,0.8l-0.3-1.3l3.6-0.8l-0.3-1.3l-5.5,1.3l-0.6-2.8L49.5,60.6z">
+            </path>
+            <path
+              d="M32.4,60.9c0.5,0.1,0.7,0.8,0.5,1.6l-0.3,1.1c-0.1,0.5,0,0.9,0.6,1.1l1.7,0.4l0.9-3.4l3.7,0.9l-2.3,9.2l-6.4-1.6 c-2.2-0.5-3.2-2-2.9-3.5l0.1-0.2c0.2-0.9,1.1-1.5,2.4-1.5c-1.3-0.5-1.7-1.6-1.4-2.5l0.2-0.9c0.1-0.6,0.1-1.1-0.1-1.6l0,0L32.4,60.9 z M31.8,67.1c-0.1,0.6,0.1,0.9,1,1.1l1.2,0.3l0.5-1.9l-1.2-0.3c-0.9-0.2-1.3,0-1.4,0.5L31.8,67.1z">
+            </path>
+            <path d="M23.8,55.2l2.7,2.5l-3.2,9.9l-3.1-2.8l2.1-5.7l-5.5,2.6l-2.6-2.3L23.8,55.2z"></path>
+            <path
+              d="M18.8,46.6l-1.3,1.1l1.2,3.1l1.7,0l1.3,3.1l-10.3,0L9.9,50l7.3-7.2L18.8,46.6z M13.7,50.9l2.9-0.1l-0.7-1.7L13.7,50.9z">
+            </path>
+          </svg></div>
+      </div>
+      <div class="fast__booking bar-hidden">
+        <div class="wrapper">
+          <div class="fast__booking__bar">
+            <div class="fast__booking--title">
+              <div class="rail__container rail white--rail rail--left active">
+                <div class="track__container">
+                  <div class="track"> <span class="track--stroked">Reservar</span></div>
+                  <div class="track"> <span class="track--filled">Reservar</span></div>
+                </div>
+                <div class="track__container">
+                  <div class="track"> <span class="track--stroked">Reservar</span></div>
+                  <div class="track"> <span class="track--filled">Reservar</span></div>
+                </div>
+                <div class="track__container">
+                  <div class="track"> <span class="track--stroked">Reservar</span></div>
+                  <div class="track"> <span class="track--filled">Reservar</span></div>
+                </div>
+                <div class="track__container">
+                  <div class="track"> <span class="track--stroked">Reservar</span></div>
+                  <div class="track"> <span class="track--filled">Reservar</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="fastbooking__form">
+              <form id="formFastBooking" name="fastbooking" class="form form--fastbooking form--dark"
+                action="https://bandidosburger.es/es/reservas/" method="post" novalidate="">
+                <fieldset>
+                  <div class="form__element"> <input class="fastbooking_input pac-target-input" type="text"
+                      id="locator_address" name="direc" placeholder="Dirección" required="" autocapitalize="off"
+                      spellcheck="false" autocomplete="off"> <a href="#" class="geolocateMe" id="doGeolocation"> <svg
+                        viewBox="0 0 18.98 21.36">
+                        <path d="M8.36,11.33l0.55,7.83l8.22-17.12l-16.22,8.8L8.36,11.33z"></path>
+                      </svg> </a></div>
+                  <div class="form__element"> <label id="reserve-date-label">Fecha</label> <input
+                      id="reserve-date-input" name="date" type="date" class="hidden fastbooking_date" min="2024-01-24"
+                      max="2025-12-31"></div>
+                  <div class="form__element form__element--select"> <select class="fastbooking_select" name="time"
+                      required="" id="time">
+                      <option value="start" disabled="" hidden="" selected="" class="schedule-label">Hora</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:15">12:15</option>
+                      <option value="12:30">12:30</option>
+                      <option value="12:45">12:45</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:15">13:15</option>
+                      <option value="13:30">13:30</option>
+                      <option value="13:45">13:45</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:15">14:15</option>
+                      <option value="14:30">14:30</option>
+                      <option value="14:45">14:45</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:15">15:15</option>
+                      <option value="15:30">15:30</option>
+                      <option value="15:45">15:45</option>
+                      <option value="16:00">16:00</option>
+                      <option value="16:15">16:15</option>
+                      <option value="16:30">16:30</option>
+                      <option value="16:45">16:45</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:15">17:15</option>
+                      <option value="17:30">17:30</option>
+                      <option value="17:45">17:45</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:15">18:15</option>
+                      <option value="18:30">18:30</option>
+                      <option value="18:45">18:45</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:15">19:15</option>
+                      <option value="19:30">19:30</option>
+                      <option value="19:45">19:45</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:15">20:15</option>
+                      <option value="20:30">20:30</option>
+                      <option value="20:45">20:45</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:15">21:15</option>
+                      <option value="21:30">21:30</option>
+                      <option value="21:45">21:45</option>
+                      <option value="22:00">22:00</option>
+                      <option value="22:15">22:15</option>
+                      <option value="22:30">22:30</option>
+                      <option value="22:45">22:45</option>
+                      <option value="23:00">23:00</option>
+                      <option value="23:15">23:15</option>
+                      <option value="23:30">23:30</option>
+                      <option value="23:45">23:45</option>
+                    </select> <svg class="arrow-drop-down icon--filled" width="24" height="24" viewBox="0 0 24 24">
+                      <path class="icon--filled__glyph" d="M7 10L12 15L17 10H7Z" fill="black"></path>
+                    </svg></div>
+                  <div class="form__element form__element--select"> <select class="fastbooking_select" name="customers"
+                      required="" id="persona">
+                      <option value="start" disabled="" hidden="" selected="">Personas</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="+15">+15</option>
+                    </select> <svg class="arrow-drop-down icon--filled" width="24" height="24" viewBox="0 0 24 24">
+                      <path class="icon--filled__glyph" d="M7 10L12 15L17 10H7Z" fill="black"></path>
+                    </svg></div><input type="hidden" name="lat" id="locator_lat" value="">
+                  <input type="hidden" name="lng" id="locator_lng" value="">
+                  <input type="hidden" name="hasPOST" value="true">
+                </fieldset>
+              </form>
+            </div><a href="/" class="fastbooking__submit">
+              <div class="booking__btn">
+                <div class="mask"> <span>Buscar</span> <span>Buscar</span></div>
+                <div class="booking__search"> <svg class="bar--one tt--ab" viewBox="0 0 56 56">
+                    <path
+                      d="M39.5,0h-1.3H17.7H0v16.5h26.8L0,43.2L12.8,56l13.7-13.7l13.1-13V56H56V38.3V17.7v-1.3V0H39.5z">
+                    </path>
+                  </svg> <svg class="bar--two tt--ab" viewBox="0 0 56 56">
+                    <path
+                      d="M39.5,0h-1.3H17.7H0v16.5h26.8L0,43.2L12.8,56l13.7-13.7l13.1-13V56H56V38.3V17.7v-1.3V0H39.5z">
+                    </path>
+                  </svg></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="dropdown-menu" class="dropdown-menu hidden-dropdown">
+      <div id="header-dropdown" class="header-dropdown">
+        <div class="menu-button" id="header-dropdown-close">
+          <div id="line1" class="line"></div>
+          <div id="line2" class="line"></div>
+        </div>
+        <div id="language-switch-menu" class="lang--switch">
+          <div id="language-btn-menu" class="active"> <button type="button" name="formSubmit"
+              class="btn btn--secondary lang--btn"> <svg id="arrow-drop-down-menu" class="arrow-drop-down icon--filled"
+                width="24" height="24" viewBox="0 0 24 24">
+                <path class="icon--filled__glyph" d="M7 10L12 15L17 10H7Z" fill="black"></path>
+              </svg> <span>es</span> </button></div>
+          <div id="available-languages-menu" class="langs--availables hidden-languages"> <a
+              href="https://bandidosburger.es/es/ca/carta/" class="btn btn--secondary lang--btn"
+              rel="noopener noreferrer">
+              <span>ca</span> </a></div>
+        </div>
+      </div>
+      <div class="options">
+        <a href="https://bandidosburger.es/es">
+          <svg class="logo-rotate" id="logo-dropdown" viewBox="0 0 64 24">
+            <path
+              d="M8.49383 8.17552H10.328C10.8078 8.17552 11.1746 7.78753 11.1746 7.34411V5.903C11.1746 4.01848 10.6949 2.54965 9.76367 1.52425C8.83245 0.526559 7.44974 0 5.5873 0C3.72487 0 2.37037 0.526559 1.41093 1.52425C0.479718 2.54965 0 3.99076 0 5.903V18.097C0 19.9815 0.479718 21.4503 1.41093 22.4757C2.34215 23.5012 3.75309 24 5.5873 24C7.42152 24 8.83245 23.5012 9.76367 22.4757C10.6949 21.4503 11.1746 20.0092 11.1746 18.097V11.5012C11.1746 11.03 10.7795 10.6697 10.328 10.6697H6.80071C6.32099 10.6697 5.95415 11.0577 5.95415 11.5012V13.164C5.95415 13.6351 6.34921 13.9954 6.80071 13.9954C7.28042 13.9954 7.64727 14.3834 7.64727 14.8268V18.3187C7.64727 19.1778 7.47795 19.7598 7.11111 20.0924C6.77249 20.4249 6.29277 20.5912 5.70018 20.5912C5.10758 20.5912 4.62787 20.4249 4.28924 20.0924C3.95062 19.7598 3.75309 19.1778 3.75309 18.3187V5.68129C3.75309 4.82217 3.9224 4.24018 4.28924 3.87991C4.62787 3.54734 5.10758 3.35335 5.70018 3.35335C6.29277 3.35335 6.77249 3.51963 7.11111 3.87991C7.47795 4.21247 7.64727 4.82217 7.64727 5.65358V7.3164C7.64727 7.81524 8.01411 8.17552 8.49383 8.17552Z">
+            </path>
+            <path
+              d="M16.1412 1.52425C15.1535 2.54965 14.6738 3.99076 14.6738 5.903V18.097C14.6738 19.9815 15.1535 21.4503 16.1412 22.4757C17.1289 23.5012 18.5398 24 20.374 24C22.2082 24 23.6192 23.5012 24.6068 22.4757C25.5945 21.4503 26.0742 20.0092 26.0742 18.097V5.903C26.0742 4.01848 25.5945 2.54965 24.6068 1.52425C23.6192 0.498846 22.2082 0 20.374 0C18.5116 0 17.1006 0.526559 16.1412 1.52425ZM22.2929 5.65358V18.3187C22.2929 19.1778 22.1236 19.7598 21.7567 20.1201C21.4181 20.4527 20.9384 20.6467 20.3458 20.6467C19.7532 20.6467 19.2735 20.4804 18.9349 20.1201C18.5962 19.7875 18.3987 19.1778 18.3987 18.3187V5.65358C18.3987 4.79446 18.568 4.21247 18.9349 3.85219C19.2735 3.51963 19.7532 3.32563 20.3458 3.32563C20.9384 3.32563 21.4181 3.49192 21.7567 3.85219C22.1236 4.21247 22.2929 4.82217 22.2929 5.65358Z">
+            </path>
+            <path
+              d="M30.702 0.2771C30.2223 0.2771 29.8555 0.665091 29.8555 1.10851V22.8637C29.8555 23.3348 30.2505 23.6951 30.702 23.6951H32.7338C33.2135 23.6951 33.5803 23.3071 33.5803 22.8637V1.10851C33.5803 0.637377 33.1853 0.2771 32.7338 0.2771H30.702Z">
+            </path>
+            <path
+              d="M40.5775 0.2771H38.5458C38.0661 0.2771 37.6992 0.665091 37.6992 1.10851V22.8637C37.6992 23.3348 38.0943 23.6951 38.5458 23.6951H40.5775C41.0572 23.6951 41.4241 23.3071 41.4241 22.8637V16.7113C41.4241 16.5727 41.4523 16.4341 41.537 16.3233L41.7063 15.9907C42.0449 15.3533 43.0043 15.4087 43.2583 16.0739L46.0237 23.1686C46.1366 23.5011 46.4752 23.6951 46.8139 23.6951H48.8174C49.41 23.6951 49.8333 23.1131 49.6075 22.5589L44.9796 11.0577C44.895 10.836 44.895 10.5866 45.0079 10.3926L49.4664 1.4965C49.7486 0.942227 49.3253 0.2771 48.7045 0.2771H46.8703C46.5317 0.2771 46.2495 0.471095 46.1084 0.748231L41.5087 10.4203H41.4523V1.10851C41.4241 0.637377 41.0572 0.2771 40.5775 0.2771Z">
+            </path>
+            <path
+              d="M54.067 1.52425C53.1075 2.54965 52.5996 3.99076 52.5996 5.903V18.097C52.5996 19.9815 53.0793 21.4503 54.067 22.4757C55.0546 23.5012 56.4656 24 58.2998 24C60.134 24 61.5449 23.5012 62.5326 22.4757C63.5202 21.4503 64 20.0092 64 18.097V5.903C64 4.01848 63.5202 2.54965 62.5326 1.52425C61.5449 0.498846 60.134 0 58.2998 0C56.4656 0 55.0546 0.526559 54.067 1.52425ZM60.2469 5.65358V18.3187C60.2469 19.1778 60.0776 19.7598 59.7107 20.1201C59.3721 20.4527 58.8924 20.6467 58.2998 20.6467C57.7072 20.6467 57.2275 20.4804 56.8889 20.1201C56.5502 19.7875 56.3527 19.1778 56.3527 18.3187V5.65358C56.3527 4.79446 56.522 4.21247 56.8889 3.85219C57.2275 3.51963 57.7072 3.32563 58.2998 3.32563C58.8924 3.32563 59.3721 3.49192 59.7107 3.85219C60.0776 4.21247 60.2469 4.82217 60.2469 5.65358Z">
+            </path>
+          </svg>
+        </a>
+        <div class="section" id="primary-menu">
+          <ul id="menu-header-2023-header-rojo-1-espanol" class="options__main nav-header-primary">
+            <li><a
+                class="current menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item item-post-id-5"
+                href="https://bandidosburger.es/es/carta/"><span class="options__main--title">Carta</span></a></li>
+            <li><a
+                class="menu-item menu-item-type-post_type menu-item menu-item-type-custom menu-item-object-custom item-post-id-48625"
+                href="https://bandidosburger.es/es/delivery/iniciar-pedido"><span class="options__main--title">Hacer
+                  pedido</span></a></li>
+            <li><a
+                class="menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-5862"
+                href="https://bandidosburger.es/es/nuestros-restaurantes/"><span
+                  class="options__main--title">Restaurantes</span></a></li>
+          </ul>
+          <div class="section__body">
+            <div class="options__footer">
+              <ul id="menu-header-2023-header-rojo-2" class="options__footer--1 nav-header-secondary">
+                <li><a
+                    class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-custom menu-item-object-custom item-post-id-54860"
+                    href="https://www.bandidosfriends.com/?utm_source=web&amp;utm_medium=menu"><span
+                      class="hover-text">Friends with Benefits</span></a></li>
+                <li><a
+                    class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-23482"
+                    href="https://bandidosburger.es/es/unete-al-equipo/"><span class="hover-text">Únete al
+                      Equipo</span></a>
+                </li>
+                <li><a
+                    class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-40820"
+                    href="https://bandidosburger.es/es/foodtruck/"><span class="hover-text">Foodtrucks</span></a></li>
+                <li><a
+                    class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-custom menu-item-object-custom item-post-id-48355"
+                    href="https://bandidosburger.es/es/bandidoscina/"><span class="hover-text">bandidoscina</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__footer">
+              <div class="social-media-container" id="social-network-container"> <a
+                  href="https://www.facebook.com/bandidos" class="social__link"> <svg class="icon--filled"
+                    viewBox="0 0 18 18">
+                    <path class="icon--filled__glyph"
+                      d="M18 9C18 4.02943 13.9706 0 9 0C4.02943 0 0 4.02943 0 9C0 13.4921 3.29115 17.2155 7.59375 17.8907V11.6016H5.30859V9H7.59375V7.01719C7.59375 4.76156 8.93742 3.51562 10.9932 3.51562C11.9776 3.51562 13.0078 3.69141 13.0078 3.69141V5.90625H11.873C10.755 5.90625 10.4062 6.60006 10.4062 7.3125V9H12.9023L12.5033 11.6016H10.4062V17.8907C14.7088 17.2155 18 13.4921 18 9Z">
+                    </path>
+                  </svg> </a> <a href="https://twitter.com/bandidos" class="social__link"> <svg class="icon--filled"
+                    viewBox="0 0 24 20">
+                    <path class="icon--filled__glyph"
+                      d="M23.9528 2.56987C23.0545 2.96475 22.1031 3.22553 21.129 3.34387C22.1558 2.72759 22.9245 1.76013 23.2928 0.62062C22.3216 1.18387 21.2645 1.58394 20.1638 1.80487C19.4236 1.01396 18.443 0.489463 17.3743 0.312743C16.3055 0.136024 15.2083 0.316965 14.2529 0.827495C13.2975 1.33803 12.5373 2.1496 12.0902 3.13631C11.6431 4.12301 11.5342 5.22968 11.7803 6.28462C7.69053 6.09337 4.06504 4.12837 1.64029 1.15987C1.19889 1.91053 0.968041 2.76631 0.972035 3.63712C0.971434 4.44664 1.17074 5.24379 1.55227 5.95777C1.93379 6.67175 2.48571 7.28047 3.15903 7.72987C2.37875 7.70628 1.61547 7.49617 0.933035 7.11712V7.17637C0.932797 8.31264 1.32544 9.41404 2.04443 10.2939C2.76341 11.1738 3.7645 11.778 4.87804 12.0041C4.45623 12.1168 4.02163 12.1745 3.58504 12.1759C3.26929 12.1759 2.96779 12.1451 2.66704 12.0896C2.98393 13.0674 3.59779 13.9221 4.42317 14.5347C5.24854 15.1472 6.24437 15.4873 7.27204 15.5074C5.53084 16.871 3.38238 17.6107 1.17079 17.6081C0.779065 17.6097 0.387606 17.5876 -0.00146484 17.5421C2.2546 18.9877 4.87831 19.7551 7.55779 19.7531C16.608 19.7531 21.5535 12.2569 21.5535 5.76487C21.5535 5.55787 21.5535 5.34712 21.5378 5.13562C22.5052 4.44228 23.3389 3.57933 23.9985 2.58862L23.9528 2.56987Z">
+                    </path>
+                  </svg> </a> <a href="https://www.instagram.com/bandidosburger.es/" class="social__link"> <svg
+                    class="icon--filled" viewBox="0 0 24 24">
+                    <path class="icon--filled__glyph"
+                      d="M12.0005 0C8.7387 0 8.3322 0.01575 7.0557 0.06975C5.77395 0.13275 4.90695 0.3315 4.14195 0.6285C3.3413 0.930765 2.6162 1.40401 2.0172 2.01525C1.40426 2.61285 0.930751 3.33835 0.630453 4.14C0.333453 4.905 0.134703 5.772 0.0717031 7.05375C0.0139531 8.331 0.00195312 8.73675 0.00195312 11.9985C0.00195312 15.2603 0.0177031 15.6667 0.0717031 16.9432C0.134703 18.2213 0.333453 19.092 0.630453 19.857C0.932718 20.6577 1.40596 21.3828 2.0172 21.9818C2.6148 22.5947 3.3403 23.0682 4.14195 23.3685C4.90695 23.6618 5.7777 23.8643 7.0557 23.9272C8.33295 23.985 8.7387 23.997 12.0005 23.997C15.2622 23.997 15.6687 23.9813 16.9452 23.9272C18.2232 23.8643 19.094 23.661 19.859 23.3685C20.6596 23.0662 21.3847 22.593 21.9837 21.9818C22.5974 21.3848 23.0711 20.6591 23.3705 19.857C23.6637 19.092 23.8662 18.2213 23.9292 16.9432C23.987 15.666 23.999 15.2603 23.999 11.9985C23.999 8.73675 23.9832 8.33025 23.9292 7.05375C23.8662 5.77575 23.663 4.9005 23.3705 4.14C23.0682 3.33935 22.5949 2.61425 21.9837 2.01525C21.3868 1.40152 20.6611 0.927885 19.859 0.6285C19.094 0.3315 18.2232 0.13275 16.9452 0.06975C15.668 0.012 15.2622 0 12.0005 0ZM12.0005 2.16C15.2037 2.16 15.5862 2.17575 16.8522 2.22975C18.02 2.2845 18.656 2.4795 19.0782 2.6445C19.6002 2.83719 20.0727 3.14389 20.4612 3.54225C20.8589 3.92912 21.1644 4.40051 21.3552 4.9215C21.5202 5.34375 21.7152 5.97975 21.77 7.1475C21.8239 8.4135 21.8397 8.79675 21.8397 11.9992C21.8397 15.2017 21.824 15.585 21.7655 16.851C21.7025 18.0188 21.5075 18.6548 21.3432 19.077C21.116 19.6403 20.8624 20.034 20.444 20.46C20.0541 20.8559 19.582 21.1611 19.061 21.354C18.644 21.519 17.999 21.714 16.8267 21.7687C15.554 21.8228 15.179 21.8385 11.9675 21.8385C8.75595 21.8385 8.3817 21.8228 7.10745 21.7642C5.9397 21.7013 5.29545 21.5063 4.8732 21.342C4.3032 21.1147 3.91245 20.8612 3.49395 20.4427C3.0717 20.0205 2.8032 19.6185 2.5962 19.0597C2.4282 18.6427 2.2362 17.9977 2.17395 16.8255C2.1312 15.5677 2.11095 15.1778 2.11095 11.9813C2.11095 8.78625 2.1312 8.3955 2.17395 7.122C2.2362 5.94975 2.4282 5.30625 2.5962 4.88775C2.8032 4.317 3.07245 3.927 3.49395 3.50475C3.9117 3.087 4.3032 2.817 4.8732 2.6055C5.29545 2.44125 5.92395 2.24625 7.0962 2.18775C8.36895 2.142 8.74395 2.1255 11.951 2.1255L12.0005 2.16ZM12.0005 5.84025C11.1915 5.83995 10.3903 5.99908 9.64287 6.30853C8.8954 6.61798 8.21624 7.0717 7.64419 7.64374C7.07215 8.21578 6.61843 8.89495 6.30898 9.64242C5.99953 10.3899 5.84041 11.191 5.8407 12C5.84041 12.809 5.99953 13.6101 6.30898 14.3576C6.61843 15.1051 7.07215 15.7842 7.64419 16.3563C8.21624 16.9283 8.8954 17.382 9.64287 17.6915C10.3903 18.0009 11.1915 18.16 12.0005 18.1597C12.8094 18.16 13.6106 18.0009 14.358 17.6915C15.1055 17.382 15.7847 16.9283 16.3567 16.3563C16.9288 15.7842 17.3825 15.1051 17.6919 14.3576C18.0014 13.6101 18.1605 12.809 18.1602 12C18.1605 11.191 18.0014 10.3899 17.6919 9.64242C17.3825 8.89495 16.9288 8.21578 16.3567 7.64374C15.7847 7.0717 15.1055 6.61798 14.358 6.30853C13.6106 5.99908 12.8094 5.83995 12.0005 5.84025ZM12.0005 15.9998C9.78945 15.9998 8.0007 14.211 8.0007 12C8.0007 9.789 9.78945 8.00025 12.0005 8.00025C14.2115 8.00025 16.0002 9.789 16.0002 12C16.0002 14.211 14.2115 15.9998 12.0005 15.9998ZM19.8485 5.59425C19.8481 5.9765 19.6959 6.34296 19.4255 6.6131C19.1551 6.88326 18.7885 7.035 18.4062 7.035C18.2172 7.035 18.03 6.99777 17.8554 6.92544C17.6808 6.85311 17.5221 6.7471 17.3885 6.61345C17.2549 6.47981 17.1488 6.32115 17.0765 6.14653C17.0042 5.97191 16.967 5.78475 16.967 5.59575C16.967 5.40674 17.0042 5.21959 17.0765 5.04497C17.1488 4.87036 17.2549 4.71169 17.3885 4.57805C17.5221 4.4444 17.6808 4.33839 17.8554 4.26606C18.03 4.19373 18.2172 4.1565 18.4062 4.1565C19.199 4.1565 19.8485 4.8015 19.8485 5.59425Z">
+                    </path>
+                  </svg> </a> <a href="https://www.linkedin.com/company/bandidos-burgers/" class="social__link"> <svg
+                    class="icon--filled" viewBox="0 0 24 24">
+                    <path class="icon--filled__glyph"
+                      d="M20.445 20.4533H16.8953V14.883C16.8953 13.5547 16.8675 11.8477 15.039 11.8477C13.188 11.8477 12.906 13.2885 12.906 14.7847V20.4525H9.35175V8.99925H12.7657V10.5615H12.8115C13.2885 9.65925 14.4487 8.7105 16.1798 8.7105C19.7805 8.7105 20.4487 11.0813 20.4487 14.1637V20.4525L20.445 20.4533ZM5.33625 7.434C5.06496 7.4341 4.79631 7.38068 4.54569 7.27679C4.29508 7.1729 4.06742 7.02059 3.87576 6.82858C3.6841 6.63658 3.53221 6.40864 3.42878 6.15784C3.32534 5.90704 3.27241 5.63829 3.273 5.367C3.27344 4.95866 3.39496 4.55963 3.62217 4.22034C3.84939 3.88106 4.1721 3.61677 4.54951 3.46088C4.92692 3.305 5.34208 3.26451 5.74249 3.34456C6.14291 3.4246 6.5106 3.62158 6.79907 3.91058C7.08755 4.19958 7.28385 4.56763 7.36317 4.96818C7.44249 5.36874 7.40126 5.78383 7.24468 6.16095C7.08811 6.53808 6.82323 6.86031 6.48354 7.08691C6.14384 7.31351 5.74459 7.4343 5.33625 7.434ZM7.11675 20.4533H3.555V9H7.11675V20.4533ZM22.227 0H1.77C0.79275 0 0 0.77325 0 1.73025V22.2705C0 23.2275 0.79275 24.0007 1.77 24.0007H22.2233C23.199 24.0007 24 23.2275 24 22.2705V1.73025C24 0.77325 23.199 0 22.2233 0H22.227Z">
+                    </path>
+                  </svg> </a></div><a href="https://bandidosburger.es/es/reservas/">
+                <div class="wheel-container">
+                  <div class="wheel-wrapper"> <svg viewBox="0 0 302 302" xmlns="http://www.w3.org/2000/svg">
+                      <path class="filled"
+                        d="m128.2 42.3c-2.1.6-4.1-1.6-5.1-4.7l-1.4-4.5c-.6-2-1.8-3.3-4.5-2.5l-6.8 2 4.1 13.8-14.9 4.5-11.1-37 25.6-7.7c8.7-2.6 15.4.3 17.2 6.1l.3.9c1.1 3.6-.8 7.7-5.2 10.2 5.7-.9 9.1 1.9 10.3 5.8l1.1 3.6c.7 2.3 1.9 4.2 3.6 5.5l.1.2zm-10.9-22.7c-.7-2.4-2.4-2.9-5.9-1.9l-5 1.5 2.2 7.5 5-1.5c3.5-1 4.6-2.5 3.9-4.8z">
+                      </path>
+                      <path class="filled"
+                        d="m143.5 39 4-38.5 38.2 3.9-1.1 10.7-22.7-2.4-.6 5.4 15 1.6-.6 5.5-15-1.6-.5 5.2 22.7 2.4-1.1 11.8z">
+                      </path>
+                      <path class="filled"
+                        d="m202 54.2c-8.3-4.3-14-10.4-17.4-16.3l8.7-4.7c3.1 5 8.3 10.1 12.8 12.4 4.3 2.2 6.2 1.8 6.9.5 2.3-4.3-22.6-14-16-26.4 3.2-6.2 13.6-7.3 24.2-1.8 8.2 4.3 12.1 9.3 15.6 15.1l-8.8 4c-3.1-4.7-7.3-8.8-11.5-10.9-3.4-1.8-5.5-1.6-6.1-.4-2.5 4.7 22.8 14.4 16.5 26.4-3.7 6.9-14.6 7.5-24.9 2.1z">
+                      </path>
+                      <path class="filled"
+                        d="m223.2 65.1 29.5-25 24.8 29.3-8.2 7-14.8-17.5-4.1 3.5 9.8 11.5-4.3 3.6-9.8-11.5-4 3.4 14.8 17.5-8.9 7.5z">
+                      </path>
+                      <path class="filled"
+                        d="m259.2 126c-.7-2 1.5-4.1 4.6-5.1l4.5-1.4c2-.6 3.3-1.9 2.4-4.6l-2.2-6.7-13.7 4.4-4.8-14.8 36.8-11.9 8.2 25.4c2.8 8.7 0 15.4-5.8 17.3l-.9.3c-3.5 1.1-7.7-.7-10.3-5 1.1 5.7-1.7 9.2-5.6 10.4l-3.6 1.2c-2.3.7-4.2 2-5.4 3.7l-.2.1zm22.5-11.4c2.4-.8 2.9-2.5 1.7-5.9l-1.6-4.9-7.4 2.4 1.6 4.9c1.1 3.5 2.6 4.5 4.9 3.8z">
+                      </path>
+                      <path class="filled" d="m260.4 168.8 1.4-14.9 40.1-13.4-1.6 16.9-23.7 6.9 21.9 11.6-1.4 14.1z">
+                      </path>
+                      <path class="filled"
+                        d="m246.3 207.8 6.7.9 6.1-12.1-4.6-5.1 6.1-12.1 27.4 31.5-7.5 14.9-41.7-3.3zm26.8 4-7.9-8.5-3.4 6.7z">
+                      </path>
+                      <path class="filled"
+                        d="m214.9 241.8c1.6-1.4 4.4-.2 6.5 2.4l3 3.6c1.3 1.6 3 2.4 5.1.5l5.4-4.5-9.2-11.1 11.9-10 24.8 29.7-20.4 17.1c-7 5.8-14.3 5.8-18.2 1.1l-.6-.7c-2.4-2.8-2.3-7.4.8-11.4-4.9 3.1-9.1 1.8-11.7-1.3l-2.4-2.9c-1.6-1.9-3.4-3.2-5.5-3.6l-.1-.1zm18.9 16.6c1.6 1.9 3.3 1.7 6.2-.6l4-3.3-5-6-4 3.3c-2.8 2.3-3.2 4.1-1.7 6z">
+                      </path>
+                      <path class="stroked"
+                        d="m173.8 259.7c2.1-.6 4.1 1.5 5.1 4.7l1.4 4.5c.6 2 1.8 3.3 4.5 2.5l6.8-2-4.1-13.8 14.9-4.5 11.1 37-25.6 7.7c-8.7 2.6-15.4-.3-17.2-6.1l-.3-.9c-1.1-3.6.8-7.7 5.2-10.2-5.7.9-9.1-1.9-10.3-5.8l-1.1-3.6c-.7-2.3-1.9-4.2-3.6-5.5l-.1-.2zm10.9 22.7c.7 2.4 2.4 2.9 5.9 1.9l5-1.5-2.2-7.5-5 1.5c-3.5 1-4.6 2.5-3.9 4.8z">
+                      </path>
+                      <path class="stroked"
+                        d="m158.5 263-4 38.5-38.2-3.9 1.1-10.7 22.7 2.4.6-5.4-15-1.6.6-5.5 15 1.6.5-5.2-22.7-2.4 1.2-11.6z">
+                      </path>
+                      <path class="stroked"
+                        d="m100 247.8c8.3 4.3 14 10.4 17.4 16.3l-8.7 4.7c-3.1-5-8.3-10.1-12.8-12.4-4.3-2.2-6.2-1.8-6.9-.5-2.3 4.3 22.6 14 16 26.4-3.2 6.2-13.6 7.3-24.2 1.8-8.2-4.3-12.1-9.2-15.6-15.1l8.8-4c3.1 4.7 7.3 8.8 11.5 10.9 3.4 1.8 5.5 1.6 6.1.4 2.5-4.7-22.8-14.4-16.5-26.4 3.7-6.9 14.6-7.5 24.9-2.1z">
+                      </path>
+                      <path class="stroked"
+                        d="m78.8 237-29.5 25-24.8-29.3 8.2-7 14.8 17.4 4.1-3.5-9.8-11.5 4.3-3.6 9.8 11.5 4-3.4-14.8-17.4 8.9-7.5z">
+                      </path>
+                      <path class="stroked"
+                        d="m42.8 176c.7 2-1.5 4.1-4.6 5.1l-4.5 1.4c-2 .6-3.3 1.9-2.4 4.6l2.2 6.7 13.7-4.4 4.8 14.8-36.8 11.9-8.2-25.3c-2.8-8.7 0-15.4 5.8-17.3l.9-.3c3.5-1.1 7.7.7 10.3 5-1-5.7 1.7-9.2 5.6-10.4l3.6-1.2c2.3-.7 4.2-2 5.4-3.7l.2-.1zm-22.5 11.4c-2.4.8-2.9 2.5-1.7 5.9l1.6 4.9 7.4-2.4-1.6-4.9c-1.1-3.5-2.6-4.5-4.9-3.8z">
+                      </path>
+                      <path class="stroked" d="m41.6 133.2-1.4 14.9-40.2 13.5 1.6-16.9 23.7-6.9-21.9-11.7 1.4-14.1z">
+                      </path>
+                      <path class="stroked"
+                        d="m55.7 94.2-6.7-.9-6.1 12.1 4.6 5.1-6.1 12.1-27.4-31.5 7.6-14.9 41.7 3.3zm-26.8-4 7.9 8.5 3.4-6.7z">
+                      </path>
+                      <path class="stroked"
+                        d="m87.1 60.2c-1.6 1.4-4.4.2-6.5-2.4l-3-3.6c-1.3-1.6-3-2.4-5.1-.5l-5.5 4.5 9.2 11.1-11.9 10-24.8-29.7 20.5-17.1c7-5.8 14.3-5.8 18.2-1.1l.6.7c2.4 2.8 2.3 7.4-.8 11.4 4.9-3.1 9.1-1.8 11.7 1.3l2.4 2.9c1.6 1.9 3.4 3.2 5.5 3.6l.1.1zm-18.9-16.6c-1.6-1.9-3.3-1.7-6.2.6l-4 3.3 5 6 4-3.3c2.8-2.3 3.2-4.1 1.7-5.9z">
+                      </path>
+                    </svg></div><svg class="bar--one" viewBox="0 0 56 56">
+                    <path
+                      d="M39.5,0h-1.3H17.7H0v16.5h26.8L0,43.2L12.8,56l13.7-13.7l13.1-13V56H56V38.3V17.7v-1.3V0H39.5z">
+                    </path>
+                  </svg>
+                  <svg class="bar--two" viewBox="0 0 56 56">
+                    <path
+                      d="M39.5,0h-1.3H17.7H0v16.5h26.8L0,43.2L12.8,56l13.7-13.7l13.1-13V56H56V38.3V17.7v-1.3V0H39.5z">
+                    </path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-picture">
+      <div class="slide">
+        <picture>
+          <img src="assets/home-banner-image.png" alt="">
+        </picture>
+        <div class="content">
+          <div class="container">
+            <h1 class="top-title">Carta</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-container">
+      <ul class="secondary-menu">
+        <li class="entrantes"> <a href="entrantes/">Entrantes</a> </li>
+        <li class="hamburguesas"> <a href="hamburguesas/">Hamburguesas</a> </li>
+        <li class="perrros"> <a href="smash-burgers/">Hod Dogs</a> </li>
+        <li class="burgers-especiales"> <a href="burgers-especiales/">Burgers Especiales</a> </li>
+        <li class="para-peques"> <a href="para-peques/">Menu Kids</a> </li>
+        <li class="postres"> <a href="postres/">Postres</a> </li>
+        <li class="bebidas"> <a href="bebidas/">Bebidas</a> </li>
+      </ul>
+      <select class="secondary-menu select-dropdown select2-hidden-accessible" data-select2-id="1" tabindex="-1"
+        aria-hidden="true">
+        <option value="" data-select2-id="3">Escoge una categoría </option>
+        <option value="entrantes">Entrantes</option>
+        <option value="hamburguesas">Hamburguesas</option>
+        <option value="perrros">Hod Dogs</option>
+        <option value="burgers-especiales">Burgers Especiales</option>
+        <option value="para-peques">Para Peques</option>
+        <option value="ensaladas">Salads</option>
+        <option value="postres">Postres</option>
+        <option value="bebidas">Bebidas</option>
+      </select>
+      <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2"
+        style="width: 1303px;"><span class="selection"><span class="select2-selection select2-selection--single"
+            role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0"
+            aria-labelledby="select2-ask7-container"><span class="select2-selection__rendered"
+              id="select2-ask7-container" role="textbox" aria-readonly="true" title="Escoge una categoría  ">Escoge una
+              categoría </span><span class="select2-selection__arrow" role="presentation"><b
+                role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+          aria-hidden="true"></span></span>
+    </div>
+    <div class="main-content" id="gridMainMenu">
+      <section class="container">
+        <h2>Descubre nuestra carta</h2>
+      </section>
+      <div class="menu-grid container">
+        <a class="category-link entrantes" id="entrantesId">
+          <h2>Entrantes</h2>
+          <div class="grid-item" style="background-image: url(assets/tequeños_queso.jpg);">
+          </div>
+        </a>
+       
+        <a class="category-link hamburguesas" href="smash-burgers/">
+          <h2>Hamburguesas</h2>
+          <div class="grid-item" style="background-image: url(assets/pablo_escobar.jpg);">
+          </div>
+        </a>
+        <a class="category-link burgers-especiales" href="burgers-especiales/">
+          <h2>Burgers Especiales</h2>
+          <div class="grid-item" style="background-image: url(assets/al_capone.jpg);">
+          </div>
+        </a>
+        <a class="category-link perrros" href="perros/">
+          <h2>HOT DODS</h2>
+          <div class="grid-item" style="background-image: url(assets/chapo_guzman.jpg);">
+          </div>
+        </a>
+        <a class="category-link para-peques" href="para-peques/">
+          <h2>Menu kids</h2>
+          <div class="grid-item" style="background-image: url(assets/pequesBandidos.jpg);">
+          </div>
+        </a>
+
+        <a class="category-link postres" href="postres/">
+          <h2>Postres</h2>
+          <div class="grid-item" style="background-image: url(assets/cheese_cakeIA.jpg);">
+          </div>
+        </a>
+        <a class="category-link bebidas" href="bebidas/">
+          <h2>Bebidas</h2>
+          <div class="grid-item" style="background-image: url(assets/bebidasBandidos.jpg);">
+          </div>
+        </a>
+
+        <div class="booking-link">
+          <h2>Encuentra tu Bandido´s Burger más cercano</h2> <a href="/reservas/" class="btn">Reserva aquí</a>
+        </div>
+      </div>
+    </div>
+    <div id="content" style="display: none;">
+      <div id="inner-content" class="container">
+        <h2 class="mainTitle">Entrantes</h2>
+        <div class="burger-container" id="boxMenuDetails">
+          
+        </div>
+        <div class="back-link">
+          <h2>¿Aún no te has decidido?</h2>
+          <a href="carta.html" class="btn volverBtnMenu">Volver a la carta</a>
+        </div>
+      </div>
+    </div>
+    <footer id="bandidos_footer">
+      <div class="footer-container--top">
+        <div class="container-logo">
+          <a href="index.html">
+            <img src="./assets/logoInicio.png" class="logo" alt="">
+          </a>
+        </div>
+        <ul id="menu-footer-2023-1" class="options-1 nav-footer-primary">
+          <li><a
+              class="current menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-5 current_page_item item-post-id-5"
+              href="carta.html"><span class="options__main--title">Carta</span></a></li>
+          <li><a
+              class="menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-7"
+              href="reservas.html"><span class="options__main--title">Reservar</span></a></li>
+          <li><a
+              class="menu-item menu-item-type-post_type menu-item menu-item-type-custom menu-item-object-custom item-post-id-48358"
+              href="reservas.html"><span class="options__main--title">Hacer pedido</span></a>
+          </li>
+          <li><a
+              class="menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-5862"
+              href="https://goo.gl/maps/VzhujTr8HMW5iUYT7"><span
+                class="options__main--title">Restaurantes</span></a></li>
+        
+        </ul>
+        <ul id="menu-footer-2023-2" class="options-2 nav-footer-secondary">
+          <li><a
+              class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-2"
+              href="https://bandidosburger.es/es/conocenos/"><span class="hover-text">Conócenos</span></a></li>
+        
+          <li><a
+              class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-80"
+              href="https://bandidosburger.es/es/contacto/"><span class="hover-text">Atención al cliente</span></a></li>
+          <li><a
+              class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-custom menu-item-object-custom item-post-id-54986"
+              href="https://bandidosburger.es/es/bases-condiciones/"><span class="hover-text">Bases y
+                condiciones</span></a>
+          </li>
+          <li><a
+              class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-custom menu-item-object-custom item-post-id-55118"
+              href="https://whistleblowersoftware.com/secure/CanaldeDenunciasbandidos"><span class="hover-text">Buzón
+                ético</span></a></li>
+          <li><a
+              class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-custom menu-item-object-custom item-post-id-55130"
+              href="https://bandidosburger.es/es/politica_de_proteccion_de_datos/"><span class="hover-text">Política de
+                privacidad</span></a></li>
+        </ul>
+      </div>
+      <div class="social-media-container"> 
+      
+          </svg> </a> 
+          <a href="https://www.instagram.com/bandidosburger.es/" class="social__link"> <svg class="icon--filled"
+            viewBox="0 0 24 24">
+            <path class="icon--filled__glyph"
+              d="M12.0005 0C8.7387 0 8.3322 0.01575 7.0557 0.06975C5.77395 0.13275 4.90695 0.3315 4.14195 0.6285C3.3413 0.930765 2.6162 1.40401 2.0172 2.01525C1.40426 2.61285 0.930751 3.33835 0.630453 4.14C0.333453 4.905 0.134703 5.772 0.0717031 7.05375C0.0139531 8.331 0.00195312 8.73675 0.00195312 11.9985C0.00195312 15.2603 0.0177031 15.6667 0.0717031 16.9432C0.134703 18.2213 0.333453 19.092 0.630453 19.857C0.932718 20.6577 1.40596 21.3828 2.0172 21.9818C2.6148 22.5947 3.3403 23.0682 4.14195 23.3685C4.90695 23.6618 5.7777 23.8643 7.0557 23.9272C8.33295 23.985 8.7387 23.997 12.0005 23.997C15.2622 23.997 15.6687 23.9813 16.9452 23.9272C18.2232 23.8643 19.094 23.661 19.859 23.3685C20.6596 23.0662 21.3847 22.593 21.9837 21.9818C22.5974 21.3848 23.0711 20.6591 23.3705 19.857C23.6637 19.092 23.8662 18.2213 23.9292 16.9432C23.987 15.666 23.999 15.2603 23.999 11.9985C23.999 8.73675 23.9832 8.33025 23.9292 7.05375C23.8662 5.77575 23.663 4.9005 23.3705 4.14C23.0682 3.33935 22.5949 2.61425 21.9837 2.01525C21.3868 1.40152 20.6611 0.927885 19.859 0.6285C19.094 0.3315 18.2232 0.13275 16.9452 0.06975C15.668 0.012 15.2622 0 12.0005 0ZM12.0005 2.16C15.2037 2.16 15.5862 2.17575 16.8522 2.22975C18.02 2.2845 18.656 2.4795 19.0782 2.6445C19.6002 2.83719 20.0727 3.14389 20.4612 3.54225C20.8589 3.92912 21.1644 4.40051 21.3552 4.9215C21.5202 5.34375 21.7152 5.97975 21.77 7.1475C21.8239 8.4135 21.8397 8.79675 21.8397 11.9992C21.8397 15.2017 21.824 15.585 21.7655 16.851C21.7025 18.0188 21.5075 18.6548 21.3432 19.077C21.116 19.6403 20.8624 20.034 20.444 20.46C20.0541 20.8559 19.582 21.1611 19.061 21.354C18.644 21.519 17.999 21.714 16.8267 21.7687C15.554 21.8228 15.179 21.8385 11.9675 21.8385C8.75595 21.8385 8.3817 21.8228 7.10745 21.7642C5.9397 21.7013 5.29545 21.5063 4.8732 21.342C4.3032 21.1147 3.91245 20.8612 3.49395 20.4427C3.0717 20.0205 2.8032 19.6185 2.5962 19.0597C2.4282 18.6427 2.2362 17.9977 2.17395 16.8255C2.1312 15.5677 2.11095 15.1778 2.11095 11.9813C2.11095 8.78625 2.1312 8.3955 2.17395 7.122C2.2362 5.94975 2.4282 5.30625 2.5962 4.88775C2.8032 4.317 3.07245 3.927 3.49395 3.50475C3.9117 3.087 4.3032 2.817 4.8732 2.6055C5.29545 2.44125 5.92395 2.24625 7.0962 2.18775C8.36895 2.142 8.74395 2.1255 11.951 2.1255L12.0005 2.16ZM12.0005 5.84025C11.1915 5.83995 10.3903 5.99908 9.64287 6.30853C8.8954 6.61798 8.21624 7.0717 7.64419 7.64374C7.07215 8.21578 6.61843 8.89495 6.30898 9.64242C5.99953 10.3899 5.84041 11.191 5.8407 12C5.84041 12.809 5.99953 13.6101 6.30898 14.3576C6.61843 15.1051 7.07215 15.7842 7.64419 16.3563C8.21624 16.9283 8.8954 17.382 9.64287 17.6915C10.3903 18.0009 11.1915 18.16 12.0005 18.1597C12.8094 18.16 13.6106 18.0009 14.358 17.6915C15.1055 17.382 15.7847 16.9283 16.3567 16.3563C16.9288 15.7842 17.3825 15.1051 17.6919 14.3576C18.0014 13.6101 18.1605 12.809 18.1602 12C18.1605 11.191 18.0014 10.3899 17.6919 9.64242C17.3825 8.89495 16.9288 8.21578 16.3567 7.64374C15.7847 7.0717 15.1055 6.61798 14.358 6.30853C13.6106 5.99908 12.8094 5.83995 12.0005 5.84025ZM12.0005 15.9998C9.78945 15.9998 8.0007 14.211 8.0007 12C8.0007 9.789 9.78945 8.00025 12.0005 8.00025C14.2115 8.00025 16.0002 9.789 16.0002 12C16.0002 14.211 14.2115 15.9998 12.0005 15.9998ZM19.8485 5.59425C19.8481 5.9765 19.6959 6.34296 19.4255 6.6131C19.1551 6.88326 18.7885 7.035 18.4062 7.035C18.2172 7.035 18.03 6.99777 17.8554 6.92544C17.6808 6.85311 17.5221 6.7471 17.3885 6.61345C17.2549 6.47981 17.1488 6.32115 17.0765 6.14653C17.0042 5.97191 16.967 5.78475 16.967 5.59575C16.967 5.40674 17.0042 5.21959 17.0765 5.04497C17.1488 4.87036 17.2549 4.71169 17.3885 4.57805C17.5221 4.4444 17.6808 4.33839 17.8554 4.26606C18.03 4.19373 18.2172 4.1565 18.4062 4.1565C19.199 4.1565 19.8485 4.8015 19.8485 5.59425Z">
+            </path>
+          </svg> 
+        </a> 
+        
+      </div>
+      <div id="footer__rail" class="rail__container black--rail rail--left active">
+        <div class="track__container">
+          <div class="track"> <span class="track--filled">FOREVER</span></div>
+          <div class="track"> <span class="track--stroked">CHORREO</span></div>
+        </div>
+        <div class="track__container">
+          <div class="track"> <span class="track--filled">FOREVER</span></div>
+          <div class="track"> <span class="track--stroked">CHORREO</span></div>
+        </div>
+        <div class="track__container">
+          <div class="track"> <span class="track--filled">FOREVER</span></div>
+          <div class="track"> <span class="track--stroked">CHORREO</span></div>
+        </div>
+      </div>
+      <div class="legal-links-container">
+        <div class="copy ko">©<b>2024 bandidos GRILL GROUP SL</b>, TODOS LOS DERECHOS RESERVADOS</div>
+        <ul id="menu-footer-2023-3" class="legal-links-container--items item nav-footer-legal">
+          <li><a
+              class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-18446"
+              href="https://bandidosburger.es/es/aviso_legal/"><span>Aviso Legal</span></a></li>
+          <li><a
+              class="text-container menu-item menu-item-type-post_type menu-item menu-item-type-post_type menu-item-object-page item-post-id-33773"
+              href="https://bandidosburger.es/es/politica_de_cookies/"><span>Política de Cookies</span></a></li>
+        </ul>
+        <div class="scroll__top item">
+          <div class="mask">
+            <div class="top ko">TOP</div>
+          </div>
+          <div class="top--icon"></div>
+        </div>
+      </div>
+    </footer>
+    <div class="fast__back"></div>
+  </div>
+  <link rel="mask-icon" href="/img/favicon/favicon.svg" color="#181f2c">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <script src="js/jquery.js"></script>
+  <script src="js/cartbandidos.js"></script>
+  <script src="js/data.js"></script>
+
+
+</html>
