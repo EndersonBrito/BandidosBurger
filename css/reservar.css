@@ -1,0 +1,15 @@
+
+.container-reservas {
+    width: auto;
+    height: 80vh;
+    overflow: auto;
+}
+.select-dropdown{
+    width: 40vw;
+    font-size: 15px;
+}
+.label-1linea{
+    width: 70vw;
+    display: flex;
+}
+

@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reem Kufi", sans-serif !important;
+   /*  background-image: url('../assets/fondoBandidos.jpg'); */
+    background-size: cover;
+    background-attachment: fixed;
+  
+  }
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .nav-logo-container {
+  max-width: 250px;
+  max-height: 125px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+.navbar-menu-container {
+  display: none;
+}
+.navbar-links-container a {
+  margin-right: 3rem;
+  text-decoration: none;
+  /*color: black;rgb(129 132 137)*/
+  color:rgb(129 132 137);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.navbar-links-container a:hover{
+  color: yellow;
+}
+
+.primary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: rgb(105, 52, 52);
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  color: rgb(129 132 137);
+}
+.navbar-cart-icon {
+  font-size: 1.15rem;
+}
+.primary-button:hover {
+  background-color: rgb(234, 234, 234);
+}
+.navbar-menu-container svg {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.nav-logo-container {
+  max-width: 250px;
+  max-height: 125px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hamburger {
+	position: relative;
+	display: block;
+	width: 35px;
+	cursor: pointer;
+	
+	appearance: none;
+	background: none;
+	outline: none;
+	border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 5px;
+	background-color: #FFF;
+	margin: 6px 0px;
+	transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+	transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+	transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+	opacity: 0;
+}
+
+
+.menu {
+  height: 100%;
+
+  position: fixed;
+  overflow: hidden;
+ 
+  pointer-events: none;
+  width: 100%;
+}
+
+.menu__background {
+  background: #ee2737;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: top;
+  /*transform: scaleY(0);*/
+  transition: all 0s .64s;
+  width: 100%;
+}
+
+.menu__float {
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: transform .64s cubic-bezier(0.78, 0, 0.13, 1);
+  width: 7.5rem;
+  z-index: 2
+}
+
+.menu__float .rotate__logo {
+  margin-top: 2.75rem;
+  opacity: 0;
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+  transform: translateY(-50%);
+  transition: all 0s .64s
+}
+
+.menu__float .rotate__logo .text__logo {
+  fill: #fff;
+  width: 100%;
+  height: auto;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateY(-50%) translateX(-100%)
+}
+
+.menu__close {
+  align-items: center;
+  background: #000;
+  cursor: pointer;
+  display: flex;
+  height: 7.5rem;
+  justify-content: center;
+  position: relative;
+  transform-origin: top;
+  transform: translateY(-100%);
+  transition: all 0s .64s;
+  width: 100%
+}
+
+.menu__close>div {
+  height: 4rem;
+  width: 4rem;
+  position: relative
+}
+
+.menu__close .close--line {
+  height: .1875rem;
+  left: 0;
+  position: absolute;
+  top: calc(50% - 0.09375rem);
+  width: 100%
+}
+
+.menu__close .close--line:before {
+  background: #fff;
+  border-radius: .1875rem;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: all 0s .64s;
+  width: 100%
+}
+
+.menu__close .close--line:first-child {
+  transform: rotate(45deg)
+}
+
+.menu__close .close--line:last-child {
+  transform: rotate(-45deg)
+}
+
