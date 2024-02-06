@@ -7258,17 +7258,12 @@ legend+p:last-of-type {
 }
 
 .upload__cancel {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-close.svg) 0 0 no-repeat;
     position: absolute;
     top: 10px;
     right: 0;
     width: 24px;
     height: 24px;
     cursor: pointer
-}
-
-.upload__file--done {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-checkmark.svg) 0 center no-repeat
 }
 
 .upload__file--done .upload__info,.upload__file--done .upload__progress {
@@ -7366,15 +7361,11 @@ legend+p:last-of-type {
 }
 
 .pwd-toggler {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-eyeslash.svg) center center no-repeat;
     width: 24px;
     height: 24px;
     display: block
 }
 
-.pwd-toggler--on {
-    background-image: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-eye.svg)
-}
 
 .validation-help,.validation-error {
     font-family: "Nunito Sans","Helvetica","Arial",sans-serif;
@@ -7554,8 +7545,7 @@ legend+p:last-of-type {
 
 .bandidosins:after {
     content: "";
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/bandidosin.svg) 0 0 no-repeat;
-    width: 24px;
+     width: 24px;
     height: 24px;
     margin-left: 8px;
     display: block
@@ -7692,15 +7682,10 @@ legend+p:last-of-type {
     display: inline-flex;
     flex: 1 0 100%;
     height: 100%;
-   /* background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/svg/home-featured-next.svg);*/
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-100%);
     transition: all ease-in .2s
-}
-
-.home__featured__nav__button--prev {
-    /*background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/svg/home-featured-prev.svg)*/
 }
 
 .slides-container {
@@ -8405,13 +8390,6 @@ legend+p:last-of-type {
     position: relative
 }
 
-a.link__content {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-angle-right.svg) right center no-repeat
-}
-
-a.link__content.link__content--more {
-    background-image: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-more.svg)
-}
 
 .link__content {
     border-bottom: 1px solid #fff;
@@ -8607,14 +8585,6 @@ a.link__content.link__content--more {
     margin-top: -1.5rem
 }
 
-.link--visa .link__wrp:before {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-visa.svg) center center no-repeat
-}
-
-.link--applepay .link__wrp:before {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-applepay.svg) center center no-repeat
-}
-
 .link--list--cards .link {
     margin-bottom: 16px
 }
@@ -8647,14 +8617,6 @@ a.link__content.link__content--more {
     line-height: 1.5625rem;
     color: #fff;
     margin: 0
-}
-
-.link--add-card .link__wrp:before {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-add-card.svg) center center no-repeat
-}
-
-.link--add-paypal .link__wrp:before {
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-add-paypal.svg) center center no-repeat
 }
 
 .link--list-noSeparator .link--list__title {
@@ -9411,29 +9373,6 @@ a.link__content.link__content--more {
     background-color: #fbe8cc
 }
 
-.notice--help:before {
-    display: block;
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/img/icon-notice-info.svg)
-}
-
-.notice--attention {
-    background-color: #fbe8cc
-}
-
-.notice--attention:before {
-    display: block;
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/img/icon-attention.svg)
-}
-
-.notice--info {
-    background-color: #fbe8cc
-}
-
-.notice--info:before {
-    display: block;
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/img/icon-info.svg)
-}
-
 @media(max-width: 767.98px) {
     .notice {
         font-family:"Nunito Sans","Helvetica","Arial",sans-serif;
@@ -9895,8 +9834,7 @@ a.link__content.link__content--more {
 
 .text__back .text__maintitle:before {
     content: "";
-    background: url(https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/.https://www.bandidosburger.com/es/wp-content/themes/bandidos2020/assets/css/img/icon-arrow-back.svg) 0 0 no-repeat;
-    width: 24px;
+     width: 24px;
     height: 24px;
     margin-right: 16px;
     display: block;
@@ -18645,7 +18583,6 @@ legend+p:last-of-type {
 }
 
 .upload__cancel {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-close.565ea417b861fbae1860.svg) 0 0 no-repeat;
     position: absolute;
     top: 10px;
     right: 0;
@@ -18654,9 +18591,6 @@ legend+p:last-of-type {
     cursor: pointer
 }
 
-.upload__file--done {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-checkmark.d97a5f9adf60cc9dc856.svg) 0 center no-repeat
-}
 
 .upload__file--done .upload__info,.upload__file--done .upload__progress {
     display: none
@@ -18753,14 +18687,9 @@ legend+p:last-of-type {
 }
 
 .pwd-toggler {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-eyeslash.1b277c48820d33502a37.svg) center center no-repeat;
     width: 24px;
     height: 24px;
     display: block
-}
-
-.pwd-toggler--on {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-eye.ffbb27263d857428e440.svg)
 }
 
 .validation-help,.validation-error {
@@ -18941,7 +18870,6 @@ legend+p:last-of-type {
 
 .bandidosins:after {
     content: "";
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/bandidosin.c4ee79a118dc594c874f.svg) 0 0 no-repeat;
     width: 24px;
     height: 24px;
     margin-left: 8px;
@@ -19068,8 +18996,7 @@ legend+p:last-of-type {
     display: inline-flex;
     flex: 1 0 100%;
     height: 100%;
-    /*background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/home-featured-next.bf9038a41d888d42c140.svg);*/
-    background-repeat: no-repeat;
+     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-100%);
     transition: all ease-in .2s
@@ -19080,7 +19007,6 @@ legend+p:last-of-type {
     display: inline-flex;
     flex: 1 0 100%;
     height: 100%;
-    /*background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/home-featured-next.bf9038a41d888d42c140.svg);*/
     background-repeat: no-repeat;
     background-size: contain;
     transform: translateX(-100%);
@@ -19090,7 +19016,7 @@ legend+p:last-of-type {
 .home__featured__nav__button--prev {
     display: flex;
     flex-wrap: nowrap;
-   /* background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/home-featured-prev.2b63d30afc59bd47926c.svg)*/
+   
 }
 
 .slides-container {
@@ -19825,14 +19751,6 @@ legend+p:last-of-type {
     position: relative
 }
 
-a.link__content {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-angle-right.da11ce25f6616ef0a8f6.svg) right center no-repeat
-}
-
-a.link__content.link__content--more {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-more.a2c2a6de1dfbb00c7220.svg)
-}
-
 .link__content {
     border-bottom: 1px solid #fff;
     width: 100%;
@@ -20017,62 +19935,6 @@ a.link__content.link__content--more {
     right: 0
 }
 
-.link--withicon.link--win-01 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-win-01@2x.7a7be1c77d57fa36f907.png)
-}
-
-.link--withicon.link--win-02 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-win-02@2x.54344218bad61fa21c5c.png)
-}
-
-.link--withicon.link--win-03 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-win-03@2x.b7959c5f6f67e8cac623.png)
-}
-
-.link--withicon.link--do-01 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-do-01@2x.ce8415293ae245aa29e1.png)
-}
-
-.link--withicon.link--do-02 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-do-02@2x.f5f20e58375a52884982.png)
-}
-
-.link--withicon.link--do-03 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-do-03@2x.2d63a0012f58a81d124e.png)
-}
-
-.link--withicon.link--do-04 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-do-04@2x.9f7e5c7201ed2d26b225.png)
-}
-
-.link--withicon.link--friends-01 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-friends-01@2x.143f1b02f7c1b85e1813.png)
-}
-
-.link--withicon.link--friends-02 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-friends-02@2x.48d0ffaad99524aa736c.png)
-}
-
-.link--withicon.link--friends-03 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-friends-03@2x.f1ac38cfb1700addb707.png)
-}
-
-.link--withicon.link--friends-04 .link__wrp:before {
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/works-friends-04@2x.67869dd9ee3e35c168f5.png)
-}
-
-.link--drink .link__wrp:before {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-drink.9bd814e0c2186602f079.svg) center center no-repeat #6c441a
-}
-
-.link--desert .link__wrp:before {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-desert.331dc79ac0fa8cebc722.svg) center center no-repeat #57243b
-}
-
-.link--burger .link__wrp:before {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-burger.ae1f522ceb0448066cbc.svg) center center no-repeat #33510e
-}
-
 .link--list--payments .link__wrp:before {
     width: 75px;
     height: 48px;
@@ -20081,13 +19943,6 @@ a.link__content.link__content--more {
     margin-top: -1.5rem
 }
 
-.link--visa .link__wrp:before {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-visa.c477854613d68f8c443c.svg) center center no-repeat
-}
-
-.link--applepay .link__wrp:before {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-applepay.c144034603ba4b317822.svg) center center no-repeat
-}
 
 .link--list--cards .link {
     margin-bottom: 16px
@@ -20123,13 +19978,6 @@ a.link__content.link__content--more {
     margin: 0
 }
 
-.link--add-card .link__wrp:before {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-add-card.0b066bb1252888d3e190.svg) center center no-repeat
-}
-
-.link--add-paypal .link__wrp:before {
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-add-paypal.6d0f5e8c3de197ced29c.svg) center center no-repeat
-}
 
 .link--list-noSeparator .link--list__title {
     margin-bottom: 2rem
@@ -20887,7 +20735,6 @@ a.link__content.link__content--more {
 
 .notice--help:before {
     display: block;
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-notice-info.d2ba1580461386e032d5.svg)
 }
 
 .notice--attention {
@@ -20896,7 +20743,7 @@ a.link__content.link__content--more {
 
 .notice--attention:before {
     display: block;
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-attention.030d721fe1331c29f99a.svg)
+   
 }
 
 .notice--info {
@@ -20905,7 +20752,7 @@ a.link__content.link__content--more {
 
 .notice--info:before {
     display: block;
-    background-image: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-info.855e254668a0f2d8867c.svg)
+    
 }
 
 @media(max-width: 767.98px) {
@@ -21369,7 +21216,6 @@ a.link__content.link__content--more {
 
 .text__back .text__maintitle:before {
     content: "";
-    background: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/img/icon-arrow-back.f4aab420ba36f8461fd3.svg) 0 0 no-repeat;
     width: 24px;
     height: 24px;
     margin-right: 16px;
@@ -22739,8 +22585,6 @@ p,dl,label,ul li {
 .full__logoMobile{
     height: 4.4em;
 }
-
-
 
 .Carousel{
     position: absolute;

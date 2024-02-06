@@ -119,38 +119,7 @@ window.addEventListener("DOMContentLoaded", (function(e) {
     r = document.querySelector(".home__hero--video"),
     null != t && (o = parseInt(getComputedStyle(featuredSlide).getPropertyValue("border-radius"))),
     window.innerWidth < 767) {
-        var a = new Flickity(document.querySelector(".slides-container.home__featured"),{
-            prevNextButtons: !1,
-            pageDots: !1,
-            initialIndex: 0,
-            groupCells: !0,
-            cellAlign: "left",
-            contain: !0
-        });
-        a.on("dragStart", (function() {
-            document.querySelector(".slides-container.home__featured").classList.add("dragging"),
-            document.querySelectorAll(".slides-container.home__featured .home__featured__cell").forEach((function(e) {
-                return e.style.pointerEvents = "none"
-            }
-            ))
-        }
-        )),
-        a.on("dragEnd", (function() {
-            document.querySelector(".slides-container.home__featured").classList.remove("dragging"),
-            document.querySelectorAll(".slides-container.home__featured .home__featured__cell").forEach((function(e) {
-                return e.style.pointerEvents = "all"
-            }
-            ))
-        }
-        )),
-        document.querySelector("#prevButtonM").addEventListener("click", (function() {
-            a.previous()
-        }
-        )),
-        document.querySelector("#nextButtonM").addEventListener("click", (function() {
-            a.next()
-        }
-        ))
+       console.log("sfsd");
     }
     document.querySelector("body").classList.contains("home") && (gsap.to(".header--main", {
         scrollTrigger: {
@@ -183,17 +152,6 @@ window.addEventListener("DOMContentLoaded", (function(e) {
         transformOrigin: "top",
         ease: "none"
     })),
-    document.querySelector(".fast__booking"),
-    ScrollTrigger.observe({
-        target: document.querySelector("body"),
-        type: "wheel,touch,pointer",
-        onUp: function() {
-            ScrollTrigger.isInViewport(document.querySelector(".page__footer")) || document.querySelector(".fast__booking").classList.remove("sticked")
-        },
-        onDown: function() {
-            ScrollTrigger.isInViewport(document.querySelector(".page__footer"), .1) && document.querySelector(".fast__booking").classList.add("sticked")
-        }
-    }),
     gsap.to(".page__content", {
         scrollTrigger: {
             trigger: ".home__mundo--bandidos",

@@ -359,14 +359,3 @@ function openMobileMenu() {
      dive.classList.toggle('hide')
  }
 
-window.onload = function() {
-    document.getElementById('btnVolverMenu').addEventListener('click', event => {
-        event.preventDefault();
-        document.getElementById("content").style.display = "none";
-        document.getElementById("gridMainMenu").style.display = "block";
-        divcustumfldshow();
-     });
-    
-     
-    
-  };
