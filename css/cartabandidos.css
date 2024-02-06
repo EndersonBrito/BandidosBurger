@@ -3491,100 +3491,7 @@ body.compensate-for-scrollbar {
     border-color: #5897fb
 }
 
-@font-face {
-    font-family: "Nunito Sans";
-    src: local("Nunito Sans Black"),local("NunitoSans-Black"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Black.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Black.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Black.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Black.svg#NunitoSans-Black) format("svg");
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap
-}
 
-@font-face {
-    font-family: "Nunito Sans";
-    src: local("Nunito Sans SemiBold"),local("NunitoSans-SemiBold"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-SemiBold.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-SemiBold.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-SemiBold.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-SemiBold.svg#NunitoSans-SemiBold) format("svg");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Nunito Sans";
-    src: local("Nunito Sans Regular"),local("NunitoSans-Regular"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Regular.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Regular.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Regular.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Regular.svg#NunitoSans-Regular) format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Nunito Sans";
-    src: local("Nunito Sans Light"),local("NunitoSans-Light"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Light.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Light.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Light.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Light.svg#NunitoSans-Light) format("svg");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Nunito Sans";
-    src: local("Nunito Sans Bold"),local("NunitoSans-Bold"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Bold.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Bold.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Bold.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-Bold.svg#NunitoSans-Bold) format("svg");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Nunito Sans";
-    src: local("Nunito Sans ExtraBold"),local("NunitoSans-ExtraBold"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraBold.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraBold.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraBold.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraBold.svg#NunitoSans-ExtraBold) format("svg");
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Nunito Sans";
-    src: local("Nunito Sans ExtraLight"),local("NunitoSans-ExtraLight"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraLight.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraLight.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraLight.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-NunitoSans-ExtraLight.svg#NunitoSans-ExtraLight) format("svg");
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Knockout";
-    src: local("Knockout-HTF73-FullHeviweight"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-Knockout-HTF73-FullHeviweight.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-Knockout-HTF73-FullHeviweight.woff) format("woff"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-Knockout-HTF73-FullHeviweight.ttf) format("truetype"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/hinted-Knockout-HTF73-FullHeviweight.svg#Knockout-HTF73-FullHeviweight) format("svg");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Northen";
-    src: local("Northen"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/Northen.ttf) format("truetype");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Knockout";
-    src: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/Knockout-HTF73FullHeviweight-Regular.otf) format("opentype");
-    font-weight: 800;
-    font-style: normal
-}
-
-@font-face {
-    font-family: "Knockout";
-    src: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/Knockout-HTF73-FullHeviweight.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/Knockout-HTF73-FullHeviweight.woff) format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Knockout";
-    src: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/Knockout-HTF33-JuniorHeviwt.woff2) format("woff2"),url(//www.bandidos.com/es/wp-content/themes/bandidos2020/fonts/Knockout-HTF33-JuniorHeviwt.woff) format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap
-}
 
 html {
     line-height: 1.15;
@@ -4074,9 +3981,7 @@ button,a.btn,input[type=submit] {
     color: #ee2737;
     text-transform: uppercase;
     border-radius: 5px;
-    padding: 10px 30px 8px 15px;
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right.svg) no-repeat right 5px center;
-    border: 1px solid #ee2737;
+     border: 1px solid #ee2737;
     display: inline-block;
     margin: auto;
     text-decoration: none;
@@ -4087,7 +3992,6 @@ button:hover,a.btn:hover,input[type=submit]:hover {
     background-color: #ee2737;
     color: #fff;
     cursor: pointer;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg)
 }
 
 .alignleft {
@@ -9241,13 +9145,9 @@ hr {
 
 .back-link a.btn {
     padding: 10px 15px 8px 30px;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-left.svg);
     background-position: 10px center
 }
 
-.back-link a.btn:hover {
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-left-w.svg)
-}
 
 .modal-background {
     display: none;
@@ -9400,7 +9300,6 @@ header {
 }
 
 #inner-header::after {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/gotas-white.svg) no-repeat top right;
     content: " ";
     display: block;
     position: absolute;
@@ -9794,7 +9693,6 @@ ul.sub-nav li a {
     }
 
     .header-booking::after,.header-nobooking::after {
-        background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/gotas-black.svg) no-repeat top right;
         content: " ";
         display: block;
         position: absolute;
@@ -9954,7 +9852,7 @@ ul.sub-nav li a {
 }
 
 .fastbooking-form .date_wrap input:placeholder-shown {
-    background: #fff url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/ico-calendar.svg) no-repeat 91% 50%;
+    
     background-size: 18px
 }
 
@@ -9966,7 +9864,6 @@ ul.sub-nav li a {
     letter-spacing: normal;
     border: 0;
     text-transform: none;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg);
     padding: 10px 28px 0px;
     background-position: right 5px top 12px;
     width: auto
@@ -10113,7 +10010,6 @@ ul.sub-nav li a {
     margin-left: 8px;
     background-color: #ee2737;
     color: #fff;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg);
     transform: scale(0.8);
     transform-origin: top left;
     transition: all .3s ease;
@@ -10286,8 +10182,7 @@ ul.sub-nav li a {
 }
 
 .home-daily-wrapper {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
-    background-size: cover;
+     background-size: cover;
     padding: 45px 22px 70px;
     position: relative;
     text-align: center
@@ -10619,7 +10514,6 @@ ul.sub-nav li a {
 }
 
 .home-blog {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
     background-size: cover;
     padding: 40px 20px 55px;
     text-align: center
@@ -10822,8 +10716,7 @@ ul.sub-nav li a {
     margin-left: 8px;
     background-color: #ee2737;
     color: #fff;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg);
-    transform: scale(0.8);
+     transform: scale(0.8);
     transform-origin: top left;
     transition: all .3s ease
 }
@@ -11255,8 +11148,7 @@ a.bases-back:hover {
 }
 
 .info-burgers {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
-    background-size: cover;
+     background-size: cover;
     padding: 25px 30px
 }
 
@@ -11441,6 +11333,7 @@ a.bases-back:hover {
     .burger-container .burger-box {
         display:inline-block;
         width: 48%;
+        height: 45vh;
         margin: 1%
     }
 }
@@ -11448,6 +11341,7 @@ a.bases-back:hover {
 @media(min-width: 992px) {
     .burger-container .burger-box {
         width:41%;
+        height: 45vh;
         height: auto
     }
 }
@@ -11533,7 +11427,6 @@ a.bases-back:hover {
 }
 
 .location-booking {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
     background-size: cover;
     text-align: center;
     padding: 35px 0 20px;
@@ -11669,7 +11562,6 @@ a.bases-back:hover {
 }
 
 .location-burger-container .location-burger {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
     background-size: cover;
     position: relative;
     padding-bottom: 20px
@@ -11899,7 +11791,6 @@ a.bases-back:hover {
 }
 
 .availability-form .date_wrap input {
-    background: #fff url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/ico-calendar.svg) no-repeat 95% 50%;
     background-size: 18px
 }
 
@@ -12050,7 +11941,6 @@ a.bases-back:hover {
 #locationsGrid .restaurant-card .bookingButtonsByHour button {
     color: #fff;
     background-color: #ee2737;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg);
     transition: all .3s ease
 }
 
@@ -12404,7 +12294,6 @@ a.show-all-locations {
 }
 
 .today-container {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
     background-size: cover;
     text-align: center;
     padding: 45px 35px
@@ -12494,7 +12383,6 @@ a.show-all-locations {
     .today-burger .slide-main {
         grid-area: main;
         padding: 50px 30px 40px;
-        background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
         background-size: cover
     }
 
@@ -12691,7 +12579,6 @@ a.show-all-locations {
 }
 
 .make-order-content .order-card {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
     background-size: cover;
     padding: 30px 10px;
     margin-bottom: 10px;
@@ -12817,7 +12704,6 @@ a.show-all-locations {
     margin: 20px auto 30px auto;
     background-color: #ee2737;
     color: #fff;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg)
 }
 
 #findMybandidos .deliveryResults .street-selected {
@@ -12881,7 +12767,6 @@ a.show-all-locations {
 }
 
 .survey,.covid {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
     color: #000;
     width: 100%;
     margin: 50px auto;
@@ -12904,7 +12789,6 @@ a.show-all-locations {
 .survey .surveyBtn .btn,.covid .surveyBtn .btn {
     background-color: #ee2737;
     color: #fff;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg)
 }
 
 @media(min-width: 768px) {
@@ -12979,7 +12863,6 @@ a.show-all-locations {
         padding: 50px 60px;
         margin-top: 240px;
         margin-bottom: 0;
-        background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
         background-size: cover
     }
 
@@ -13009,7 +12892,6 @@ a.show-all-locations {
         padding: 50px 60px;
         margin-top: 240px;
         margin-bottom: 0;
-        background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
         background-size: cover
     }
 
@@ -13043,7 +12925,7 @@ a.show-all-locations {
     box-shadow: 2px 2px 8px rgba(136,136,136,.4);
     padding: 20px 10px;
     margin-bottom: 30px;
-    background: #e6e6e6 url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat
+    background: #e6e6e6 repeat
 }
 
 #deliveryMain .delivery-restaurant .delivery-restaurant-thumbnail {
@@ -13130,7 +13012,7 @@ a.show-all-locations {
     align-items: center;
     justify-content: center;
     display: flex;
-    background: #fff no-repeat url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-b.svg);
+    background: #fff no-repeat;
     background-position: center right 8px;
     border-radius: 5px;
     flex-direction: column;
@@ -13243,7 +13125,6 @@ a.show-all-locations {
 }
 
 a.deliveryBtn {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
     background-size: cover;
     margin-bottom: 20px;
     padding: 10px 15px;
@@ -13695,7 +13576,6 @@ a.deliveryBtn strong {
 }
 
 .modal_emergencia .modal_content::after {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/gotas-white_4.svg) no-repeat top right;
     content: " ";
     display: block;
     position: absolute;
@@ -13838,8 +13718,7 @@ a.deliveryBtn strong {
 }
 
 .safe-place .indicaciones {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
-    background-size: cover;
+     background-size: cover;
     padding: 40px 20px 55px;
     text-align: center;
     margin-top: 40px
@@ -14091,7 +13970,6 @@ a.deliveryBtn strong {
 
 .page-template-template-takeaway .top-relative-container #findMybandidos,.page-template-template-delivery .top-relative-container #findMybandidos,.page-template-template-delivery-v2 .top-relative-container #findMybandidos {
     padding: 10%;
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat
 }
 
 .page-template-template-takeaway .top-relative-container #findMybandidos h2,.page-template-template-delivery .top-relative-container #findMybandidos h2,.page-template-template-delivery-v2 .top-relative-container #findMybandidos h2 {
@@ -14124,7 +14002,6 @@ a.deliveryBtn strong {
     border-radius: 0;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/ico-lupa.svg);
     background-size: 20px 20px;
     background-position: center
 }
@@ -14179,13 +14056,13 @@ a.deliveryBtn strong {
     border-radius: 10px;
     background-color: #ee2737;
     color: #fff;
-    background-image: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/chevron-right-w.svg);
+   
     min-width: 65%;
     padding: 10px 24px
 }
 
 .page-template-template-takeaway .featuredBoxes .delivery-safe-place,.page-template-template-delivery .featuredBoxes .delivery-safe-place,.page-template-template-delivery-v2 .featuredBoxes .delivery-safe-place {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidos2020/img/fondo-textura.jpg) repeat;
+    
     color: #000;
     width: 100%;
     max-width: 100%
@@ -14896,7 +14773,6 @@ body.zoom150 #dropdown-menu .options .logo-rotate {
 }
 
 #carrera .carrera-burger {
-    background: url(//www.bandidos.com/es/wp-content/themes/bandidosgrill17/library/images/plan/burger.png) center center no-repeat;
     background-size: contain;
     width: 860px;
     height: 840px;
@@ -15163,14 +15039,6 @@ body.zoom150 #dropdown-menu .options .logo-rotate {
     body.page-id-10424 .top-picture .slide .top-title {
         font-size:70px
     }
-}
-
-@font-face {
-    font-family: eicons;
-    src: url(//www.bandidos.com/es/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.20.0);
-    src: url(//www.bandidos.com/es/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.20.0#iefix) format("embedded-opentype"),url(//www.bandidos.com/es/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.20.0) format("woff2"),url(//www.bandidos.com/es/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.20.0) format("woff"),url(//www.bandidos.com/es/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.20.0) format("truetype"),url(//www.bandidos.com/es/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.20.0#eicon) format("svg");
-    font-weight: 400;
-    font-style: normal
 }
 
 [class*=" eicon-"],[class^=eicon] {
@@ -21398,4 +21266,7 @@ button.swiper-pagination-bullet {
     to {
         transform: rotate(1turn)
     }
+}
+.logoMobile{
+    height: 4.4em;
 }

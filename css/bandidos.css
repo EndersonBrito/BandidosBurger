@@ -3566,7 +3566,7 @@ body {
 }
 
 .header--main .page__text__logo {
-    height: 1.5rem;
+    height: 2.5rem;
     width: auto
 }
 
@@ -5295,7 +5295,7 @@ body {
     }
 
     .special__burger--3.special__burger--right {
-        right: calc(50% - 46vw)
+        right: calc(50% - 66vw)
     }
 
     .special__burger--3.special__burger--left {
@@ -11785,21 +11785,6 @@ ul,li {
     display: none
 }
 
-/* @font-face {
-    font-family: "Knockout";
-    src: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/fonts/Knockout-HTF73-FullHeviweight.386a901fd564bd4a47c7.woff2) format("woff2"),url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/fonts/Knockout-HTF73-FullHeviweight.0f379a04dca41d9442bd.woff) format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap
-}
-
-@font-face {
-    font-family: "Knockout";
-    src: url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/fonts/Knockout-HTF33-JuniorHeviwt.291432cdf9638ce91c1d.woff2) format("woff2"),url(//www.bandidosburger.com/es/wp-content/themes/bandidos2020/dist/fonts/Knockout-HTF33-JuniorHeviwt.29daa80c7ca040de6397.woff) format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap
-} */
 
 
 .icon {
@@ -11812,7 +11797,6 @@ ul,li {
 .icon__glyph {
     fill: none;
     stroke: #000;
-    vector-effect: non-scaling-stroke
 }
 
 .icon--filled {
@@ -11842,7 +11826,6 @@ body {
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased
 }
 
 .clearfix::after {
@@ -14953,7 +14936,7 @@ body {
 }
 
 .header--main .page__text__logo {
-    height: 1.5rem;
+    height: 2.5rem;
     width: auto
 }
 
@@ -16680,30 +16663,30 @@ body {
 
     .special__burger--2 {
         position: absolute;
-        top: calc(50% - 21vw);
+        top: calc(50% - 6vw);
         width: 42vw;
         z-index: 2
     }
 
     .special__burger--2.special__burger--right {
-        right: calc(50% - 40vw)
+        right: calc(50% - 60vw)
     }
 
     .special__burger--2.special__burger--left {
-        left: calc(50% - 40vw)
+        left: calc(50% - 58vw)
     }
 
     .special__burger--3 {
-        top: calc(50% - 16vw);
+        top: calc(50% - 4vw);
         width: 32vw
     }
 
     .special__burger--3.special__burger--right {
-        right: calc(50% - 46vw)
+        right: calc(50% - 66vw)
     }
 
     .special__burger--3.special__burger--left {
-        left: calc(50% - 46vw)
+        left: calc(50% - 64vw)
     }
 }
 
@@ -17017,7 +17000,7 @@ body {
 
 .markee .markjs {
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     display: inline-block;
     width: auto;
     white-space: nowrap;
@@ -17027,7 +17010,7 @@ body {
 }
 
 .markee:hover>span {
-    opacity: 0
+    opacity: 1
 }
 
 .markee:hover .markjs {
@@ -22753,3 +22736,56 @@ p,dl,label,ul li {
     font-size: 0;
 }
 
+.full__logoMobile{
+    height: 4.4em;
+}
+
+
+
+.Carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    overflow: hidden;
+  
+    .Carousel-Slide{
+      left: 0;
+      position: relative;
+      background: grey;
+      height: 100%;
+      transition: left 1s linear;
+  
+      .Carousel-Slide-item{
+        height: 100%;
+        float: left;
+      }
+    }
+  }
+  .Carousel-Controller, .Carousel-Controller-Nav{
+    box-sizing: border-box;
+    height: auto;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    .Carousel-Controller-Nav-right{
+      float: right;
+    }
+  }
+  .prev:hover,.next:hover{
+    color:#000;
+  }
+  [class^=Carousel-Controller-Nav-]{
+    color: white;
+    cursor: pointer;
+    width: auto;
+    float:left;
+    font-size: 30px;
+    height: 100%;
+    &:hover{
+      color: #fff;
+    }
+  }

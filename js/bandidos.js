@@ -208,9 +208,7 @@ window.addEventListener("DOMContentLoaded", (function(e) {
     }))
 }
 ));
-document.querySelector('.fast__back').addEventListener('click', function() {
-    document.querySelector('.fast__booking').classList.remove('is--visible');
-});
+
 var e, t, n, r, o, a = "";
 window.addEventListener("scroll", (function() {
     var t;

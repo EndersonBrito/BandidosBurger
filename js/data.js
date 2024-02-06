@@ -215,24 +215,8 @@ document.querySelectorAll('.entrantes').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
-        console.log("aqui estamos");
-        var html = "";
-        for (var i=0; i< sides.length; i++){
-            html += '<div class="burger-box">'+
-                '<a href="carta.html"></a>'
-                +'<img width="340" height="340"'
-                +'src="'+sides[i].imagen+'"'
-                +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
-                +'fetchpriority="high"'
-                +'srcset="'+sides[i].imagen+' 340w, '+sides[i].imagen+' 150w"'
-                +'sizes="(max-width: 340px) 100vw, 340px">'
-                +'<h3>'+sides[i].nombre+'</h3>'
-            +'</div>';
-        
-        };
-        document.getElementById("boxMenuDetails").innerHTML = html;
-        document.getElementById("content").style.display = "block";
-        document.getElementById("gridMainMenu").style.display = "none";
+        llenarDivCarta(sides,'Entrantes');
+
         divcustumfldshow();
     });
   });
@@ -242,25 +226,8 @@ document.querySelectorAll('.hamburguesas').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
-        console.log("aqui estamos");
-        var html = "";
-        for (var i=0; i< burgers.length; i++){
-        console.log(burgers[i]);
-        html += '<div class="burger-box">'+
-                        '<a href="carta.html"></a>'
-                        +'<img width="340" height="340"'
-                        +'src="'+burgers[i].imagen+'"'
-                        +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
-                        +'fetchpriority="high"'
-                        +'srcset="'+burgers[i].imagen+' 340w, '+burgers[i].imagen+' 150w"'
-                        +'sizes="(max-width: 340px) 100vw, 340px">'
-                        +'<h3>'+burgers[i].nombre+'</h3>'
-                    +'</div>';
-        
-        };
-        document.getElementById("boxMenuDetails").innerHTML = html;
-        document.getElementById("content").style.display = "block";
-        document.getElementById("gridMainMenu").style.display = "none";
+        llenarDivCarta(burgers,"Hamburguesas");
+
     });
   });
 
@@ -268,24 +235,8 @@ document.querySelectorAll('.hamburguesas').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
-        console.log("aqui estamos");
-        var html = "";
-        for (var i=0; i< especiales.length; i++){
-        console.log(especiales[i]);
-        html += '<div class="burger-box">'+
-                        '<a href="carta.html"></a>'
-                        +'<img width="340" height="340"'
-                        +'src="'+especiales[i].imagen+'"'
-                        +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
-                        +'fetchpriority="high"'
-                        +'srcset="'+especiales[i].imagen+' 340w, '+especiales[i].imagen+' 150w"'
-                        +'sizes="(max-width: 340px) 100vw, 340px">'
-                        +'<h3>'+especiales[i].nombre+'</h3>'
-                    +'</div>';
-        
-        };
-        document.getElementById("boxMenuDetails").innerHTML = html;
-        document.getElementById("content").style.display = "block";
+        llenarDivCarta(especiales,"Especiales");
+
         document.getElementById("gridMainMenu").style.display = "none";
     });
   });
@@ -295,98 +246,127 @@ document.querySelectorAll('.hamburguesas').forEach(item => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
         var html = "";
-        for (var i=0; i< postres.length; i++){
-       
-        html += '<div class="burger-box">'+
-                        '<a href="carta.html"></a>'
-                        +'<img width="340" height="340"'
-                        +'src="'+postres[i].imagen+'"'
-                        +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
-                        +'fetchpriority="high"'
-                        +'srcset="'+postres[i].imagen+' 340w, '+postres[i].imagen+' 150w"'
-                        +'sizes="(max-width: 340px) 100vw, 340px">'
-                        +'<h3>'+postres[i].nombre+'</h3>'
-                    +'</div>';
-        
-        };
-        document.getElementById("boxMenuDetails").innerHTML = html;
-        document.getElementById("content").style.display = "block";
-        document.getElementById("gridMainMenu").style.display = "none";
+        llenarDivCarta(postres,"Postres");
+
     });
   });
   document.querySelectorAll('.para-peques').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
-        var html = "";
-        for (var i=0; i< kids.length; i++){
-       
-            html += '<div class="burger-box">'+
-                        '<a href="carta.html"></a>'
-                        +'<img width="340" height="340"'
-                        +'src="'+kids[i].imagen+'"'
-                        +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
-                        +'fetchpriority="high"'
-                        +'srcset="'+kids[i].imagen+' 340w, '+kids[i].imagen+' 150w"'
-                        +'sizes="(max-width: 340px) 100vw, 340px">'
-                        +'<h3>'+kids[i].nombre+'</h3>'
-                    +'</div>';
-        
-        };
-        document.getElementById("boxMenuDetails").innerHTML = html;
-        document.getElementById("content").style.display = "block";
-        document.getElementById("gridMainMenu").style.display = "none";
+        llenarDivCarta(kids,"Menu Kids");
+
     });
   });
   document.querySelectorAll('.perrros').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
-        var html = "";
-        for (var i=0; i< hotdogs.length; i++){
-       
-            html += '<div class="burger-box">'+
-                        '<a href="carta.html"></a>'
-                        +'<img width="340" height="340"'
-                        +'src="'+hotdogs[i].imagen+'"'
-                        +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
-                        +'fetchpriority="high"'
-                        +'srcset="'+hotdogs[i].imagen+' 340w, '+hotdogs[i].imagen+' 150w"'
-                        +'sizes="(max-width: 340px) 100vw, 340px">'
-                        +'<h3>'+hotdogs[i].nombre+'</h3>'
-                    +'</div>';
-        
-        };
-        document.getElementById("boxMenuDetails").innerHTML = html;
-        document.getElementById("content").style.display = "block";
-        document.getElementById("gridMainMenu").style.display = "none";
+        llenarDivCarta(postres,"Hot Dogs");
+
     });
   });
   
-  document.getElementById('volverBtnMenu').addEventListener('click', event => {
-    event.preventDefault();
-    document.getElementById("content").style.display = "none";
-    document.getElementById("gridMainMenu").style.display = "block";
-    divcustumfldshow();
- });
-
- function openMobileMenu() {
-   console.log("222222222222222 estamos");
-   document.getElementById("content").style.display = "flex";
-    var openMenu = document.getElementById("hamburgerMenuList");
-    openMenu.classList.remove("Menu-Closed");
-    openMenu.classList.add("Menu-Opened");
-  }
   
-  function closeMobileMenu() {
-   console.log("4444444444444444444444 estamos");
-   var closeMenu = document.getElementById("gridMainMenu");
-    closeMenu.classList.remove("Menu-Opened");
-    closeMenu.classList.add("Menu-Closed");
-  }
-  //100007643376
 
-  function divcustumfldshow() {
-    var dive = document.getElementById("gridMainMenu");
-    dive.classList.toggle('hide')
+var select = document.getElementById('SelectMenuDown');
+select.addEventListener('change',
+    function(){
+    var selectedOption = this.options[select.selectedIndex];
+    console.log(selectedOption.value + ': ' + selectedOption.text);
+    if (selectedOption.value == 'entrantes'){
+        llenarDivCarta(sides,'Entrantes');
+
+    }else if (selectedOption.value == 'hamburguesas'){
+        llenarDivCarta(burgers,'Hamburguesas');
+
+    }
+    else if (selectedOption.value == 'perrros'){
+        llenarDivCarta(hotdogs,"Hot Dogs");
+
+    }
+    else if (selectedOption.value == 'burgers-especiales'){
+        llenarDivCarta(especiales,"Especiales");
+
+    }
+    else if (selectedOption.value == 'para-peques'){
+        llenarDivCarta(kids, "Menu Kids");
+
+    }
+    else if (selectedOption.value == 'postres'){
+        llenarDivCarta(postres, "Postres");
+
+    }
+});
+
+//esta funcion se va encargar de recorrer el arreglo de los datos y cargar la informacion
+function llenarDivCarta(arreglo, titulo){
+    var html = "";
+    html += '<h2 class="mainTitle">'+titulo+'</h2><div class="burger-container" id="boxMenuDetails">';
+    for (var i=0; i< arreglo.length; i++){
+   
+        html += '<div class="burger-box">'+
+                    '<a href="carta.html"></a>'
+                    +'<img width="340" height="340"'
+                    +'src="'+arreglo[i].imagen+'"'
+                    +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
+                    +'fetchpriority="high"'
+                    +'srcset="'+arreglo[i].imagen+' 340w, '+arreglo[i].imagen+' 150w"'
+                    +'sizes="(max-width: 340px) 100vw, 340px">'
+                    +'<h3>'+arreglo[i].nombre+'</h3>'
+                +'</div>';
+    
+    };
+    html += '</div>'
+        +'<div class="back-link">'
+            +'<h2>¿Aún no te has decidido?</h2>'
+            +'<a href="carta.html" class="btn volverBtnMenu" id="btnVolverMenu">Volver a la carta</a>'
+        +'</div>';
+    document.getElementById("inner-content").innerHTML = html;
+    document.getElementById("content").style.display = "block";
+    document.getElementById("gridMainMenu").style.display = "none";
 }
+
+function activate(e) {
+    if (e.target.matches('.volverBtnMenu')){
+        e.preventDefault();
+        document.getElementById("content").style.display = "none";
+        document.getElementById("gridMainMenu").style.display = "block";
+    }else{
+        console.log("nada");
+    }
+   
+}
+
+document.addEventListener('click',activate,false);
+
+function openMobileMenu() {
+    document.getElementById("content").style.display = "flex";
+     var openMenu = document.getElementById("hamburgerMenuList");
+     openMenu.classList.remove("Menu-Closed");
+     openMenu.classList.add("Menu-Opened");
+   }
+   
+   function closeMobileMenu() {
+    var closeMenu = document.getElementById("gridMainMenu");
+     closeMenu.classList.remove("Menu-Opened");
+     closeMenu.classList.add("Menu-Closed");
+   }
+   //100007643376
+ 
+   function divcustumfldshow() {
+     var dive = document.getElementById("gridMainMenu");
+     dive.classList.toggle('hide')
+ }
+
+window.onload = function() {
+    document.getElementById('btnVolverMenu').addEventListener('click', event => {
+        event.preventDefault();
+        document.getElementById("content").style.display = "none";
+        document.getElementById("gridMainMenu").style.display = "block";
+        divcustumfldshow();
+     });
+    
+     
+    
+  };
