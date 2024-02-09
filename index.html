@@ -87,6 +87,7 @@
                         <div class="page__text__logo header--mobile">
                             <a href="index.html" class="main__logo">
                                 <img src="./assets/logoInicio.png" class="full__logoMobile" alt="">
+                                <img src="./assets/logobandidos2.png" class="full__logoMobile" alt="">
                             </a>
                         </div>
                     </div>
@@ -130,10 +131,12 @@
                         </div>
                     </div>
                     <div class="rotate__logo">
-                        <a href="/" target="_self">
+                        <a href="index.html" target="_self">
                             <span class="text__logo">
-                                Bandido`s Burger
+                                <img src="./assets/logobandidos2.png" class="full__logo"  alt="">
+
                             </span>
+                          
                             
                         </a>
                     </div>
@@ -145,21 +148,8 @@
                                 <div class="menu__top__nav">
                                     <div class="button__nav">
                                         <div class="lang--switch">
-                                            <div class="active">
-                                                <button type="button" name="formSubmit" class="btn btn--secondary lang--btn">
-                                                    <?xml
-                                                    version="1.0" standalone="no"?>
-                                                    <svg class="arrow-drop-down icon--filled" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                                        <path class="icon--filled__glyph" d="M7 10L12 15L17 10H7Z" fill="black"/>
-                                                    </svg>
-                                                    <span>es</span>
-                                                </button>
-                                            </div>
-                                            <div class="langs--availables">
-                                                <a href="https://www.bandidosburger.com/es/ca/" class="btn btn--secondary lang--btn">
-                                                    <span>ca</span>
-                                                </a>
-                                            </div>
+                                            <img src="./assets/logoInicio.png" class="full__logoMobile" alt="">
+
                                         </div>
                                     </div>
                                 </div>
@@ -251,214 +241,15 @@
                             </svg>
                         </div>
                         <div class="booking__arrow">
-                            <svg class="bar--one" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path d="M39.5,0h-1.3H17.7H0v16.5h26.8L0,43.2L12.8,56l13.7-13.7l13.1-13V56H56V38.3V17.7v-1.3V0H39.5z"/>
-                            </svg>
+                            
+                            <img src="./assets/logoInicio.png" class="bar--one" style="width: -webkit-fill-available;" alt="">
+
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-        <!-- <div class="fast__booking">
-            <div class="fast__back"></div>
-            <div class="wrapper">
-                <div class="fast__booking__bar">
-                    <div class="fast__booking--title">
-                        <div class="rail__container rail white--rail rail--left active">
-                            <div class="track__container">
-                                <div class="track">
-                                    <span class="track--stroked">Reservar</span>
-                                </div>
-                                <div class="track">
-                                    <span class="track--filled">Reservar</span>
-                                </div>
-                            </div>
-                            <div class="track__container">
-                                <div class="track">
-                                    <span class="track--stroked">Reservar</span>
-                                </div>
-                                <div class="track">
-                                    <span class="track--filled">Reservar</span>
-                                </div>
-                            </div>
-                            <div class="track__container">
-                                <div class="track">
-                                    <span class="track--stroked">Reservar</span>
-                                </div>
-                                <div class="track">
-                                    <span class="track--filled">Reservar</span>
-                                </div>
-                            </div>
-                            <div class="track__container">
-                                <div class="track">
-                                    <span class="track--stroked">Reservar</span>
-                                </div>
-                                <div class="track">
-                                    <span class="track--filled">Reservar</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fastbooking__form">
-                        <form id="formFastBooking" name="fastbooking" class="form form--fastbooking form--dark fastbooking-form" action="https://www.bandidosburger.com/es/reservas/" method="post" novalidate>
-                            <input type="hidden" name="lat" id="locator_lat" value=""/>
-                            <input type="hidden" name="lng" id="locator_lng" value=""/>
-                            <input type="hidden" name="hasPOST" value="true"/>
-                            <fieldset>
-                                <div class="form__element">
-                                    <input type="text" id="locator_address" name="direc" placeholder="Dirección" required="" autocapitalize="off" spellcheck="false">
-                                    <a href="#" class="geolocateMe" id="doGeolocation">
-                                        <svg viewBox="0 0 18.98 21.36">
-                                            <path d="M8.36,11.33l0.55,7.83l8.22-17.12l-16.22,8.8L8.36,11.33z"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="form__element">
-                                    <input type="date" name="date" id="locator_date" placeholder="" pseudoplaceholder="Fecha" autocomplete="off" value="" min="2024-01-08" max="2025-12-31">>
-                                </div>
-                                <div class="form__element form__element--select">
-                                    <select name="time" required id="time">
-                                        <option value="start" disabled hidden selected>Hora</option>
-                                        <option value="12:00">12:00</option>
-                                        <option value="12:15">12:15</option>
-                                        <option value="12:30">12:30</option>
-                                        <option value="12:45">12:45</option>
-                                        <option value="13:00">13:00</option>
-                                        <option value="13:15">13:15</option>
-                                        <option value="13:30">13:30</option>
-                                        <option value="13:45">13:45</option>
-                                        <option value="14:00">14:00</option>
-                                        <option value="14:15">14:15</option>
-                                        <option value="14:30">14:30</option>
-                                        <option value="14:45">14:45</option>
-                                        <option value="15:00">15:00</option>
-                                        <option value="15:15">15:15</option>
-                                        <option value="15:30">15:30</option>
-                                        <option value="15:45">15:45</option>
-                                        <option value="16:00">16:00</option>
-                                        <option value="16:15">16:15</option>
-                                        <option value="16:30">16:30</option>
-                                        <option value="16:45">16:45</option>
-                                        <option value="17:00">17:00</option>
-                                        <option value="17:15">17:15</option>
-                                        <option value="17:30">17:30</option>
-                                        <option value="17:45">17:45</option>
-                                        <option value="18:00">18:00</option>
-                                        <option value="18:15">18:15</option>
-                                        <option value="18:30">18:30</option>
-                                        <option value="18:45">18:45</option>
-                                        <option value="19:00">19:00</option>
-                                        <option value="19:15">19:15</option>
-                                        <option value="19:30">19:30</option>
-                                        <option value="19:45">19:45</option>
-                                        <option value="20:00">20:00</option>
-                                        <option value="20:15">20:15</option>
-                                        <option value="20:30">20:30</option>
-                                        <option value="20:45">20:45</option>
-                                        <option value="21:00">21:00</option>
-                                        <option value="21:15">21:15</option>
-                                        <option value="21:30">21:30</option>
-                                        <option value="21:45">21:45</option>
-                                        <option value="22:00">22:00</option>
-                                        <option value="22:15">22:15</option>
-                                        <option value="22:30">22:30</option>
-                                        <option value="22:45">22:45</option>
-                                        <option value="23:00">23:00</option>
-                                        <option value="23:15">23:15</option>
-                                        <option value="23:30">23:30</option>
-                                        <option value="23:45">23:45</option>
-                                    </select>
-                                    <svg class="arrow-drop-down icon--filled" width="24" height="24" viewBox="0 0 24 24">
-                                        <path class="icon--filled__glyph" d="M7 10L12 15L17 10H7Z" fill="black"></path>
-                                    </svg>
-                                </div>
-                                <div class="form__element form__element--select">
-                                    <select name="customers" required id="persona">
-                                        <option value="start" disabled hidden selected>Personas</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                        <option value="11">11</option>
-                                        <option value="12">12</option>
-                                        <option value="13">13</option>
-                                        <option value="14">14</option>
-                                        <option value="15">15</option>
-                                        <option value="+15">+15</option>
-                                    </select>
-                                    <svg class="arrow-drop-down icon--filled" width="24" height="24" viewBox="0 0 24 24">
-                                        <path class="icon--filled__glyph" d="M7 10L12 15L17 10H7Z" fill="black"></path>
-                                    </svg>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                    <a href="#" class="fastbooking__submit">
-                        <div class="booking__btn">
-                            <div class="mask">
-                                <span>Buscar</span>
-                                <span>Buscar</span>
-                            </div>
-                            <div class="booking__search">
-                                <svg class="bar--one tt--ab" viewBox="0 0 56 56">
-                                    <path d="M39.5,0h-1.3H17.7H0v16.5h26.8L0,43.2L12.8,56l13.7-13.7l13.1-13V56H56V38.3V17.7v-1.3V0H39.5z"></path>
-                                </svg>
-                                <svg class="bar--two tt--ab" viewBox="0 0 56 56">
-                                    <path d="M39.5,0h-1.3H17.7H0v16.5h26.8L0,43.2L12.8,56l13.7-13.7l13.1-13V56H56V38.3V17.7v-1.3V0H39.5z"></path>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="fastbooking__btn">
-                    <div class="fastbooking__btn--icon tt--ab">
-                        <?xml
-                        version="1.0" standalone="no"?>
-                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <path d="M20.1,30.1L17,28.9l-1.2,3l3.1,1.3l-1.4,3.5L8.6,33l1.4-3.5l3.4,1.4l1.2-3l-3.4-1.4l1.4-3.5l8.8,3.6L20.1,30.1z"/>
-                            <path d="M27.5,21.6l-1.4-0.9l-2.6,2.1l0.5,1.6l-2.6,2.1l-3-9.8l3.2-2.6l9,4.9L27.5,21.6z M21.9,18l0.9,2.7l1.4-1.2L21.9,18z"/>
-                            <path d="M34.7,15.5l4.8-1.1l0.6,2.8l-10.2,2.3l-0.1-0.5l3.5-7.4l-4.7,1.1l-0.6-2.5l10-2.3l0.1,0.5L34.7,15.5z"/>
-                            <path d="M52.7,14l-2.5,6.2l-3.5-1.5l2.5-6.2l-3.1-1.3l1.1-2.6l9.7,4l-1.1,2.6L52.7,14z"/>
-                            <path d="M56.8,26c-2.4-2.8-2.1-5.3-0.3-6.7l4.4-3.7l2.5,2.9L59.1,22c-0.7,0.6-0.8,1.4-0.1,2.3c0.8,0.9,1.6,1,2.3,0.3l4.2-3.5 l2.2,2.6l-4.4,3.7C61.6,28.8,59.2,28.8,56.8,26z"/>
-                            <path d="M62.3,41.2c0-0.5,0.6-0.9,1.4-0.9l1.2-0.1c0.5,0,0.9-0.2,0.9-0.9l-0.1-1.7l-3.5,0.2l-0.2-3.8l9.5-0.5l0.3,6.6 c0.1,2.2-1,3.7-2.5,3.7l-0.2,0c-0.9,0-1.8-0.7-2.1-1.9c-0.1,1.4-1,2.1-2,2.1l-0.9,0c-0.6,0-1.1,0.2-1.5,0.5l0,0L62.3,41.2z M68.3,40c0.6,0,0.8-0.4,0.8-1.3l-0.1-1.3l-1.9,0.1l0.1,1.3c0,0.9,0.3,1.2,0.9,1.2L68.3,40z"/>
-                            <path d="M62.1,44.9l8.7,3.9l-3.9,8.6l-2.4-1.1l2.3-5.1l-1.2-0.5L64.1,54l-1.2-0.6l1.5-3.4l-1.2-0.5l-2.3,5.1l-2.6-1.2L62.1,44.9z"/>
-                            <path d="M53.8,56.9c1.8-1.5,3.7-2.2,5.3-2.4l0.2,2.4c-1.4,0.2-3.1,0.9-4,1.7c-0.9,0.8-1,1.2-0.8,1.5c0.8,0.9,5.3-3.8,7.5-1.1 c1.1,1.3,0.4,3.8-1.9,5.6c-1.8,1.4-3.3,1.9-4.9,2.1l0-2.4c1.4-0.3,2.7-0.8,3.6-1.6c0.7-0.6,0.9-1.1,0.7-1.3c-0.8-1-5.5,3.8-7.6,1.2 C50.7,61.3,51.7,58.7,53.8,56.9z"/>
-                            <path d="M49.5,60.6l2.1,9.3l-9.2,2.1l-0.6-2.6l5.5-1.3L47,66.8l-3.6,0.8l-0.3-1.3l3.6-0.8l-0.3-1.3l-5.5,1.3l-0.6-2.8L49.5,60.6z"/>
-                            <path d="M32.4,60.9c0.5,0.1,0.7,0.8,0.5,1.6l-0.3,1.1c-0.1,0.5,0,0.9,0.6,1.1l1.7,0.4l0.9-3.4l3.7,0.9l-2.3,9.2l-6.4-1.6 c-2.2-0.5-3.2-2-2.9-3.5l0.1-0.2c0.2-0.9,1.1-1.5,2.4-1.5c-1.3-0.5-1.7-1.6-1.4-2.5l0.2-0.9c0.1-0.6,0.1-1.1-0.1-1.6l0,0L32.4,60.9 z M31.8,67.1c-0.1,0.6,0.1,0.9,1,1.1l1.2,0.3l0.5-1.9l-1.2-0.3c-0.9-0.2-1.3,0-1.4,0.5L31.8,67.1z"/>
-                            <path d="M23.8,55.2l2.7,2.5l-3.2,9.9l-3.1-2.8l2.1-5.7l-5.5,2.6l-2.6-2.3L23.8,55.2z"/>
-                            <path d="M18.8,46.6l-1.3,1.1l1.2,3.1l1.7,0l1.3,3.1l-10.3,0L9.9,50l7.3-7.2L18.8,46.6z M13.7,50.9l2.9-0.1l-0.7-1.7L13.7,50.9z"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div class="page__content over" data-section="section--black">
-            <!-- <script>
-                
-                function initLocator() {
-                    geocoder = new google.maps.Geocoder();
-                    autocomplete = new google.maps.places.Autocomplete(document.getElementById('locator_address'),{
-                        types: ['geocode'],
-                        fields: ['name', 'geometry.location'],
-                        componentRestrictions: {
-                            country: 'ES'
-                        }
-                    });
-                    autocomplete.addListener('place_changed', function() {
-                        var place = autocomplete.getPlace();
-                        jQuery('input[name="lat"]').val(place.geometry.location.lat());
-                        jQuery('input[name="lng"]').val(place.geometry.location.lng());
-                        jQuery('#doGeolocation').addClass('selected');
-                        jQuery('[data-toggle="datepicker"]').datepicker('show');
-                    });
-                }
-            </script> -->
+       <div class="page__content over" data-section="section--black">
             <div id="content">
                 <div id="inner-content" class="wrap cf">
                     <main id="main" class="m-all t-all d-all cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
@@ -868,11 +659,12 @@
                                                                         <div class="Carousel-Controller">
                                                                             <div class="Carousel-Controller-Nav">
                                                                                 <div class="Carousel-Controller-Nav-left">
-                                                                                    <ion-icon class='btn  btn--secondary prev' name="arrow-back-outline"></ion-icon>
+                                                                                    <ion-icon class='btn  btn--secondary prev' name="chevron-back-outline" style="border: 0; font-size: 1em;"></ion-icon>
                                                                         
                                                                                 </div>
                                                                                 <div class="Carousel-Controller-Nav-right">
-                                                                                    <ion-icon class='btn  btn--secondary next' name="arrow-forward-outline"></ion-icon>
+                                                                                    <ion-icon class='btn  btn--secondary next' name="chevron-forward-outline" style="border: 0; font-size: 1em;"></ion-icon>
+                                                                            
                                                                                 </div>
                                                                             </div>
                                                                         </div>
