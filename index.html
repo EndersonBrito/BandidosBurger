@@ -77,18 +77,19 @@
                                 <img src="./assets/logoInicio.png" class="full__logo" alt="">
                             </a>
                         </div>
+                       
+                        <div class="page__text__logo header--mobile">
+                            <a href="index.html" class="main__logo">
+                                <img src="./assets/logoInicio.png" class="full__logoMobile" alt="">
+                                <img src="./assets/logobandidos2.png" class="full__logoMobile" alt="">
+                            </a>
+                        </div>
                         <div class="menu__navtrigger">
                             <div class="ham">
                                 <div class="ham--line"></div>
                                 <div class="ham--line"></div>
                                 <div class="ham--line"></div>
                             </div>
-                        </div>
-                        <div class="page__text__logo header--mobile">
-                            <a href="index.html" class="main__logo">
-                                <img src="./assets/logoInicio.png" class="full__logoMobile" alt="">
-                                <img src="./assets/logobandidos2.png" class="full__logoMobile" alt="">
-                            </a>
                         </div>
                     </div>
                     <nav class="header__nav">
@@ -670,7 +671,21 @@
                                                                         </div>
                                                                         <script>
                                                                             const slider = document.querySelector('.slider');
+                                                                            const prevSlider = document.querySelector('.prev'); 
+                                                                            const nextSlider = document.querySelector('.next'); 
+                                                                                    prevSlider.addEventListener('mouseenter', (event) => {
+                                                                                console.log(event.target.matches('.next'));
+                                                                                const items2 = document.querySelectorAll('.card');
+                                                                                event.target.matches('.next') && slider.append(items2[0])
+                                                                                event.target.matches('.prev') && slider.prepend(items2[items2.length-1]);
+                                                                            });
+                                                                            nextSlider.addEventListener('mouseenter', (event) => {
+                                                                                const items3 = document.querySelectorAll('.card');
+                                                                                event.target.matches('.next') && slider.append(items3[0])
+                                                                                event.target.matches('.prev') && slider.prepend(items3[items3.length-1]);
+                                                                            });
 
+                                                                            
                                                                             function activate(e) {
                                                                                 const items = document.querySelectorAll('.card');
                                                                                 e.target.matches('.next') && slider.append(items[0])
