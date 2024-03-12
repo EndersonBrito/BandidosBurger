@@ -3723,6 +3723,81 @@ body {
 .menu__navtrigger:hover .ham--line:nth-child(3):after {
     transition-delay: .16s
 }
+.menu__navtrigger2 {
+    cursor: pointer;
+    padding: .5rem;
+    margin: -0.5rem
+}
+
+.menu__navtrigger2 .ham {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative
+}
+
+.menu__navtrigger2 .ham .ham--line {
+    height: .15625rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%
+}
+
+.menu__navtrigger2 .ham .ham--line:nth-child(1),.menu__navtrigger2 .ham .ham--line:nth-child(3) {
+    margin: .375rem 0
+}
+
+.menu__navtrigger2 .ham .ham--line:before,.menu__navtrigger2 .ham .ham--line:after {
+    background: #fff;
+    border-radius: .125rem;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform-origin: left;
+    width: 100%
+}
+
+.menu__navtrigger2 .ham .ham--line:before {
+    transform: scaleX(1)
+}
+
+.menu__navtrigger2 .ham .ham--line:after {
+    transform: scaleX(0)
+}
+
+.menu__navtrigger2:hover .ham--line:before {
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .64s cubic-bezier(0.78, 0, 0.13, 1)
+}
+
+.menu__navtrigger2:hover .ham--line:after {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform .64s cubic-bezier(0.78, 0, 0.13, 1)
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(1):after {
+    transition-delay: .08s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(2):before {
+    transition-delay: .02s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(2):after {
+    transition-delay: .12s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(3):before {
+    transition-delay: .06s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(3):after {
+    transition-delay: .16s
+}
 
 .body--onmodal .page__header {
     pointer-events: none
@@ -3807,6 +3882,9 @@ body {
     }
 
     .menu__navtrigger {
+        margin-right: .125rem
+    }
+    .menu__navtrigger2 {
         margin-right: .125rem
     }
 
@@ -15032,6 +15110,82 @@ body {
     transition-delay: .16s
 }
 
+.menu__navtrigger2 {
+    cursor: pointer;
+    padding: .5rem;
+    margin: -0.5rem
+}
+
+.menu__navtrigger2 .ham {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative
+}
+
+.menu__navtrigger2 .ham .ham--line {
+    height: .15625rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%
+}
+
+.menu__navtrigger2 .ham .ham--line:nth-child(1),.menu__navtrigger2 .ham .ham--line:nth-child(3) {
+    margin: .375rem 0
+}
+
+.menu__navtrigger2 .ham .ham--line:before,.menu__navtrigger2 .ham .ham--line:after {
+    background: #fff;
+    border-radius: .125rem;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform-origin: left;
+    width: 100%
+}
+
+.menu__navtrigger2 .ham .ham--line:before {
+    transform: scaleX(1)
+}
+
+.menu__navtrigger2 .ham .ham--line:after {
+    transform: scaleX(0)
+}
+
+.menu__navtrigger2:hover .ham--line:before {
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .64s cubic-bezier(0.78, 0, 0.13, 1)
+}
+
+.menu__navtrigger2:hover .ham--line:after {
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: transform .64s cubic-bezier(0.78, 0, 0.13, 1)
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(1):after {
+    transition-delay: .08s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(2):before {
+    transition-delay: .02s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(2):after {
+    transition-delay: .12s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(3):before {
+    transition-delay: .06s
+}
+
+.menu__navtrigger2:hover .ham--line:nth-child(3):after {
+    transition-delay: .16s
+}
+
 .body--onmodal .page__header {
     pointer-events: none
 }
@@ -15103,7 +15257,9 @@ body {
 .lang--switch.open .langs--availables .lang--btn:nth-child(4) {
     transform: translateY(calc(400% + 2rem))
 }
-
+.menu__navtrigger2{
+    display: none;
+}
 @media(max-width: 767.98px) {
     .page__header {
         background:#000;
@@ -15117,7 +15273,12 @@ body {
     .menu__navtrigger {
         margin-right: .125rem
     }
-
+    .menu__navtrigger {
+        display: none;
+    }
+    .menu__navtrigger2{
+        display: block;
+    }
     .ham {
         height: 2.25rem;
         width: 2.25rem
@@ -15190,6 +15351,14 @@ body {
     .header--mobile {
         display: block
     }
+    .menu__navtrigger {
+        display:none
+    }
+
+    .menu__navtrigger2 {
+        display: block
+    }
+    
 }
 
 @media(min-width: 1024px) {
@@ -22583,7 +22752,7 @@ p,dl,label,ul li {
 }
 
 .full__logoMobile{
-    height: 4.4em;
+    height: 5.4em;
 }
 
 .Carousel{
@@ -22632,4 +22801,19 @@ p,dl,label,ul li {
     &:hover{
       color: #fff;
     }
+  }
+
+  .btnReservas {
+    border: 2px #ee2737 solid;
+    border-radius: 32px;
+    background-color: #ee2737;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .75rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 10px;
   }

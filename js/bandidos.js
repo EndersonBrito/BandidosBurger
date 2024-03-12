@@ -15,6 +15,14 @@ window.addEventListener("DOMContentLoaded", (function(e) {
         ))
     }
     )),
+    null != document.querySelector(".menu__navtrigger2") && (document.querySelectorAll(".menu__navtrigger2").forEach((function(e) {
+        e.addEventListener("click", (function() {
+            document.querySelector("body").classList.toggle("menu--open")
+        }
+        ))
+    }
+    ))),
+    
     document.querySelectorAll(".menu__close").forEach((function(e) {
         e.addEventListener("click", (function() {
             document.querySelector("body").classList.toggle("menu--open")

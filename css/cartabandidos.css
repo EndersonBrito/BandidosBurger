@@ -21270,3 +21270,16 @@ button.swiper-pagination-bullet {
     height: 4.4em;
 }
 
+.btnReservas {
+    border: 2px #ee2737 solid;
+    border-radius: 32px;
+    background-color: #ee2737;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .75rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
