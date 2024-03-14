@@ -22144,7 +22144,8 @@ legend+p:last-of-type {
 .home__carta--slider .slider {
     margin: 0;
     padding: 0;
-    width: 100%
+    width: 100%;
+    overflow-y: auto;
 }
 
 .home__carta--slider .slider .flickity-cell {
