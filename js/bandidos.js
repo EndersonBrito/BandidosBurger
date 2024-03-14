@@ -113,7 +113,8 @@ window.addEventListener("DOMContentLoaded", (function(e) {
               , o = e.getAttribute("data-vel") ? e.getAttribute("data-vel") : 24
               , a = r < o ? o : r;
             e.querySelectorAll(".track__container").forEach((function(e) {
-                e.style.animationDuration = a + "s"
+                e.style.animationDuration = 8 + "s";
+                e.style.overflow = "hidden";
             }
             ))
         }

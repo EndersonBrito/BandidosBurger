@@ -9747,6 +9747,16 @@ legend+p:last-of-type {
     animation: 15s rail-right infinite linear
 }
 
+.rail--top.active .track__container {
+    animation: 4s rail-top infinite linear;
+    animation-fill-mode: forwards;
+}
+
+.rail--botton.active .track__container {
+    animation: 4s rail-botton infinite linear;
+    animation-fill-mode: forwards;
+
+}
 .track__container {
     display: inline-block;
     margin: 0;
@@ -21219,7 +21229,17 @@ legend+p:last-of-type {
 .rail--right.active .track__container {
     animation: 15s rail-right infinite linear
 }
+.rail--top.active.active .track__container {
+    animation: 4s rail-top infinite linear;
+    animation-fill-mode: forwards;
 
+}
+
+.rail--botton.active .track__container {
+    animation: 4s rail-botton infinite linear;
+    animation-fill-mode: forwards;
+
+}
 .track__container {
     display: inline-block;
     margin: 0;
@@ -21343,7 +21363,25 @@ legend+p:last-of-type {
         transform: translateX(0)
     }
 }
+@keyframes rail-top {
+    0% {
+        transform: translateY(0)
+    }
 
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+@keyframes rail-botton {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
 .text {
     margin-bottom: 40px;
     display: block;
