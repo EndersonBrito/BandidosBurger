@@ -22856,3 +22856,105 @@ p,dl,label,ul li {
     text-decoration: none;
     margin-right: 10px;
   }
+
+  .containerBurger {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    align-items: stretch;
+    height: 500px;
+    gap: 10px;
+    overflow-y: auto;
+
+    > div {
+        flex: 0 0 120px;
+        border-radius: 0.5rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        box-shadow: 1px 5px 15px #1e0e3e;
+        position: relative;
+        overflow: hidden;
+
+        &:nth-of-type(1) {
+        background: url("../assets/al_capone.jpg")
+            no-repeat 40% / cover;
+        }
+        &:nth-of-type(2) {
+        background: url("../assets/pablo_escobar.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(3) {
+        background: url("../assets/big_jim_colosimo.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(4) {
+        background: url("../assets/gambino.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(5) {
+            background: url("../assets/heisenberg.jpg")
+                no-repeat 50% / cover;
+        }&:nth-of-type(6) {
+            background: url("../assets/frank_costello.jpg")
+                no-repeat 50% / cover;
+        }
+
+        .contentBurger {
+            font-size: 1.5rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            opacity: 0;
+            flex-direction: column;
+            height: 100%;
+            white-space: pre-wrap;
+            justify-content: flex-end;
+            background: rgb(2, 2, 46);
+            background: linear-gradient(
+                0deg,
+                rgba(2, 2, 46, 0.6755077030812324) 0%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: translatey(100%);
+            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+            visibility: hidden;
+
+            span {
+                display: block;
+                margin-top: 5px;
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+        }
+
+        &:hover {
+        flex: 0 0 250px;
+        box-shadow: 1px 3px 15px #7645d8;
+        transform: translatey(-30px);
+        }
+
+        &:hover .contentBurger {
+        opacity: 1;
+        transform: translatey(0%);
+        visibility: visible;
+        }
+    }
+}
+
+
+
+        @media (min-width: 824px) {
+            .containerBurger {
+                width: 100%;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                white-space: nowrap;
+                height: 500px;
+                gap: 10px;
+                overflow-y: auto;
+            
+            }
+        }

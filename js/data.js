@@ -67,7 +67,7 @@ var especiales = [
     {
         "nombre": "AL CAPONE (200gr carne)" ,
         "imagen" : "assets/al_capone.jpg",
-        "descripcion" :"Doble carne smash, pan brioche patatas,triple Bacon crunchy triple cheddar madurado, cebolla caramelizada, smokey baconnaise Sriracha mayo",
+        "descripcion" :"Doble carne smash, pan brioche patatas,triple Bacon crunchy triple cheddar madurado, cebolla caramelizada, smokey bacon, saisa Sriracha mayo",
         "precio" : "14,90 €"
     },
     {
