@@ -3,121 +3,694 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Animated Background</title>
     <style>
-      .containerBurger {
-        width: 100%;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        height: 500px;
-        gap: 10px;
-        overflow-y: auto;
-
-        > div {
-            flex: 0 0 120px;
-            border-radius: 0.5rem;
-            transition: 0.5s ease-in-out;
-            cursor: pointer;
-            box-shadow: 1px 5px 15px #1e0e3e;
-            position: relative;
-            overflow: hidden;
-
-            &:nth-of-type(1) {
-            background: url("assets/al_capone.jpg")
-                no-repeat 40% / cover;
-            }
-            &:nth-of-type(2) {
-            background: url("https://images.pexels.com/photos/36469/woman-person-flowers-wreaths.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-                no-repeat 50% / cover;
-            }
-            &:nth-of-type(3) {
-            background: url("https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-                no-repeat 50% / cover;
-            }
-            &:nth-of-type(4) {
-            background: url("https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-                no-repeat 50% / cover;
-            }
-            &:nth-of-type(5) {
-                background: url("assets/big_jim_colosimo.jpg")
-                    no-repeat 50% / cover;
-                }
-
-            .contentBurger {
-                font-size: 1.5rem;
-                color: #fff;
-                display: flex;
-                align-items: center;
-                padding: 15px;
-                opacity: 0;
-                flex-direction: column;
-                height: 100%;
-                justify-content: flex-end;
-                background: rgb(2, 2, 46);
-                background: linear-gradient(
-                    0deg,
-                    rgba(2, 2, 46, 0.6755077030812324) 0%,
-                    rgba(255, 255, 255, 0) 100%
-                );
-                transform: translatey(100%);
-                transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-                visibility: hidden;
-
-                span {
-                    display: block;
-                    margin-top: 5px;
-                    font-size: 1.2rem;
-                }
-            }
-
-            &:hover {
-            flex: 0 0 250px;
-            box-shadow: 1px 3px 15px #7645d8;
-            transform: translatey(-30px);
-            }
-
-            &:hover .contentBurger {
-            opacity: 1;
-            transform: translatey(0%);
-            visibility: visible;
-            }
-        }
+     *:not(style, head),
+    *::before,
+    *::after {
+    box-sizing: border-box;
     }
+
+    body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #222;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 110%;
+    font-weight: 400;
+    line-height: 150%;
+    }
+
+    body article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .sectionWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+
+    .swiper {
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px;
+    overflow: visible;
+    }
+
+    .swiper .parallax-bg {
+    position: absolute;
+    right: -5%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url("https://rb.gy/wk4c6n");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    }
+
+    .swiper .swiper-wrapper {
+    align-items: center;
+    }
+
+    .swiper .swiper-slide {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(102, 102, 102, 0.8);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 0;
+    cursor: grab;
+    user-select: none;
+    text-wrap: pretty;
+    }
+
+    .swiper .swiper-slide::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    border-bottom: 1px dashed white;
+    border-right: 1px solid white;
+    border-radius: 0 0 7px 0;
+    content: "";
+    transition: all 0.3s ease;
+    }
+
+    .swiper .swiper-slide::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    border-top: 1px solid white;
+    border-left: 1px dashed white;
+    border-radius: 7px 0 0 0;
+    content: "";
+    transition: all 0.3s ease;
+    }
+
+    .swiper .swiper-slide:hover {
+    background: linear-gradient(
+        135deg,
+        #ff1e9c99,
+        #ff1ea499,
+        #ff1fbc99,
+        #ff1fde99,
+        #f620ff99,
+        #c721ff99,
+        #9723ff99,
+        #6a24ff99,
+        #4125ff99,
+        #252aff99,
+        #2641ff99,
+        #2649ff99
+    );
+    }
+
+    .swiper .swiper-slide:hover::before,
+    .swiper .swiper-slide:hover::after {
+    width: 170px;
+    height: 170px;
+    transition: all 0.3s ease;
+    }
+
+    .swiper .swiper-slide .cardPopout {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 7px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    }
+
+    .swiper .swiper-slide img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    }
+
+    .swiper .swiper-slide h2 {
+    font-size: 200%;
+    line-height: 110%;
+    margin: 0 0 7px 0;
+    color: white;
+    font-family: "Nabla", system-ui;
+    font-variation-settings: "EDPT" 100, "EHLT" 24;
+    background-color: #111;
+    border-radius: 100%;
+    }
+
+    .swiper .swiper-slide h4 {
+    font-size: 110%;
+    line-height: 120%;
+    font-weight: 700;
+    margin: 0 0 13px 0;
+    color: #bbb;
+    font-style: italic;
+    }
+
+    .swiper .swiper-slide figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+    border-left: 1px solid white;
+    }
+
+    .swiper .swiper-slide figcaption p {
+    color: #999;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    }
+
+    .swiper .swiper-slide a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.6s ease !important;
+    }
+
+    .swiper .swiper-slide a:hover {
+    color: black;
+    transition: all 0.6s ease;
+    }
+
+    .swiper .swiper-slide a::after {
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2649ff;
+    content: "";
+    z-index: -1;
+    transition: all 0.6s ease;
+    }
+
+    .swiper .swiper-slide a:hover::after {
+    right: 0;
+    transition: all 0.6s ease;
+    }
+
+    .swiper .swiper-slide a svg {
+    width: 23px;
+    height: auto;
+    fill: white;
+    margin-left: 5px;
+    transition: all 0.6s ease;
+    }
+
+    .swiper .swiper-slide a:hover svg {
+    margin-left: 10px;
+    fill: black;
+    transition: all 0.6s ease;
+    }
+
+    .swiper .swiper-scrollbar {
+    --swiper-scrollbar-bottom: 0px;
+    --swiper-scrollbar-size: 10px;
+    }
+
+    @media (max-height: 550px) {
+    .swiper .swiper-slide figcaption p {
+        -webkit-line-clamp: 2;
+    }
+    }
+
+    @media (max-height: 490px) {
+    .swiper .swiper-slide figcaption p {
+        -webkit-line-clamp: 1;
+    }
+    }
+
+    @media (max-height: 460px) {
+    .swiper .swiper-slide figcaption p {
+        display: none;
+    }
+    .swiper .swiper-slide h4 {
+        margin: 0;
+    }
+    }
+
+    @media (max-height: 430px) {
+    .swiper .swiper-wrapper {
+        position: relative;
+        bottom: 6px;
+    }
+    }
+
+    @media (max-width: 750px) {
+    .swiper .parallax-bg {
+        width: 320%;
+    }
+    }
+
     </style>
 </head>
 <body>
-    <div class="containerBurger">
-        <div>
-            <div class="contentBurger">
-            <h2>AL CAPONE (200gr carne)</h2>
-            <span>Doble carne smash, pan brioche patatas,triple Bacon crunchy triple cheddar madurado, cebolla caramelizada, smokey baconnaise Sriracha mayo</span>
+    <article>
+
+        <section class="sectionWrapper">
+      
+          <section class="swiper">
+      
+            <div class="parallax-bg" data-swiper-parallax="600" data-swiper-parallax-scale="0.85"></div>
+      
+            <div class="swiper-wrapper">
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/qk577o" alt="jellyfish" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Jellyfish
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    Not Made of Jelly
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      Jellyfish are fascinating marine creatures known for their graceful and mesmerizing movements in the water. Belonging to the phylum Cnidaria, these gelatinous animals come in various shapes, sizes, and colors. One distinctive feature of jellyfish is their umbrella-shaped bell, which pulsates to propel them through the ocean.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/tj2xqe" alt="clownfish" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Clownfish
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    Clowning Around
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      Clownfish, renowned for their vibrant colors and distinctive markings, are small saltwater fish belonging to the family Pomacentridae. Found in warm oceanic waters, particularly in the Indo-Pacific region, these fish have become widely recognized and popularized, in part, thanks to the animated film "Finding Nemo."
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/299e84" alt="blue tang" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Blue Tang
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    42 Wallaby Way, Sydney
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      The blue tang, scientifically known as Paracanthurus hepatus, is a striking marine fish celebrated for its vivid blue coloration and unique body shape. Native to the Indo-Pacific region, blue tangs are commonly found in coral reefs, lagoons, and tropical coastal waters.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/wua67g" alt="Queen Angelfish" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Queen Angelfish
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    So Angelic!
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      The queen angelfish (Holacanthus ciliaris) is a dazzling and vibrant species of angelfish that inhabits the warm coral reefs of the Western Atlantic, particularly in the Caribbean Sea and the Gulf of Mexico. Renowned for its striking and intricate coloration, the queen angelfish is a favorite among divers and underwater enthusiasts.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/qbysqy" alt="Barracudas" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Barracuda
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    Burn, Burn, Burn
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      Barracudas are formidable and predatory fish known for their sleek, elongated bodies and sharp teeth. Belonging to the genus Sphyraena, these species are found in tropical and subtropical waters around the world, including the Atlantic, Pacific, and Indian Oceans.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/x2etjb" alt="Rainbowfish" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Rainbowfish
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    On The Spectrum
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      Rainbowfish are a diverse and colorful group of freshwater fish known for their vibrant hues and iridescent scales. Belonging to the family Melanotaeniidae, these fish are native to the freshwater rivers and lakes of Australia, New Guinea, and parts of Southeast Asia. Rainbowfish are popular among aquarium enthusiasts for their striking appearance, active behavior, and relatively easy care.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/vqnqq8" alt="Piranha" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Piranha
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    A Friendly Little Fellow
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      Piranhas are infamous freshwater fish known for their sharp teeth, predatory nature, and a reputation that often exceeds reality. Belonging to the family Characidae, these carnivorous fish are native to the rivers and tributaries of South America, particularly the Amazon Basin. Piranhas have become iconic in popular culture, often depicted as ferocious and aggressive predators.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/97jte0" alt="Unicornfish" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Unicornfish
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    Coral Reefs Thank Them
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      Unicornfish, members of the Acanthuridae family, are a group of marine fish known for their distinctive horn-like rostral protuberance. Unicornfish play a crucial role in coral reef ecosystems as herbivores. Their diet primarily consists of algae, helping to regulate and control algae growth on coral reefs.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/u4zoru" alt="Ocean Sunfish" width="800" height="400" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Ocean Sunfish
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    Oh Lawd He Comin'
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      The ocean sunfish, scientifically known as Mola mola, is an extraordinary and unique marine creature that holds the title for being the heaviest bony fish in the world. Residing in both temperate and tropical oceans globally, the ocean sunfish is renowned for its peculiar appearance, massive size, and intriguing behavior.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
+              <figure class="swiper-slide">
+      
+                <div class="cardPopout" data-swiper-parallax="30" data-swiper-parallax-scale="0.9" data-swiper-parallax-opacity="0.8" data-swiper-parallax-duration="1000">
+      
+                  <img src="https://rb.gy/c14cwd" alt="giant gourami" width="400" height="200" data-swiper-parallax="80" data-swiper-parallax-duration="2000">
+      
+                  <h2 class="title" data-swiper-parallax="80" data-swiper-parallax-duration="1000">
+                    Giant Gourami
+                  </h2>
+      
+                  <h4 class="subtitle" data-swiper-parallax="80" data-swiper-parallax-duration="1500">
+                    What Type of Dog Is This?
+                  </h4>
+      
+                  <figcaption data-swiper-parallax="80" data-swiper-parallax-duration="1250">
+      
+                    <p>
+                      The giant gourami (Osphronemus goramy) is a large and impressive freshwater fish that hails from Southeast Asia. As a member of the labyrinth fish family (Osphronemidae), giant gouramis possess a labyrinth organ that enables them to extract oxygen directly from the air, allowing them to survive in oxygen-deprived waters.
+                    </p>
+      
+                  </figcaption>
+      
+                  <a href="javascript:void(0);" title="Continue Reading" data-swiper-parallax="80" data-swiper-parallax-opacity="0.2" data-swiper-parallax-duration="1750">
+                    Continue Reading
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
+                    </svg>
+                  </a>
+      
+                </div>
+      
+              </figure>
+      
             </div>
-        </div>
-        <div>
-            <div class="contentBurger">
-            <h2>Alex Smith</h2>
-            <span>CEO Expert</span>
-            </div>
-        </div>
-        <div>
-            <div class="contentBurger">
-            <h2>Emily New</h2>
-            <span>Web Designer</span>
-            </div>
-        </div>
-        <div>
-            <div class="contentBurger">
-            <h2>Lisa Boley</h2>
-            <span>Marketing Coordinator</span>
-            </div>
-        </div>
-        <div>
-            <div class="contentBurger">
-                <h2>Lisa Boley</h2>
-                <span>Marketing Coordinator</span>
-            </div>
-            </div>
-    </div>
+      
+            <div class="swiper-scrollbar"></div>
+      
+          </section>
+      
+        </section>
+      
+      </article>
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+       const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: false,
+        speed: 1500,
+        slidesPerView: 4,
+        spaceBetween: 60,
+        mousewheel: true,
+        parallax: true,
+        centeredSlides: true,
+        effect: "coverflow",
+        coverflowEffect: {
+            rotate: 40,
+            slideShadows: true
+        },
+        autoplay: {
+            delay: 2000,
+            pauseOnMouseEnter: true
+        },
+        scrollbar: {
+            el: ".swiper-scrollbar"
+        },
+        breakpoints: {
+            0: {
+            slidesPerView: 1,
+            spaceBetween: 60
+            },
+            600: {
+            slidesPerView: 2,
+            spaceBetween: 60
+            },
+            1000: {
+            slidesPerView: 3,
+            spaceBetween: 60
+            },
+            1400: {
+            slidesPerView: 4,
+            spaceBetween: 60
+            },
+            2300: {
+            slidesPerView: 5,
+            spaceBetween: 60
+            },
+            2900: {
+            slidesPerView: 6,
+            spaceBetween: 60
+            }
+        }
+        });
+
+    </script>
 </body>
 </html>
