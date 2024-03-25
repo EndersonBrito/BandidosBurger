@@ -22084,7 +22084,7 @@ legend+p:last-of-type {
 }
 
 .burger__360 {
-    height: 80vh;
+    height: 60vh;
     width: 100%
 }
 
@@ -22985,6 +22985,10 @@ p,dl,label,ul li {
         height: 150px;
         width: 150px;
     }
+    .burger__360 {
+        height: 80vh;
+        width: 100%
+    }
 }
 @media (max-width: 1023px) {
     .DivbotonRerseva{
@@ -23026,20 +23030,20 @@ p,dl,label,ul li {
 .shapes li:nth-child(odd) {
     left: calc(75px*var(--i));
     animation-delay: calc(1.2s*var(--i));
-    animation-duration: calc(2s*var(--i) + 6s);
+    animation-duration: calc(2s*var(--i) + 2s);
 }
 
 .shapes li:nth-child(3n) {
     width: calc(5px*var(--i) + 20px);
     height: calc(5px*var(--i) + 20px);
     animation-delay: calc(1.2s*(21 - var(--i)));
-    animation-duration: calc(1.6s*(21-var(--i)) + 4s);
+    animation-duration: calc(1.6s*(21-var(--i)) + 1s);
 }
 
 .shapes li:not(:nth-child(3n)) {
     height: calc(6px*(21 - var(--i)));
     width: calc(6px*(21 - var(--i)));
-    animation-duration: calc(1.2s*var(-i) + 8s);
+    animation-duration: calc(1.2s*var(-i) + 2s);
 }
 
 @keyframes animate{
@@ -23051,4 +23055,24 @@ p,dl,label,ul li {
         transform: translateY(-1000px) rotate(360deg);
         opacity: 0;
     }
+}
+.demo-material-label-span{
+    display: block;
+    margin-top: 5px !important;
+    white-space: pre-wrap !important;
+    font-size: 1.2rem !important; 
+    margin-bottom: 30px !important;
+}
+
+.demo-material-label-h1 {
+    font-size: 1.5rem !important;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px !important;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    white-space: pre-wrap !important;
+    justify-content: flex-end;
 }
