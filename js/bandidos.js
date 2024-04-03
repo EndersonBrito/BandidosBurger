@@ -229,3 +229,4 @@ function D(e) {
     var t = e.touches;
     t && 1 === t.length || (document.body.classList.add("body--grabbing"), u = !0, document.addEventListener("pointermove", v, !1), document.addEventListener("pointerup", w, !1), h = e.clientX - S, l = m, M = e.clientY - k, y = c)
 }
+

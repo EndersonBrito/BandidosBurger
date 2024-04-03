@@ -23076,3 +23076,59 @@ p,dl,label,ul li {
     white-space: pre-wrap !important;
     justify-content: flex-end;
 }
+
+swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      justify-content: flex-end;
+      color: #fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+    }
+
+    swiper-slide img {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    swiper-slide .title {
+      font-size: 44px;
+      font-weight: 300;
+    }
+
+    swiper-slide .subtitle {
+      font-size: 28px;
+    }
+
+    swiper-slide .textP  p{
+      font-size: 18px !important;
+      max-width: 400px !important;
+      line-height: 1.3 !important;    
+      text-align: justify !important;
+      color:white;
+    }
+    .visibleCard{
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+    }
+    swiper-slide:hover .visibleCard {
+        opacity: 1;
+        transform: translatey(0%);
+        visibility: visible;
+      }
+      @media (max-width: 1023px) {
+          .DivbotonRerseva{
+              display: block;       
+          }
+      }

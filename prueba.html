@@ -82,9 +82,8 @@
 
 <body>
 
-  <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="2"
-    centered-slides="true" space-between="10" grab-cursor="true" loop="true">
-      <swiper-slide style="background-image: url(assets/al_capone.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-position: center;">
+  <swiper-container class="mySwiper" init="false">
+      <swiper-slide style="background-image: url(assets/al_capone.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-repeat: round;">
         
         <div class="title visibleCard" data-swiper="-300">AL CAPONE </div>
         <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
@@ -96,7 +95,7 @@
         </div>
       </swiper-slide>
     
-    <swiper-slide style="background-image: url(assets/pablo_escobar.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-position: center;">
+    <swiper-slide style="background-image: url(assets/pablo_escobar.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-repeat: round">
       <div class="visibleCard title" data-swiper="-300">LA LATINA - PABLO ESCOBAR </div>
         <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
         <div class="visibleCard text" data-swiper="-100">
@@ -106,7 +105,7 @@
           </p>
         </div>
     </swiper-slide>
-    <swiper-slide style="background-image: url(assets/big_jim_colosimo.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-position: center;">
+    <swiper-slide style="background-image: url(assets/big_jim_colosimo.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-repeat: round">
       <div class="visibleCard title" data-swiper="-300">BIG JIM COLOSINO</div>
         <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
         <div class="visibleCard text" data-swiper="-100">
@@ -116,7 +115,7 @@
           </p>
         </div>
     </swiper-slide>
-    <swiper-slide style="background-image: url(assets/gambino.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-position: center;">
+    <swiper-slide style="background-image: url(assets/gambino.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-repeat: round">
       <div class="visibleCard title" data-swiper="-300">GAMBINO</div>
         <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
         <div class="visibleCard text" data-swiper="-100">
@@ -125,7 +124,7 @@
           </p>
         </div>
     </swiper-slide>
-    <swiper-slide style="background-image: url(assets/heisenberg.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-position: center;">
+    <swiper-slide style="background-image: url(assets/heisenberg.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-repeat: round">
       <div class="visibleCard title" data-swiper="-300">HEISENBERG </div>
         <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
         <div class="visibleCard text" data-swiper="-100">
@@ -135,7 +134,7 @@
           </p>
         </div>
       </swiper-slide>
-    <swiper-slide style="background-image: url(assets/frank_costello.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-position: center;">
+    <swiper-slide style="background-image: url(assets/frank_costello.jpg);display: flex;flex-direction: column;justify-content: flex-end; background-repeat: round">
         <div class="visibleCard title" data-swiper="-300">FRANK COSTELLO </div>
         <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
         <div class="visibleCard text" data-swiper="-100">
@@ -150,11 +149,12 @@
 <script>
   const swiperEl = document.querySelector('swiper-container')
     Object.assign(swiperEl, {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
+      loop :true,
       breakpoints: {
         640: {
-          slidesPerView: 3,
+          slidesPerView:2,
           spaceBetween: 20,
         },
         768: {
@@ -162,7 +162,7 @@
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetween: 50,
         },
       },
