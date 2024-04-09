@@ -16146,7 +16146,6 @@ body {
     }
 
     .footer__logo {
-        margin-top: 40%;
         width: 4rem
     }
 
@@ -23093,4 +23092,151 @@ swiper-container {
         width: 20vw !important;
     }
 }
+
+.card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+
+  .card-carousel .card-special {
+    background: transparent;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 350px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-special.highlight {
+    filter: brightness(1)
+  }
+
+  .card-special:nth-of-type(1) {
+      background-image: url("../assets/alCapone.png");
+      background-position: center;
+      background-size: cover;
+  }
+
+  .card-special:nth-of-type(2) {
+      background-image: url("../assets/heisenberg2.png");
+      background-position: center;
+      background-size: cover;
+  }
+  .card-special:nth-of-type(3) {
+      background-image: url("../assets/gambino.png");
+      background-position: center;
+      background-size: cover;
+  }
+
+  .card-special:nth-of-type(4)  {
+    background-image: url("../assets/jimColoso.png");
+    background-position: center;
+      background-size: cover;
+  }
+  .card-special:nth-of-type(5)  {
+    background-image: url("../assets/frankcostello.png");
+    background-position: center;
+      background-size: cover;
+
+  }
+  .card-special:nth-of-type(6)  {
+    background-image: url("../assets/big_jim_colosimo.jpg");
+    background-position: center;
+      background-size: cover;
+  }
+  .card-special:nth-of-type(7)  {
+    background-image: url("../assets/tequeños_queso.jpg");
+    background-position: center;
+      background-size: cover;
+  }
+
+
+
+
+  .image-container {
+    width: 10em;
+    height: 10em;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5em;
+    border-radius: 100%;
+    padding: 1em;
+    
+  }
+
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: calc(-6% - 3px);
+    left: calc(-6% - 3px);
+  }
+
+  .card-special:hover {
+    .topCardEspecial{
+      transform: translateY(10%);
+
+
+    }
+  }
+  .topCardEspecial{
+    background-color: yellow;
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    white-space: pre-wrap !important;
+    transform: translateY(-6060%);
+    transition: 0.5s;
+      margin-top: 22vh;
+    }
    
+    .titleEspecial{
+        font-size: 24px;
+    }
+    .subtitleEspecial{
+        font-size: 20px;
+    }
+    .textEspecial p{
+        font-size: 18px !important;
+        height: 100%;
+        justify-content: right;
+        justify-items: right;
+        white-space: pre-wrap !important;
+    }

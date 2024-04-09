@@ -8,157 +8,230 @@
 
   <style>
    * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: system-ui;
-  background: #3d76d9;
-}
-
-.visuallyhidden {
-  position: absolute;
-  z-index: -1;
-  right: 0;
-  opacity: 0;
-  
-}
-
-h1 {
-  color: white;
-  text-align: center;
-  margin-top: 1em;
-}
-
-.container {
-  overflow: hidden;
-  padding: 20px;
-  margin-top: 2em;
-  background: rgba(0,0,0,.1)
-}
-
-.card-carousel {
-  --card-width: 80%;
-  --card-max-width: 280px;
-  --card-height: 450px;
-  --carousel-min-width: 600px;
-  z-index: 1;
-  position: relative;
-  margin: 0 auto;
-  width: 100%;
-  height: var(--card-height);
-  min-width: var(--carousel-min-width);
-  transition: filter .3s ease;
-}
-
-@media screen and (max-width: 640px) {
-  .card-carousel {
-    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
-}
 
-.card-carousel.smooth-return {
-  transition: all .2s ease;
-}
+    html {
+      font-family: system-ui;
+      background: #3d76d9;
+    }
 
-.card-carousel .card {
-  background: whitesmoke;
-  width: var(--card-width);
-  max-width: var(--card-max-width);
-  text-align: center;
-  padding: 1em;
-  min-width: 250px;
-  height: var(--card-height);
-  position: absolute;
-  margin: 0 auto;
-  color: rgba(0,0,0,.5);
-  transition: inherit;
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-  border-radius: 1em;
-  filter: brightness(.9);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+    .visuallyhidden {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      opacity: 0;
+      
+    }
 
-.card.highlight {
-  filter: brightness(1)
-}
+    h1 {
+      color: white;
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    .container {
+      overflow: hidden;
+      padding: 20px;
+      margin-top: 2em;
+      background: rgba(0,0,0,.1)
+    }
+
+    .card-carousel {
+      --card-width: 80%;
+      --card-max-width: 280px;
+      --card-height: 350px;
+      --carousel-min-width: 600px;
+      z-index: 1;
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      height: var(--card-height);
+      min-width: var(--carousel-min-width);
+      transition: filter .3s ease;
+    }
+
+    @media screen and (max-width: 640px) {
+      .card-carousel {
+        margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+      }
+    }
+
+    .card-carousel.smooth-return {
+      transition: all .2s ease;
+    }
+
+    .card-carousel .card {
+      background: transparent;
+      width: var(--card-width);
+      max-width: var(--card-max-width);
+      text-align: center;
+      padding: 1em;
+      min-width: 350px;
+      height: var(--card-height);
+      position: absolute;
+      margin: 0 auto;
+      color: rgba(0,0,0,.5);
+      transition: inherit;
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+      box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+      
+      filter: brightness(.9);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card.highlight {
+      filter: brightness(1)
+    }
+
+    .card:nth-of-type(1) {
+        background-image: url("assets/alCapone.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card:nth-of-type(2) {
+        background-image: url("assets/heisenberg2.png");
+        background-position: center;
+        background-size: cover;
+    }
+    .card:nth-of-type(3) {
+        background-image: url("assets/gambino.png");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card:nth-of-type(4)  {
+      background-image: url("assets/jimColoso.png");
+      background-position: center;
+        background-size: cover;
+    }
+    .card:nth-of-type(5)  {
+      background-image: url("assets/frankcostello.png");
+      background-position: center;
+        background-size: cover;
+
+    }
+    .card:nth-of-type(6)  {
+      background-image: url("assets/big_jim_colosimo.jpg");
+      background-position: center;
+        background-size: cover;
+    }
+    .card:nth-of-type(6)  {
+      background-image: url("assets/tequeños_queso.jpg");
+      background-position: center;
+        background-size: cover;
+    }
 
 
-.card:nth-of-type(1) .image-container {
-    background-image: url("assets/al_capone.jpg");
-}
- 
-.card:nth-of-type(2) .image-container {
-  background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")
-}
-
-.card:nth-of-type(3) .image-container {
-  background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
-}
-.card:nth-of-type(4) .image-container {
-  background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
-}
-.card:nth-of-type(5) .image-container {
-  background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
-}
-.card:nth-of-type(6) .image-container {
-  background-image: url("assets/big_jim_colosimo.jpg")
-}
-.card:nth-of-type(7) .image-container {
-  background-image: url("assets/tequeños_queso.jpg")
-}
 
 
+    .image-container {
+      width: 10em;
+      height: 10em;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 5em;
+      border-radius: 100%;
+      padding: 1em;
+      
+    }
+
+    .image-container::after {
+      content: "";
+      display: block;
+      width: 120%;
+      height: 120%;
+      position: absolute;
+      top: calc(-6% - 3px);
+      left: calc(-6% - 3px);
+    }
+
+    h2 {
+      padding: 1em;
+      margin-top: 1em;
+      background: rgba(0,0,0,.3);
+      text-align: center;
+      color: white;
+      border-radius: .2em;
+      display: inline-block;
+      transform: translateX(calc((100vw - 100%) / 2))
+    }
+
+    h2 a {
+      color: #f5b916
+    }
+    .back{
+        background: #111111;
+        transform: rotateY(180deg);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .back h1{
+        margin: 2px;
+    }
+
+    .back h3{
+        color: rgb(205, 161, 255);
+        font-size: 1.1rem;
+    }
+
+    .back .info{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .back .info .vert-line{
+        background-color: white;
+        width: 1px;
+    }
+
+    .media{
+        font-size: 18px;
+        display: flex;
+        gap: 20px;
+    }
+
+    .media i{
+        border: 2px solid rgb(50, 50, 50);
+        height: 35px;
+        width: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .card:hover {
+      .topCardEspecial{
+        transform: translateY(10%);
 
 
-.image-container {
-  width: 10em;
-  height: 10em;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 5em;
-  border-radius: 100%;
-  padding: 1em;
-  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
--moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-  
-}
-
-.image-container::after {
-  content: "";
-  display: block;
-  width: 120%;
-  height: 120%;
-  border: solid 3px rgba(0,0,0,.1);
-  border-radius: 100%;
-  position: absolute;
-  top: calc(-6% - 3px);
-  left: calc(-6% - 3px);
-}
-
-h2 {
-  padding: 1em;
-  margin-top: 1em;
-  background: rgba(0,0,0,.3);
-  text-align: center;
-  color: white;
-  border-radius: .2em;
-  display: inline-block;
-  transform: translateX(calc((100vw - 100%) / 2))
-}
-
-h2 a {
-  color: #f5b916
-}
+      }
+    }
+    .topCardEspecial{
+      background-color: yellow;
+      color: black;
+      position: absolute;
+      transform: translateY(-6060%);
+      transition: 0.5s;
+        margin-top: 22vh;
+      }
   </style>
 </head>
 
@@ -170,32 +243,62 @@ h2 a {
 <div class="container">
   <div class="card-carousel">
     <div class="card" id="1">
-      <div class="image-container"></div>
-      <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+       <div class="topCardEspecial">
+          <div class="title visibleCard">AL CAPONE </div>
+          <div class="visibleCard subtitle">(200gr carne)</div>
+          <div class="visibleCard text">
+            <p>
+              Doble carne smash, pan brioche patatas,triple Bacon crunchy triple cheddar
+              madurado, cebolla caramelizada, smokey baconnaise, Sriracha mayo.
+            </p>
+          </div>
+       </div>
     </div>
     <div class="card" id="2">
-      <div class="image-container"></div>
-      <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="topCardEspecial">
+        <div class="visibleCard title" data-swiper="-300">HEISENBERG </div>
+        <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
+        <div class="visibleCard text" data-swiper="-100">
+          <p>
+            Doble carne smash, doble cheddar madurado, cebolla en 
+            plancha (smasher) pepinillos, salsa BANDIDO'S.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="card" id="3">
-      <div class="image-container"></div>
-      <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="topCardEspecial">
+        <div class="visibleCard title" data-swiper="-300">GAMBINO</div>
+        <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
+        <div class="visibleCard text" data-swiper="-100">
+          <p>
+            Doble carne smash, triple cheddar madurado, doble bacon, Sriracha Mayo mermelada de pepinillo.
+          </p>
+        </div>
+      </div>
     </div>  
     <div class="card" id="4">
-      <div class="image-container"></div>
-      <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="topCardEspecial">
+        <div class="visibleCard title" data-swiper="-300">BIG JIM COLOSINO</div>
+      <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
+      <div class="visibleCard text" data-swiper="-100">
+        <p>
+          Doble carne smash, pan brioche patatas glaseado limón, queso provolone y cheddar
+          madurado, 2 tiras de bacon, Sriracha mayo & smokey baconnaise bacon bits.
+        </p>
+      </div>
+    </div>
     </div>
     <div class="card" id="5">
-      <div class="image-container"></div>
-      <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      <div class="topCardEspecial">
+        <div class="visibleCard title" data-swiper="-300">FRANK COSTELLO </div>
+      <div class="visibleCard subtitle" data-swiper="-200">(200gr carne)</div>
+      <div class="visibleCard text" data-swiper="-100">
+        <p>
+          2 Piezas de pollo crispy, doble queso cheddar, bacon, tomate, lechuga salsa BANDIDO'S.
+        </p>
+      </div>
     </div>
-    <div class="card" id="6">
-      <div class="image-container"></div>
-      <p>6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
-    </div>
-    <div class="card" id="7">
-      <div class="image-container"></div>
-      <p>7 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
     </div>
   </div>
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
@@ -304,7 +407,7 @@ h2 a {
       this.cards = container.querySelectorAll(".card")
       
       // Carousel data
-      this.centerIndex = (this.cards.length - 1) /1.5;
+      this.centerIndex = (this.cards.length - 1) /2;
       this.cardWidth = this.cards[0].offsetWidth / this.container.offsetWidth * 100
       this.xScale = {};
       
@@ -442,18 +545,18 @@ h2 a {
       let formula;
     
       if (x <= 0) {
-        formula = 1 - -1 / 7 * x
+        formula = 1 - -1 / 5 * x
         
         return formula
       } else if (x > 0) {
-        formula = 1 - 1 / 7 * x
+        formula = 1 - 1 / 5 * x
         
         return formula
       }
     }
     
     calcScale(x) {
-      const formula = 1 - 1 /7 * Math.pow(x, 2)
+      const formula = 1 - 1 /5 * Math.pow(x, 2)
       
       if (formula <= 0) {
         return 0 
