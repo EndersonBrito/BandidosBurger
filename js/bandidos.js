@@ -436,6 +436,8 @@ const cardsContainer = document.querySelector(".card-carousel");
     }
     
     updateCards(card, data) {
+      console.log("data: ");
+      console.log(data);
       if (data.x || data.x == 0) {
         card.setAttribute("data-x", data.x)
       }
@@ -519,6 +521,7 @@ const cardsContainer = document.querySelector(".card-carousel");
     
     moveCards(data) {
       let xDist;
+      console.log("data2: "+data);
       
       if (data != null) {
         this.container.classList.remove("smooth-return")
@@ -543,12 +546,12 @@ const cardsContainer = document.querySelector(".card-carousel");
               scale2 = this.calcScale2(x + xDist),
               leftPos = this.calcPos(x + xDist, scale2)
         
-        
         this.updateCards(this.cards[i], {
           scale: scale,
           leftPos: leftPos
         })
       }
+
     }
   }
 

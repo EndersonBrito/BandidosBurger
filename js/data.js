@@ -167,13 +167,13 @@ var costillas = [
 var postres = [
     {
         "nombre": "CHEESECAKE" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/postres/cheesCake.jpg",
         "descripcion" :"CHEESECAKE",
         "precio" : "5,90 €"
     },
     {
         "nombre": "CHEESECAKE ESPECIAL" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/postres/pistacho.jpg",
         "descripcion" :"Oreo, Pistacho, Lotus",
         "precio" : "6,90 €"
     },
@@ -185,7 +185,7 @@ var postres = [
     },
     {
         "nombre": "TARTA 3 LECHES" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/postres/3leches.jpg",
         "descripcion" :"TARTA 3 LECHES",
         "precio" : "5,90 €"
     },
@@ -220,8 +220,8 @@ document.querySelectorAll('.entrantes').forEach(item => {
         divcustumfldshow();
     });
   });
-
-
+  
+  
 document.querySelectorAll('.hamburguesas').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
@@ -262,7 +262,7 @@ document.querySelectorAll('.hamburguesas').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
-        llenarDivCarta(postres,"Hot Dogs");
+        llenarDivCarta(hotdogs,"Hot Dogs");
 
     });
   });
@@ -305,8 +305,8 @@ function llenarDivCarta(arreglo, titulo){
     html += '<h2 class="mainTitle">'+titulo+'</h2><div class="burger-container" id="boxMenuDetails">';
     for (var i=0; i< arreglo.length; i++){
    
-        html += '<div class="burger-box">'+
-                    '<a href="carta.html"></a>'
+        html += '<div class="burger-box nadaRef">'+
+                    '<a href="#" onclick="event.preventDefault()" class="nadaRef"></a>'
                     +'<img width="340" height="340"'
                     +'src="'+arreglo[i].imagen+'"'
                     +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
@@ -314,9 +314,13 @@ function llenarDivCarta(arreglo, titulo){
                     +'srcset="'+arreglo[i].imagen+' 340w, '+arreglo[i].imagen+' 150w"'
                     +'sizes="(max-width: 340px) 100vw, 340px">'
                     +'<h3>'+arreglo[i].nombre+'</h3>'
-                +'</div>';
-    
+                    
+                    +'<div class="burger-Details">'
+                    +'<p>'+arreglo[i].descripcion+'</p>'
+                    +'</div>'
+               +'</div>';
     };
+
     html += '</div>'
         +'<div class="back-link">'
             +'<h2>¿Aún no te has decidido?</h2>'
@@ -359,3 +363,13 @@ function openMobileMenu() {
      dive.classList.toggle('hide')
  }
 
+ document.querySelectorAll('.nadaRef').forEach(item => {
+    console.log("holasd asdasds");
+    item.addEventListener('click', event => {
+      // Aquí puedes manejar el evento de click
+        console.log("holasd asdasds");
+        event.preventDefault();
+       
+    });
+  });
+document.getElementsByClassName("nadaRef")
