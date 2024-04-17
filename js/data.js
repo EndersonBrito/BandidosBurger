@@ -179,7 +179,7 @@ var postres = [
     },
     {
         "nombre": "BROWNIE CON HELADO" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/postres/browniHelado.jpg",
         "descripcion" :"BROWNIE CON HELADO",
         "precio" : "5,90 €"
     },
@@ -191,7 +191,7 @@ var postres = [
     },
     {
         "nombre": "BATIDO (SHAKE)" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/postres/3leches.jpg",
         "descripcion" :"BATIDO (SHAKE)",
         "precio" : "5,90 €"
     }

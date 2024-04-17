@@ -2720,6 +2720,7 @@ body {
     stroke: #ee2737
 }
 .botonRerseva{
+    border-radius: 100%;
     height: 150px;
     width: 150px;
 }
@@ -14056,6 +14057,7 @@ body {
     z-index: 2
 }
 .botonRerseva{
+    border-radius: 100%;
     height: 160px;
     width: 160px;
 }
@@ -14839,6 +14841,7 @@ body {
         height: 200px
     }
     .botonRerseva{
+        border-radius: 100%;
         height: 150px;
         width: 150px;
     }
@@ -17750,11 +17753,11 @@ body {
 }
 
 .card__hover:hover .card__image__link img {
-    filter: grayscale(1)
+    filter: brightness(0.8)
 }
 
 .card__hover:hover .card__image__link:before {
-    background: #ee2737;
+    background: yellow;
     border-radius: .75rem;
     content: "";
     height: calc(100% - 0.25rem);
@@ -22965,6 +22968,7 @@ p,dl,label,ul li {
     
 }
 .botonRerseva{
+    border-radius: 100%;
     height: 100px;
     width: 100px;
 }
@@ -22981,6 +22985,7 @@ p,dl,label,ul li {
     
     }
     .botonRerseva{
+        border-radius: 100%;
         height: 150px;
         width: 150px;
     }

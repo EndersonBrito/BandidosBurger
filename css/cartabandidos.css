@@ -9068,6 +9068,7 @@ hr {
 .burger-box {
     display: block;
     position: relative;
+    width: 100%;
     margin-bottom: 30px
 }
 
@@ -9121,7 +9122,7 @@ hr {
 }
 
 .burger-box:hover img {
-    opacity: .55
+    opacity: .22
 }
 
 .burger-box:hover h3 {
@@ -11342,7 +11343,13 @@ a.bases-back:hover {
     .burger-container .burger-box {
         width:41%;
         height: 45vh;
-        height: auto
+    }
+}
+
+@media(max-width: 768px) {
+    .burger-container .burger-box {
+       
+        height: 45vh;
     }
 }
 
@@ -21276,6 +21283,7 @@ button.swiper-pagination-bullet {
   .botonRerseva{
     height: 80px;
     width: 80px;
+    border-radius: 100%;
 }
 
 .btnReservar{
