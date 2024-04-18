@@ -2690,9 +2690,7 @@ body {
     stroke-width: .125rem
 }
 
-.booking__wheel:hover {
-    background: #fff
-}
+
 
 .booking__wheel:hover .booking__arrow {
     fill: #ee2737
@@ -3019,9 +3017,6 @@ body {
     stroke: #fff
 }
 
-.menu--white .booking__wheel:hover {
-    background: #fff
-}
 
 .menu--white .booking__wheel:hover .booking__arrow {
     fill: #ee2737
@@ -14094,9 +14089,6 @@ body {
     stroke-width: .125rem
 }
 
-.booking__wheel:hover {
-    background: #fff
-}
 
 .booking__wheel:hover .booking__arrow {
     fill: #ee2737
@@ -14419,10 +14411,17 @@ body {
     stroke: #fff
 }
 
-.menu--white .booking__wheel:hover {
-    background: #fff
+/*.booking__wheel:hover { ///eNDERSOSOBN
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    background: #12C987;
+   
+}*/
+.booking__wheel:hover:after,
+.booking__wheel:hover:before {
+  transform: rotate(45deg) scaleX(130%);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all ease 0.5s;
 }
-
 .menu--white .booking__wheel:hover .booking__arrow {
     fill: #ee2737
 }
