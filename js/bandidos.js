@@ -357,13 +357,21 @@ const cardsContainer = document.querySelector(".card-carousel");
     }
     
     build(fix = 0) {
+      
       for (let i = 0; i < this.cards.length; i++) {
         const x = i - this.centerIndex;
         const scale = this.calcScale(x)
         const scale2 = this.calcScale2(x)
         const zIndex = -(Math.abs(i - this.centerIndex))
+        console.log("222222222222222222222");
+        console.log(x);
+        console.log(scale);
+        console.log(scale2);
+        console.log(zIndex);
         
         const leftPos = this.calcPos(x, scale2)
+        console.log("leftPos");
+        console.log(leftPos);
       
         
         this.xScale[x] = this.cards[i]
@@ -422,10 +430,10 @@ const cardsContainer = document.querySelector(".card-carousel");
       if (x < 0) {
         formula = (scale * 100 - this.cardWidth) / 2
         
-        return formula
+        return formula-5
 
       } else if (x > 0) {
-        formula = 100 - (scale * 100 + this.cardWidth) / 2
+        formula = 110 - (scale * 100 + this.cardWidth) / 2
         
         return formula
       } else {
@@ -436,8 +444,7 @@ const cardsContainer = document.querySelector(".card-carousel");
     }
     
     updateCards(card, data) {
-      console.log("data: ");
-      console.log(data);
+     
       if (data.x || data.x == 0) {
         card.setAttribute("data-x", data.x)
       }
@@ -453,6 +460,8 @@ const cardsContainer = document.querySelector(".card-carousel");
       }
     
       if (data.leftPos) {
+        console.log("data");
+        console.log(data);
         card.style.left = `${data.leftPos}%`        
       }
       
@@ -482,6 +491,7 @@ const cardsContainer = document.querySelector(".card-carousel");
     }
     
     calcScale(x) {
+      console.log("x: " + x);
       const formula = 1 - 1 /5 * Math.pow(x, 2)
       
       if (formula <= 0) {
@@ -521,7 +531,6 @@ const cardsContainer = document.querySelector(".card-carousel");
     
     moveCards(data) {
       let xDist;
-      console.log("data2: "+data);
       
       if (data != null) {
         this.container.classList.remove("smooth-return")

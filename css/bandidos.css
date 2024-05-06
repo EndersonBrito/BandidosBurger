@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'american';
+    src: url('../font/American-Typewriter-Regular.ttf');
+}
+
 body {
     margin: 0;
-    font: .625em/1.231 sans-serif
+    font: .625em/1.231 'american'  sans-serif
 }
 
 article,aside,footer,header,nav,section {
@@ -23226,28 +23231,51 @@ swiper-container {
     width: 100%;
     height: auto;
     line-height: 1;
+    font-family: 'american' !important;
     white-space: normal !important;
     transform: translateY(-6060%);
     transition: 0.5s;
-      margin-top: 22vh;
+      margin-top: 62vh;
     }
    
     .titleEspecial{
-        font-size: 24px;
+        font-size: 20px !important;
     }
     .subtitleEspecial{
-        font-size: 20px;
+        font-size: 16px !important;
     }
     .textEspecial p{
-        font-size: 18px !important;
+        font-size: 14px !important;
         color: white;
-        height: 100%;
+        height: 90%;
+        padding: 0;
+        margin: 0;
         justify-content: right;
         justify-items: right;
         white-space: pre-wrap !important;
     }
-
-    
+    .img_360{
+        width: 560px;
+        margin-top: 20vh;
+        
+        animation: rotation 6s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotationY {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
     @media (max-width: 800px) {
         .card-carousel .card-special {
             width: 60vw;
@@ -23260,4 +23288,18 @@ swiper-container {
             height: 200px;
          
         }
+        .logo{
+            width: 0150px;
+        }
+
+        *{
+            font-family: 'american' !important;
+
+        }
+        .img_360{
+            width: 360px;
+            margin-top: 20vh;
+        }
     }
+
+   
