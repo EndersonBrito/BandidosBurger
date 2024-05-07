@@ -22814,9 +22814,13 @@ p,dl,label,ul li {
 }
 
 .full__logoMobile{
-    height: 5.4em;
+    width: 90px;
+    margin-top: -25px;
 }
+.full__logoMobile2{
+    width: 160px;
 
+}
 .Carousel{
     position: absolute;
     width: 100%;
