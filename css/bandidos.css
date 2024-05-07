@@ -23253,6 +23253,8 @@ swiper-container {
         justify-content: right;
         justify-items: right;
         white-space: pre-wrap !important;
+        text-align: justify;
+        margin-left: 10px;
     }
     .img_360{
         width: 560px;

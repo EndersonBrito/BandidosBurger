@@ -7611,7 +7611,8 @@ footer .footer-container--top .container-logo svg {
 footer .footer-container--top .options-1,footer .footer-container--top .options-2 {
     display: flex;
     flex-direction: column;
-    width: 100%
+    width: 100%;
+    align-items: center;
 }
 
 footer .footer-container--top .options-1 span {
@@ -7768,6 +7769,7 @@ footer .legal-links-container {
     padding: 0 24px;
     gap: 20px;
     margin-bottom: 20px;
+    text-align: center;
     flex: 1
 }
 
@@ -10675,8 +10677,9 @@ ul.sub-nav li a {
 }
 
 .top-picture {
+    padding-top: 15%;
+    height: 80%;
     width: 100%;
-    height: 400px
 }
 
 .top-picture .slide {
@@ -10785,7 +10788,8 @@ ul.sub-nav li a {
 
 @media(min-width: 1400px) {
     .top-picture {
-        height:600px
+        height:100%;
+        padding-top: 8%;
     }
 
     .top-picture .slide .top-title {
@@ -15030,7 +15034,9 @@ body.zoom150 #dropdown-menu .options .logo-rotate {
     }
 
     .top-picture {
-        height: 180px
+        height: 63%;
+        padding-top: 30%;
+        width: 100%;
     }
 
     .safe-place h1 {
