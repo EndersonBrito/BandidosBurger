@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'american';
+    src: url('../font/American-Typewriter-Regular.ttf');
+}
+
+
 .wpcf7 .screen-reader-response {
     position: absolute;
     overflow: hidden;
@@ -10664,6 +10670,10 @@ ul.sub-nav li a {
     .page-template-default .entry-content table tr td p {
         font-size: 16px
     }
+    .top-picture {
+        padding-top: 4%;
+    }
+    
 }
 
 @media(min-width: 992px) {
@@ -10674,6 +10684,7 @@ ul.sub-nav li a {
     .page-template-default .entry-content table tr td p {
         font-size: 18px
     }
+
 }
 
 .top-picture {
@@ -10738,7 +10749,9 @@ ul.sub-nav li a {
     .top-picture {
         height:450px
     }
-
+    .top-picture {
+        padding-top: 4%;
+    }
     .top-picture .slide .top-title {
         font-size: 65px;
         max-width: 80%;
@@ -10764,8 +10777,9 @@ ul.sub-nav li a {
 
 @media(min-width: 992px) {
     .top-picture {
-        height:520px
-    }
+        height:520px;
+        padding-top: 4%;
+        }
 
     .top-picture .slide .top-title {
         font-size: 70px
@@ -21310,4 +21324,8 @@ button.swiper-pagination-bullet {
     gap: 12px;
     cursor: pointer;
     text-decoration: none;
+}
+*{
+    font-family: 'american' !important;
+
 }
