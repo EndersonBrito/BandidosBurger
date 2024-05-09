@@ -7607,7 +7607,8 @@ footer .footer-container--top .container-logo {
     display: flex;
     flex-direction: column;
     margin-bottom: 2.5rem;
-    width: 100%
+    width: 100%;
+    text-align: center;
 }
 
 footer .footer-container--top .container-logo svg {
@@ -7741,7 +7742,8 @@ footer .rail__container .track__container {
 footer .rail__container .track__container .track {
     display: inline-block;
     position: relative;
-    min-width: 7.5rem
+    min-width: 7.5rem;
+    color: yellow;
 }
 
 footer .rail__container .track__container .track span {
@@ -21295,7 +21297,7 @@ button.swiper-pagination-bullet {
     }
 }
 .logoMobile{
-    height: 4.4em;
+    width: 200px;
 }
 
 
@@ -21356,22 +21358,36 @@ button.swiper-pagination-bullet {
      .page__nav{
         margin-top: 50px;
     }
-   
+    .logo{
+        width: 120px;
+
+    }
 }
 @media (min-width: 400px) {
     .logoMobile2{
         width: 200px;
         margin-right: 8vh;
     }
-    
-   
+    .logoMobile{
+        width: 90px;
+    }
+    .logo{
+        width: 140px;
+
+    }
 }
 @media (min-width: 650px) {
     .logoMobile2{
         width: 200px;
         margin-right: 25vh;
     }
-    
+    .logoMobile{
+        width: 120px;
+    }
+    .logo{
+        width: 150px;
+
+    }
 }
 @media (min-width: 800px) {
     .logoMobile2{
@@ -21382,5 +21398,8 @@ button.swiper-pagination-bullet {
        
         margin: 65px 65px;
         z-index: 10;
-      }
+    }
+    .logoMobile{
+        width: 150px;
+    }
 }

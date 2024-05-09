@@ -329,6 +329,7 @@ function llenarDivCarta(arreglo, titulo){
     document.getElementById("inner-content").innerHTML = html;
     document.getElementById("content").style.display = "block";
     document.getElementById("gridMainMenu").style.display = "none";
+    document.getElementById('content').focus();
 }
 
 function activate(e) {

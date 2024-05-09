@@ -4533,6 +4533,7 @@ body {
 .footer__top .logo__column {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between
 }
 
@@ -23334,12 +23335,20 @@ swiper-container {
          .page__nav{
             margin-top: 50px;
         }
+        .logo{
+            width: 100px;
+    
+        }
        
     }
     @media (min-width: 400px) {
         .full__logoMobile2{
             width: 200px;
             margin-right: 8vh;
+        }
+        .logo{
+            width: 120px;
+    
         }
         .img_360{
             width: 460px;
@@ -23355,6 +23364,10 @@ swiper-container {
         .full__logoMobile2{
             width: 200px;
             margin-right: 25vh;
+        }
+        .logo{
+            width: 130px;
+    
         }
         .img_360{
             width: 560px;
@@ -23380,7 +23393,16 @@ swiper-container {
             z-index: 10;
         }
         .textEspecial{
-            margin-top: -30px;
+            margin-top: -40px;
+            margin-bottom: 60px;
+        }
+        .img_360 {
+            width: 660px;
+            margin-left: 1vw;
+        }
+        .logo{
+            width: 150px;
+    
         }
     }
 
