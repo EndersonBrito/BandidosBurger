@@ -21352,6 +21352,9 @@ button.swiper-pagination-bullet {
         margin-top: 20vh;
         margin-left: 20vw;
     }
+    .options .section .options__main span {
+        line-height: 1.5;
+    }
 }
 @media (min-width: 300px) {
     
@@ -21361,6 +21364,9 @@ button.swiper-pagination-bullet {
     .logo{
         width: 120px;
 
+    }
+    .options .section .options__main span {
+        line-height: 1.5;
     }
 }
 @media (min-width: 400px) {
@@ -21402,4 +21408,20 @@ button.swiper-pagination-bullet {
     .logoMobile{
         width: 150px;
     }
+    .options .section .options__main span {
+        line-height: 1;
+    }
 }
+
+.div-visible {
+    opacity: 1;
+    transition: opacity 1.5s ease; /* Transición de opacidad */
+}
+
+.div-oculto {
+    opacity: 0;
+    transition: opacity 1.5s ease; /* Transición de opacidad */
+   
+    /* Ajusta la posición según tus necesidades */
+}
+  

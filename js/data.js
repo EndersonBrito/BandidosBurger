@@ -211,6 +211,10 @@ var kids = [
         "precio" : "8,00 €"
     },
 ];
+
+
+
+
 document.querySelectorAll('.entrantes').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
@@ -302,10 +306,10 @@ select.addEventListener('change',
 //esta funcion se va encargar de recorrer el arreglo de los datos y cargar la informacion
 function llenarDivCarta(arreglo, titulo){
     var html = "";
-    html += '<h2 class="mainTitle">'+titulo+'</h2><div class="burger-container" id="boxMenuDetails">';
+    html += '<h2 class="mainTitle">'+titulo+'</h2><div class="burger-container div-oculto" id="boxMenuDetails">';
     for (var i=0; i< arreglo.length; i++){
    
-        html += '<div class="burger-box nadaRef">'+
+        html += '<div class="burger-box nadaRef ">'+
                     '<a href="#" onclick="event.preventDefault()" class="nadaRef"></a>'
                     +'<img width="340" height="340"'
                     +'src="'+arreglo[i].imagen+'"'
@@ -330,13 +334,21 @@ function llenarDivCarta(arreglo, titulo){
     document.getElementById("content").style.display = "block";
     document.getElementById("gridMainMenu").style.display = "none";
     document.getElementById('content').focus();
+    const divVisible = document.querySelector('.div-visible');
+    const divOculto = document.querySelector('.div-oculto');
+    divVisible.style.opacity = 0;
+    divOculto.style.opacity = 1;
 }
 
 function activate(e) {
     if (e.target.matches('.volverBtnMenu')){
         e.preventDefault();
+        const divVisible = document.querySelector('.div-visible');
+        const divOculto = document.querySelector('.div-oculto');
         document.getElementById("content").style.display = "none";
         document.getElementById("gridMainMenu").style.display = "block";
+        divVisible.style.opacity = 1;
+        divOculto.style.opacity = 0;
     }else{
         console.log("nada");
     }

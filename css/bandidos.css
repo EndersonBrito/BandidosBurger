@@ -23318,6 +23318,9 @@ swiper-container {
         .img_360{
             width: 360px;
         }
+        .page__main__nav .nav__item {
+            line-height: 1.5;
+        }
     }
     @media (min-width: 500px) {
         .full__logoMobile2{
@@ -23328,6 +23331,10 @@ swiper-container {
             width: 460px;
             margin-top: 20vh;
             margin-left: 20vw;
+        }
+        
+        .page__main__nav .nav__item {
+            line-height: 1.5;
         }
     }
     @media (min-width: 300px) {
@@ -23404,11 +23411,16 @@ swiper-container {
             width: 150px;
     
         }
+        .page__main__nav .nav__item {
+            line-height: 1;
+        }
     }
 
    
       
+   
       
-      
-      
-    
+    *{
+        font-family: 'american' !important;
+
+    }
