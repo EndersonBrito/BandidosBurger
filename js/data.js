@@ -77,7 +77,7 @@ var especiales = [
         "precio" : "10,90 €"
     },
     {
-        "nombre": "BIG JIM COLOSINO (200gr carne)" ,
+        "nombre": "BIG JIM COLOSIMO (200gr carne)" ,
         "imagen" : "assets/big_jim_colosimo.jpg",
         "descripcion" :"Doble carne smash, pan brioche patatas glaseado limón, queso provolone y cheddar madurado, 2 tiras de bacon, Sriracha mayo & smokey baconnaise bacon bits",
         "precio" : "15,90 €"
