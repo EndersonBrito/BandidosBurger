@@ -74,7 +74,7 @@ var especiales = [
         "nombre": "LA LATINA - PABLO ESCOBAR (200gr carne)" ,
         "imagen" : "assets/pablo_escobar.jpg",
         "descripcion" :"Doble carne smash, pan brioche patatas, bacon crunchy, plátano maduro, queso latino (De mano), salsa BANDIDO'S (Barbacoa spicy)",
-        "precio" : "10,90 €"
+        "precio" : "14,90 €"
     },
     {
         "nombre": "BIG JIM COLOSIMO (200gr carne)" ,
@@ -104,25 +104,25 @@ var especiales = [
 var extras = [
     {
         "nombre": "CARNE SMASH" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/especiales2.jpg",
         "descripcion" :"CARNE SMASH",
         "precio" : "2,50 €"
     },
     {
         "nombre": "SALSAS ESPECIALES" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/especiales2.jpg",
         "descripcion" :"SALSAS ESPECIALES",
         "precio" : "1,50 €"
     },
     {
         "nombre": "QUESO CHEDDAR" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/especiales2.jpg",
         "descripcion" :"QUESO CHEDDAR",
         "precio" : "1,00 €"
     },
     {
         "nombre": "BACON" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/especiales2.jpg",
         "descripcion" :"BACON",
         "precio" : "1,50 €"
     },
@@ -158,7 +158,7 @@ var costillas = [
     },
     {
         "nombre": "Rack entero" ,
-        "imagen" : "assets/costillas bbqs.jpg",
+        "imagen" : "assets/costillas bbq.jpg",
         "descripcion" :"Costillas en deliciosa salsa barbeque hechas a baja temperatura con maiz dulce y patatas fritas",
         "precio" : "21,90 €"
     }
@@ -191,7 +191,7 @@ var postres = [
     },
     {
         "nombre": "BATIDO (SHAKE)" ,
-        "imagen" : "assets/postres/3leches.jpg",
+        "imagen" : "assets/cheese_cakeIA.jpg",
         "descripcion" :"BATIDO (SHAKE)",
         "precio" : "5,90 €"
     }
@@ -200,13 +200,13 @@ var postres = [
 var kids = [
     {
         "nombre": "ROBIN HOOD (100gr carne)" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/pequesBandidos.jpg",
         "descripcion" :"Carne smash, doble queso cheddar ketchup, mayonesa y mostaza",
         "precio" : "8,00 €"
     },
     {
         "nombre": "CHICKEN KIDS" ,
-        "imagen" : "assets/classic.jpg",
+        "imagen" : "assets/pequesBandidos.jpg",
         "descripcion" :"Crujientes Tiras de pollo empanadas con patatas fritas",
         "precio" : "8,00 €"
     },
@@ -224,8 +224,25 @@ document.querySelectorAll('.entrantes').forEach(item => {
         divcustumfldshow();
     });
   });
+  document.querySelectorAll('.extras').forEach(item => {
+    item.addEventListener('click', event => {
+      // Aquí puedes manejar el evento de click
+        event.preventDefault();
+        llenarDivCarta(extras,'Extras');
+
+        divcustumfldshow();
+    });
+  });
   
-  
+  document.querySelectorAll('.costillas').forEach(item => {
+    item.addEventListener('click', event => {
+      // Aquí puedes manejar el evento de click
+        event.preventDefault();
+        llenarDivCarta(costillas,'Costillasa');
+
+        divcustumfldshow();
+    });
+  });
 document.querySelectorAll('.hamburguesas').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
@@ -301,6 +318,14 @@ select.addEventListener('change',
         llenarDivCarta(postres, "Postres");
 
     }
+    else if (selectedOption.value == 'costillas'){
+        llenarDivCarta(costillas, "Costillas");
+
+    }
+    else if (selectedOption.value == 'extras'){
+        llenarDivCarta(extras, "Extras");
+
+    }
 });
 
 //esta funcion se va encargar de recorrer el arreglo de los datos y cargar la informacion
@@ -320,6 +345,7 @@ function llenarDivCarta(arreglo, titulo){
                     +'<h3>'+arreglo[i].nombre+'</h3>'
                     
                     +'<div class="burger-Details">'
+                    +'<h4>'+arreglo[i].precio+'</h4>'
                     +'<p>'+arreglo[i].descripcion+'</p>'
                     +'</div>'
                +'</div>';

@@ -23426,18 +23426,34 @@ swiper-container {
         --card-height: 500px;
     }
     .img_360 {
-        width: 1000px;
+        width: 1200px;
         margin-left: 1vw;
     }
     .titleEspecial {
-        font-size: 60px !important;
+        font-size: 50px !important;
     }
     .subtitleEspecial{
         font-size: 40px !important;
     }
     .textEspecial p{
-        font-size: 20px !important;
+        font-size: 26px !important;
        
+    }
+    .special__burgers__wrp {
+        height: 50vh;
+    }
+    .shapes li{
+        animation: animate 12s linear infinite;
+    }
+    @keyframes animate{
+        0%{
+            transform: translateY(0px) rotate(0deg);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(-2000px) rotate(360deg);
+            opacity: 0;
+        }
     }
    }
       

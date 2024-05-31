@@ -9115,6 +9115,25 @@ hr {
     max-width: 85%
 }
 
+.burger-box h4 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.56px;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    z-index: 5;
+    top: 134px;
+    right: 25px;
+    margin: 0;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    transition: color .3s ease;
+    max-width: 85%;
+    /* top: auto; */
+    padding: 0;
+}
+
 .burger-box p {
     opacity: 0;
     transition: opacity .3s ease;
