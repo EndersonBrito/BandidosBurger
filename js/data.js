@@ -212,7 +212,258 @@ var kids = [
     },
 ];
 
+var consumisicion = [
+    {
+        "nombre": "Cervezas" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Cervezas",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Licores" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Licores",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Bebidas" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Bebidas",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Vinos" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Vinos",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Cocteles" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Cocteles",
+        "precio" : "8,00 €"
+    },
+];
 
+var cervezas = [
+    {
+        "nombre": "Copa Estrella Especial" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Copa Estrella Especial",
+        "precio" : "2.80 € €"
+    },
+    {
+        "nombre": "Copa Estrella Especial con Limón" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Copa Estrella Especial con Limón",
+        "precio" : "3.00 €"
+    },
+    {
+        "nombre": "Jarra Estrella Especial" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Jarra Estrella Especial",
+        "precio" : "3.50 €"
+    },
+    {
+        "nombre": "Jarra Estrella Especial con Limón" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Jarra Estrella Especial con Limón",
+        "precio" : "3.80 €"
+    },
+    {
+        "nombre": "Estrella 1906 Especial" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Estrella 1906 Especial",
+        "precio" : "3.50 €"
+    }, {
+        "nombre": "Estrella 1906 Reserva" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Estrella 1906 Reserva",
+        "precio" : "3.50 €"
+    },
+    {
+        "nombre": "Estrella 0.0 Tostada" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Estrella 0.0 Tostada",
+        "precio" : "3.00 €"
+    },
+    {
+        "nombre": "Estrella 0.0" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Estrella 0.0",
+        "precio" : "3.00 €"
+    },
+    {
+        "nombre": "Estrella 1906 Irish Red Ale" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Estrella 1906 Irish Red Ale",
+        "precio" : "3.50 €"
+    },
+    {
+        "nombre": "Coronita" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Coronita",
+        "precio" : "3.50 €"
+    },
+];
+var Licores = [
+    {
+        "nombre": "Whisky Black Label" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Whisky Black Label",
+        "precio" : "12.00 €"
+    },
+    {
+        "nombre": "Whisky Red Label" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Whisky Red Label",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Ron Santa Teresa" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Ron Santa Teresa",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Ron Cacique" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Ron Cacique",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Ron Barcelo" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Ron Barcelo",
+        "precio" : "8.00 €"
+    },
+    {
+        "nombre": "Gin Beefeater" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Gin Beefeater",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Gin Puerto de Indias" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Gin Puerto de Indias",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Vodka Absolut" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Vodka Absolut",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Tequila" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Tequila",
+        "precio" : "3.50 €"
+    },
+];
+var vinos = [
+    {
+        "nombre": "Rioja" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Rioja",
+        "precio" : "3.50 €"
+    },
+    {
+        "nombre": "Ribera del Duero" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Ribera del Duero",
+        "precio" : "3.50 €"
+    },
+    {
+        "nombre": "Blanco Semidulce" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Blanco Semidulce",
+        "precio" : "3.00 €"
+    },
+    {
+        "nombre": "Blanco Verdejo" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Blanco Verdejo",
+        "precio" : "3.00 €"
+    },
+];
+var bebidas = [
+    {
+        "nombre": "Coca Cola" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Coca Cola",
+        "precio" : "3,00 €"
+    },
+    {
+        "nombre": "Coca Cola Zero" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Coca Cola Zero",
+        "precio" : "3,00 €"
+    },
+    {
+        "nombre": "Coca Cola Zero Zero" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Coca Cola Zero Zero",
+        "precio" : "3,00 €"
+    },
+    {
+        "nombre": "Fanta Naranja" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Fanta Naranja",
+        "precio" : "3,00 €"
+    },
+    {
+        "nombre": "Fanta Limón" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Fanta Limón",
+        "precio" : "3,00 €"
+    },
+    {
+        "nombre": "Nestea" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Nestea",
+        "precio" : "3.00 €"
+    },
+    {
+        "nombre": "Aquarius" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Aquarius",
+        "precio" : "3.00 €"
+    },
+    {
+        "nombre": "Agua" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Agua",
+        "precio" : "2.00 €"
+    },
+];
+var cocteles = [
+    {
+        "nombre": "Mojito" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Mojito",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Margarita" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Margarita",
+        "precio" : "8,00 €"
+    },
+    {
+        "nombre": "Margarita Corona" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Margarita Corona",
+        "precio" : "9.50 €"
+    },
+    {
+        "nombre": "Daiquiri" ,
+        "imagen" : "assets/bebidasBandidos.jpg",
+        "descripcion" :"Daiquiri",
+        "precio" : "8,00 €"
+    },
+];
 
 
 document.querySelectorAll('.entrantes').forEach(item => {
@@ -234,11 +485,21 @@ document.querySelectorAll('.entrantes').forEach(item => {
     });
   });
   
+  document.querySelectorAll('.bebidas').forEach(item => {
+    item.addEventListener('click', event => {
+      // Aquí puedes manejar el evento de click
+        event.preventDefault();
+        llenarDivCartaBebidas(consumisicion,'Bedidas');
+
+        divcustumfldshow();
+    });
+  });
+
   document.querySelectorAll('.costillas').forEach(item => {
     item.addEventListener('click', event => {
       // Aquí puedes manejar el evento de click
         event.preventDefault();
-        llenarDivCarta(costillas,'Costillasa');
+        llenarDivCarta(costillas,'Costillas');
 
         divcustumfldshow();
     });
@@ -326,6 +587,11 @@ select.addEventListener('change',
         llenarDivCarta(extras, "Extras");
 
     }
+    else if (selectedOption.value == 'bebidas'){
+        
+        llenarDivCartaBebidas(consumisicion, "Bedidas");
+
+    }
 });
 
 //esta funcion se va encargar de recorrer el arreglo de los datos y cargar la informacion
@@ -350,6 +616,37 @@ function llenarDivCarta(arreglo, titulo){
                     +'</div>'
                +'</div>';
     };
+
+    html += '</div>'
+        +'<div class="back-link">'
+            +'<h2>¿Aún no te has decidido?</h2>'
+            +'<a href="carta.html" class="btn volverBtnMenu" id="btnVolverMenu">Volver a la carta</a>'
+        +'</div>';
+    document.getElementById("inner-content").innerHTML = html;
+    document.getElementById("content").style.display = "block";
+    document.getElementById("gridMainMenu").style.display = "none";
+    document.getElementById('content').focus();
+    const divVisible = document.querySelector('.div-visible');
+    const divOculto = document.querySelector('.div-oculto');
+    divVisible.style.opacity = 0;
+    divOculto.style.opacity = 1;
+}
+
+function llenarDivCartaBebidas(arreglo, titulo){
+    var html = "";
+    html += '<h2 class="mainTitle">'+titulo+'</h2><div class="burger-container div-oculto" id="boxMenuDetails">';
+   // for (var i=0; i< arreglo.length; i++){
+   
+        html += '<div class="burger-boxBebidas nadaRef ">'+
+                    '<a href="#" onclick="event.preventDefault()" class="nadaRef"></a>'
+                    +'<img width="1000" height="1000"'
+                    +'src="assets/bebidas.jpg"'
+                    +'class="attachment-grid size-grid wp-post-image" alt="teques entrante" decoding="async"'
+                    +'fetchpriority="high"'
+                    +'srcset="assets/bebidas.jpg 340w, assets/bebidas.jpg 150w"'
+                    +'sizes="(max-width: 3040px) 100vw, 340px">'
+               +'</div>';
+   // };
 
     html += '</div>'
         +'<div class="back-link">'

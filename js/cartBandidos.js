@@ -244,21 +244,7 @@ if (null !== reserveBtn) {
         wrapper.classList.add('visible');
     });
 }
-wrapper.addEventListener('click', () => {
-    reserveBar.classList.add('bar-hidden');
-    reserveBar.classList.remove('is--visible');
-    wrapper.classList.remove('visible');
-    if (!visibleFooter()) {
-        reserveBtnWrapper.style.opacity = '0';
-        reserveBtn.classList.remove('reserve-btn-hidden');
-        reserveBtn.classList.remove('hidden');
-        reserveBtn.classList.add('reserve-btn-visible');
-        setTimeout(() => {
-            reserveBtn.classList.remove('reserve-btn-visible');
-            reserveBtnWrapper.style.opacity = '1';
-        }, 700);
-    }
-});
+
 function handleArrows(arrow) {
     if (arrow.classList.contains('active')) {
         arrow.classList.remove('active');
